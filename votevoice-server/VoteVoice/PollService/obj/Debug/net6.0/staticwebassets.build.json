@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "yPuUZTwFU6sCWQe6fAUPJK+0GFAyphM430v7MKpb/f8=",
+  "Source": "PollService",
+  "BasePath": "_content/PollService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
