@@ -91,7 +91,7 @@ namespace PollService.Business.Services.Services
                                             .Where(po => pollId == pollId)
                                             .ToListAsync();
 
-            var host = _configuration["GateService:Host"];
+            var host = _configuration["GateWayService:Host"];
             var port = _configuration["GatewayService:Port"];
 
             var baseAddress = $"https://{host}:{port}/";

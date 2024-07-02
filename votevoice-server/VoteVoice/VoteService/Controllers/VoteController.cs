@@ -21,6 +21,7 @@ namespace VoteService.Controllers
 
         #endregion
 
+        [Authorize]
         [HttpGet("{pollOptionId}")]
         public async Task<IActionResult> GetVotesCount(long pollOptionId)
         {

@@ -8,9 +8,6 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Configuration["GatewayService:Host"] = builder.Configuration["GatewayService:Host"];
-builder.Configuration["GatewayService:Port"] = builder.Configuration["GatewayService:Port"];
-
 var securityKey = builder.Configuration.GetValue<string>("JwtSettings:SecretKey");
 builder.Services.AddAuthentication(options =>
 {
@@ -43,6 +40,8 @@ builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
 string logPath = builder.Configuration.GetSection("Logging:LogPath").Value;
 var logger = new LoggerConfiguration()
     .MinimumLevel.Information()
@@ -68,6 +67,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
