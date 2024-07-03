@@ -1,3 +1,4 @@
 # VoteVoice
-![image](https://github.com/akhilpvijayan/VoteVoice/assets/90704113/4e440c8b-41bd-4930-a150-a94a064ce747)
+![image](https://github.com/akhilpvijayan/VoteVoice/assets/90704113/e00ff16d-8c05-4fef-9f2b-6bc42238e007)
+
 
