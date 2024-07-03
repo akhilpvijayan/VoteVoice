@@ -14,6 +14,8 @@ namespace PollService.Business.Services.Dto
 
         public bool IsActive { get; set; }
 
+        public DateTime ExpiryDate { get; set; }
+
         public List<PollOptionsDetailDto> PollOptions { get; set; }
     }
 }

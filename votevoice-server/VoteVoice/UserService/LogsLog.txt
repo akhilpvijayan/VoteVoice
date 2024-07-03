@@ -655,3 +655,5 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-07-03 18:37:42.401 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-07-03 18:39:13.865 +05:30 [INF] ClearExpiredPollsService is starting.

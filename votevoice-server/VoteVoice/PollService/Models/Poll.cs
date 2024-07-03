@@ -15,8 +15,9 @@ namespace PollService.Models
 
         public string Description { get; set; }
 
-
         public bool IsActive { get; set; } = true;
+
+        public DateTime ExpiryDate { get; set; }
     }
 
 }

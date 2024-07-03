@@ -13,5 +13,7 @@ namespace PollService.Business.Entities
         string Description { get; set; }
 
         bool IsActive { get; set; }
+
+        DateTime ExpiryDate { get; set; }
     }
 }

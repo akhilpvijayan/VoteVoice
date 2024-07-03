@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using PollService.Business.Services;
+using PollService.Business.Services.Services;
 using PollService.Data;
 using Serilog;
 using System.Text;
@@ -51,6 +52,7 @@ var logger = new LoggerConfiguration()
 builder.Logging.AddSerilog(logger);
 
 builder.Services.AddScoped<IPollService, PollService.Business.Services.Services.PollService>();
+builder.Services.AddSingleton<IHostedService, ClearExpiredPollsService>();
 
 builder.Services.AddHttpClient();
 

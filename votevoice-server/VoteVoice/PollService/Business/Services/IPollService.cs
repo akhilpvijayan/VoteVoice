@@ -12,5 +12,7 @@ namespace PollService.Business.Services
         Task<bool> DeletePollOption(long pollId, long pollOptionId);
         Task<bool> ValidatePollOption(long pollOptionId);
         Task<bool> UpdateVoteCount(long pollOptionId, bool isAdd);
+        Task<bool> DeleteVoteByPollId(List<long> pollId);
+        Task<bool> DeleteVoteByPollOptionId(long pollOptionId);
     }
 }

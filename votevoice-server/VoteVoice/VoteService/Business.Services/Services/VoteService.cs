@@ -86,6 +86,34 @@ namespace VoteService.Business.Services.Services
             return await _context.Votes.CountAsync(x => x.PollOptionId == pollOptionId);
         }
 
+        public async Task<bool> DeleteVotesByPollIds(List<long> pollIds)
+        {
+            var votes = _context.Votes.Where(v => pollIds.Contains(v.PollId)).ToList();
+
+            if (votes.Any())
+            {
+                _context.Votes.RemoveRange(votes);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+
+            return false;
+        }
+
+        public async Task<bool> DeleteVoteByPollOptionId(long pollOptionId)
+        {
+            var votes = _context.Votes.Where(v => pollOptionId == pollOptionId).ToList();
+
+            if (votes.Any())
+            {
+                _context.Votes.RemoveRange(votes);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+
+            return false;
+        }
+
         private async Task<bool> ValidatePollOptionIdAsync(long pollOptionId)
         {
             var host = _configuration["GatewayService:Host"];

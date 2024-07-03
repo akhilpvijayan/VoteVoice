@@ -4,6 +4,7 @@ using PollService.Business.Entities;
 using PollService.Business.Services.Dto;
 using PollService.Data;
 using PollService.Models;
+using System.Net.Http;
 using System.Net.Http.Formatting;
 
 namespace PollService.Business.Services.Services
@@ -69,6 +70,7 @@ namespace PollService.Business.Services.Services
                     Description = poll.Description,
                     FirstName = userDetails.FirstName,
                     LastName = userDetails.LastName,
+                    ExpiryDate = poll.ExpiryDate,
                     PollOptions = optionsForPoll.Select(po => new PollOptions
                     {
                         PollOptionId = po.PollOptionId,
@@ -110,6 +112,7 @@ namespace PollService.Business.Services.Services
                 Description = poll.Description,
                 FirstName = userDetails.FirstName,
                 LastName = userDetails.LastName,
+                ExpiryDate = poll.ExpiryDate,
                 PollOptions = pollOptions.Select(po => new PollOptions
                 {
                     PollOptionId = po.PollOptionId,
@@ -138,6 +141,7 @@ namespace PollService.Business.Services.Services
                     poll.CreatedDate = DateTime.Now;
                     poll.ModifiedBy = 1;
                     poll.ModifiedDate = DateTime.Now;
+                    poll.ExpiryDate = pollDetails.ExpiryDate;
 
                     _context.Polls.Add(poll);
                     await _context.SaveChangesAsync();
@@ -196,6 +200,7 @@ namespace PollService.Business.Services.Services
                     poll.Title = pollDetails.Title;
                     poll.ModifiedBy = pollDetails.ModifiedBy;
                     poll.ModifiedDate = DateTime.Now;
+                    poll.ExpiryDate = pollDetails.ExpiryDate;
 
                     await _context.SaveChangesAsync();
 
@@ -239,10 +244,16 @@ namespace PollService.Business.Services.Services
         {
             try
             {
-                bool isDeletePoll = true;
-                var sqlQuery = $"Exec spDeletePoll {pollId}, {isDeletePoll}";
-                await _context.Database.ExecuteSqlRawAsync(sqlQuery);
-                return true;
+                List<long> pollIdList = new List<long>();
+                pollIdList.Add(pollId);
+                if (await DeleteVoteByPollId(pollIdList))
+                {
+                    bool isDeletePoll = true;
+                    var sqlQuery = $"Exec spDeletePoll {pollId}, {isDeletePoll}";
+                    await _context.Database.ExecuteSqlRawAsync(sqlQuery);
+                    return true;
+                }
+                throw new Exception("An Unexpected error occured in deleting votes");
             }
             catch(Exception ex)
             {
@@ -254,10 +265,14 @@ namespace PollService.Business.Services.Services
         {
             try
             {
-                bool isDeletePoll = false;
-                var sqlQuery = $"Exec spDeletePoll {pollId}, {isDeletePoll}";
-                await _context.Database.ExecuteSqlRawAsync(sqlQuery);
-                return true;
+                if (await DeleteVoteByPollOptionId(pollOptionId))
+                {
+                    bool isDeletePoll = false;
+                    var sqlQuery = $"Exec spDeletePoll {pollId}, {isDeletePoll}";
+                    await _context.Database.ExecuteSqlRawAsync(sqlQuery);
+                    return true;
+                }
+                throw new Exception("An Unexpected error occured in deleting votes");
             }
             catch (Exception ex)
             {
@@ -295,6 +310,34 @@ namespace PollService.Business.Services.Services
             {
                 throw ex;
             }
+        }
+
+        public async Task<bool> DeleteVoteByPollId(List<long> pollIds)
+        {
+            var host = _configuration["GatewayService:Host"];
+            var port = _configuration["GatewayService:Port"];
+
+            var baseAddress = $"https://{host}:{port}/";
+            var client = _httpClientFactory.CreateClient();
+            client.BaseAddress = new Uri(baseAddress);
+
+            var response = await client.PostAsJsonAsync($"/vote/poll/", pollIds);
+
+            return response.IsSuccessStatusCode;
+        }
+
+        public async Task<bool> DeleteVoteByPollOptionId(long pollOptionId)
+        {
+            var host = _configuration["GatewayService:Host"];
+            var port = _configuration["GatewayService:Port"];
+
+            var baseAddress = $"https://{host}:{port}/";
+            var client = _httpClientFactory.CreateClient();
+            client.BaseAddress = new Uri(baseAddress);
+
+            var response = await client.GetAsync($"/vote/polloption/{pollOptionId}");
+
+            return response.IsSuccessStatusCode;
         }
         #endregion
     }
