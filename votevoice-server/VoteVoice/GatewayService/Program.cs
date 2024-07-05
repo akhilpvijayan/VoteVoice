@@ -14,6 +14,14 @@ Environment.SetEnvironmentVariable("POLL_SERVICE_PORT", builder.Configuration["P
 Environment.SetEnvironmentVariable("VOTE_SERVICE_HOST", builder.Configuration["VoteService:Host"]);
 Environment.SetEnvironmentVariable("VOTE_SERVICE_PORT", builder.Configuration["VoteService:Port"]);
 
+builder.Services.AddCors(p => p.AddDefaultPolicy(build =>
+{
+    build.WithOrigins("http://localhost:4200", "https://votevoice.vercel.app")
+    .AllowAnyHeader().
+    AllowAnyMethod()
+    .AllowCredentials();
+}));
+
 // Configure JWT Authentication
 var securityKey = builder.Configuration.GetValue<string>("JwtSettings:SecretKey");
 builder.Services.AddAuthentication(options =>
@@ -66,6 +74,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors();
 
 app.UseHttpsRedirection();
 

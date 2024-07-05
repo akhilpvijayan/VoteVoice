@@ -657,3 +657,6 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2024-07-03 18:37:42.401 +05:30 [INF] ClearExpiredPollsService is starting.
 2024-07-03 18:39:13.865 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-07-04 10:28:53.991 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-07-04 22:40:15.242 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-07-04 22:47:19.993 +05:30 [INF] ClearExpiredPollsService is starting.

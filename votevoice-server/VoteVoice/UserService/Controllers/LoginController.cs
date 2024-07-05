@@ -25,12 +25,43 @@ namespace UserService.Controllers
             try
             {
                 var token = _authService.GenerateToken(loginModel.Username, loginModel.Password);
-                return Ok(new { Token = token });
+                return Ok(new { 
+                    Token = token.Result.Item1,
+                    RefreshToken = token.Result.Item2,
+                    User = token.Result.Item3,
+                    Message = "Login Success"
+                });
             }
             catch
             {
                 return View();
             }
+        }
+
+        [HttpPost("refreshtoken")]
+        public async Task<IActionResult> RefreshToken(TokenApiDto tokenApiDto)
+        {
+            try
+            {
+                if (tokenApiDto != null)
+                {
+                    var tokens = await _authService.Refresh(tokenApiDto);
+                    if (tokens != null)
+                    {
+                        return Ok(new TokenApiDto()
+                        {
+                            AccessToken = tokens.Item1,
+                            RefreshToken = tokens.Item2,
+                        });
+                    };
+                }
+                return BadRequest();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
     }
 }

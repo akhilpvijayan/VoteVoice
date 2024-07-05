@@ -66,7 +66,7 @@ namespace VoteService.Controllers
             }
         }
 
-        [HttpPost("poll")]
+        [HttpDelete("poll")]
         public async Task<IActionResult> DeleteVotesByPollIds([FromBody] List<long> pollIds)
         {
             var result = await _voteService.DeleteVotesByPollIds(pollIds);
@@ -77,7 +77,7 @@ namespace VoteService.Controllers
             return BadRequest();
         }
 
-        [HttpPost("polloption/{pollOptionId}")]
+        [HttpDelete("polloption/{pollOptionId}")]
         public async Task<IActionResult> DeleteVotesByPollOptionIds(long pollOptionId)
         {
             var result = await _voteService.DeleteVoteByPollOptionId(pollOptionId);
