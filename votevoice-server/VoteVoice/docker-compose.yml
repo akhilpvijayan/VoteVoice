@@ -1,0 +1,34 @@
+version: '3.4'
+
+services:
+  userservice:
+    image: userservice:latest
+    build:
+      context: ./UserService
+      dockerfile: Dockerfile
+    ports:
+      - "5001:80"
+
+  pollservice:
+    image: pollservice:latest
+    build:
+      context: ./PollService
+      dockerfile: Dockerfile
+    ports:
+      - "5002:80"
+
+  voteservice:
+    image: voteservice:latest
+    build:
+      context: ./VoteService
+      dockerfile: Dockerfile
+    ports:
+      - "5003:80"
+
+  apigateway:
+    image: gatewayservice:latest
+    build:
+      context: ./GatewayService
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
