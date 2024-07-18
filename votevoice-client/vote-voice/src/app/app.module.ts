@@ -20,12 +20,24 @@ import { MatDialogModule } from '@angular/material/dialog';
 import {MatIconModule} from '@angular/material/icon';
 import { TokenInterceptor } from './interceptors/token-interceptor';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { PollListComponent } from './dashboard/poll-list/poll-list.component';
+import { ProfileSideBarComponent } from './dashboard/profile-side-bar/profile-side-bar.component';
+import { AddPollComponent } from './dashboard/poll-list/add-poll/add-poll.component';
+import { AddPollModalComponent } from './dashboard/poll-list/add-poll/add-poll-modal/add-poll-modal.component';
+import { LoaderSkeletonComponent } from './loader-skeleton/loader-skeleton.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    NavBarComponent
+    NavBarComponent,
+    DashboardComponent,
+    PollListComponent,
+    ProfileSideBarComponent,
+    AddPollComponent,
+    AddPollModalComponent,
+    LoaderSkeletonComponent
   ],
   imports: [
     BrowserModule,

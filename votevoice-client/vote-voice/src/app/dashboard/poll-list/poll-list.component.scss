@@ -1,0 +1,174 @@
+.facebook-post {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: #fff;
+  }
+  
+  .facebook-header,
+  .facebook-post-footer {
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+  }
+  
+  .facebook-header {
+    margin-bottom: 10px;
+    background-color: #fff;
+    width: 90%;
+    position: relative;
+  }
+  
+  .post-profile-pic img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-right: 10px;
+  }
+  
+  .post-details {
+    font-size: 0.7em;
+    color: #666;
+    text-align: left;
+  }
+  
+  .facebook-post-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.0em;
+    padding: 0 15px;
+  }
+  
+  .action-button {
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .action-button i{
+    font-size: 20px;
+  }
+  
+  .more {
+    position: absolute;
+    right: 0;
+    float: right;
+  }
+  
+  .more_icon {
+    font-size: large;
+  }
+
+  .poll-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    background-color: #f9fafb;
+  }
+  
+  .poll-option {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .poll-option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .poll-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .poll-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+  }
+  
+  .result {
+    margin-top: 10px;
+  }
+  
+  .percentage {
+    background: linear-gradient(0deg, #d55003 0%, #FF7C03 100%);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .component-container {
+    position: relative;
+  }
+  
+  .loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.163);
+  }
+  
+  .spinner {
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-top: 8px solid white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }  
+
+  @media only screen and (max-width: 950px) {
+    .facebook-post {
+      width: 100%;
+    }
+
+    .poll-option {
+        width: 200px;
+        height: 200px;
+      }
+  }
+
+  @media only screen and (max-width: 490px) {
+    .poll-option {
+        width: 100px;
+        height: 100px;
+      }
+  }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { DarkModeService } from './services/dark-mode.service';
+import { Component, Inject } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'vote-voice';
+
+  darkModeService: DarkModeService = Inject(DarkModeService);
 }

@@ -1,8 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    transition: background-color 0.5s, color 0.5s;
+    margin: 0; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+
+  .button-88 {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.3em 1.4em 0.3em 1.1em;
+    color: white;
+    background: #0f0e0e;
+    background: linear-gradient(0deg, #d55003 0%, #FF7C03 100%);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0.5em 1.5em -0.5em #FF7C03;
+        transform: scale(1.05); 
+      }
+
+      &:active {
+        box-shadow: 0 0.3em 1em -0.5em #FF7C03;
+      }    
+  }
+
+  #close {
+	overflow: hidden;
+	position: relative;
+	border: none;
+	padding: 0;
+	width: 2em; height: 2em;
+	border-radius: 50%;
+	background: transparent;
+	color: #ff0000;
+	font: inherit;
+	text-indent: 100%;
+	cursor: pointer;
+	
+	&:focus {
+		outline: solid 0 transparent;
+		box-shadow: 0 0 0 2px #8ed0f9
+	}
+	
+	&:hover {
+        color: #fdfdfd;
+		background: rgb(255, 2, 2)
+	}
+	
+	&:before, &:after {
+		position: absolute;
+		top: 15%; left: calc(50% - .0625em);
+		width: .125em; height: 70%;
+		border-radius: .125em;
+		transform: rotate(45deg);
+		background: currentcolor;
+		content: ''
+	}
+	
+	&:after { transform: rotate(-45deg); }
+}

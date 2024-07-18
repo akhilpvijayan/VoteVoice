@@ -1,0 +1,36 @@
+#leftbox {
+    float: left;
+    width: 20%;
+    height: 100%;
+    padding: 5px;
+}
+
+#middlebox {
+    float: left;
+    width: 55%;
+    overflow-y: auto;
+    height: calc(100vh - 70px);
+    padding: 5px;
+}
+
+#rightbox {
+    float: right;
+    width: 25%;
+    height: calc(100vh - 80px);
+    padding: 10px;
+}
+
+@media only screen and (max-width: 950px) {
+
+    #leftbox {
+        display: none;
+    }
+
+    #middlebox {
+        width: 100%;
+    }
+
+    #rightbox {
+        display: none;
+    }
+}

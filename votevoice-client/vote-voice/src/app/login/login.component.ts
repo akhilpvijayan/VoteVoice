@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit{
             this.authService.setRefreshToken(result.refreshToken);
             this.toastr.success(result.message);
             this.loginForm.reset();
-            this.router.navigateByUrl('home');
+            this.router.navigateByUrl('');
           } else {
             this.toastr.error('Login failed: Invalid response from server.');
           }

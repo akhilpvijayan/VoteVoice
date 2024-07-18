@@ -1,0 +1,67 @@
+<div id="boxes">
+    <div id="leftbox">
+      <form [formGroup]="addPollForm" (ngSubmit)="onSubmit()">
+        <div class="input-wrap">
+          <div class="input title">
+            <input formControlName="title" type="text" id="title" placeholder="Enter title *" />
+          </div>
+          <div class="input">
+            <div class="textarea-container">
+              <textarea
+                formControlName="description"
+                id="description"
+                rows="3"
+                placeholder="Describe your poll.. *"
+                (keyup)="updateWordCount()"
+              ></textarea>
+              <div class="word-count">{{ wordCount }}/500</div>
+            </div>
+          </div>
+          <div class="input">
+            <input formControlName="expiryDate" type="text" placeholder="Expiry Date *" onfocus="(this.type='date')" onblur="(this.type='text')">
+          </div>
+        </div>
+        <div formArrayName="pollOptions" class="poll-option">
+          <div *ngFor="let pollOption of pollOptionForms.controls; let i=index">
+            <div [formGroupName]="i">
+              <div class="head">
+                <h5>Poll Option {{i+1}}</h5>
+                <button id='close' type="button" (click)="removePollOption(i)">close</button>
+              </div>
+              <div class="container-small-unit leftbox">
+                <div class="input title">
+                  <input formControlName="optionText" type="text" id="optionText" placeholder="Enter Option Text *" />
+                </div>
+              </div>
+              <div class="leftbox">
+                <input type="file" class="upload-button" accept="image/*" (change)="onPollOptionImageFileSelected($event, i)">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" *ngIf="!hideNewPollOptionButton" class="add-experience" (click)="addPollOption()">Add Option</button>
+      </form>
+    </div>
+  
+    <div id="rightbox" #rightbox>
+        <button id='close' type="button" (click)="closeDialog()">close</button>
+        <br>
+        <div class="facebook-post">
+            <div class="facebook-post-content">
+                {{ addPollForm.value.description }}
+                <div class="poll-container">
+                  <div class="poll-option-image" *ngFor="let option of addPollForm.value.pollOptions">
+                    <img [src]="option.pollImage" alt="{{ option.optionText }}" class="poll-img">
+                    <div class="poll-content">
+                      <p>{{ option.optionText }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="buttons">
+            <button type="submit" (click)="onSubmit()" class="submit-button button-88">Create</button>
+        </div>
+    </div>
+  </div>
+  

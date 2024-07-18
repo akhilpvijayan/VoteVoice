@@ -1,0 +1,31 @@
+<div id="boxes">
+    <div id="leftbox">
+        <app-profile-side-bar></app-profile-side-bar>
+    </div>
+
+    <div id="middlebox" #middlebox>
+        <mat-tab-group [color]="'warn'">
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon>home</mat-icon>
+                    &nbsp;Feeds
+                </ng-template>
+                <app-add-poll></app-add-poll>
+                <app-poll-list class="poll hide-scrollbar"></app-poll-list>
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon>poll</mat-icon>
+                    &nbsp;My polls
+                </ng-template>
+                Content 2
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+
+    <div id="rightbox">
+        <div class="container-temp">
+            <app-loader-skeleton></app-loader-skeleton>
+        </div>
+    </div>
+</div>

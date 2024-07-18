@@ -660,3 +660,5 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 2024-07-04 10:28:53.991 +05:30 [INF] ClearExpiredPollsService is starting.
 2024-07-04 22:40:15.242 +05:30 [INF] ClearExpiredPollsService is starting.
 2024-07-04 22:47:19.993 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-07-13 21:46:02.776 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-07-15 03:09:09.870 +05:30 [INF] ClearExpiredPollsService is starting.

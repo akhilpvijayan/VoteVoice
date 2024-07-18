@@ -1,0 +1,66 @@
+.container{
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: rgba(0.15, 0.15, 0.15, 0.15) 1.95px 1.95px 2.6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0.5em 1.5em -0.5em #FF7C03;
+        transform: scale(0.98); 
+      }
+}
+
+.image-cover {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+
+    object-fit: cover;
+    object-position: center right;
+}
+
+.add-poll {
+    border-radius: 20px;
+    width: 85%;
+    height: 50px;
+}
+
+.add-poll b {
+    opacity: .5;
+}
+
+.custom-dialog-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 9999;
+  }
+  
+  .plus{
+      border-radius: 3px;
+      font-size: larger;
+    border: 1px solid #FF7C03;
+  }
+
+@media only screen and (max-width: 950px) {
+    .custom-dialog-container {
+        position: fixed;
+        top: 5%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: 9999;
+      }
+
+      .container{
+          display: none;
+      }
+}
