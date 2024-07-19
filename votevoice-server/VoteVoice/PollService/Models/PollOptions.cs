@@ -19,7 +19,7 @@ namespace PollService.Models
         public long VoteCount { get; set; } = 0;
 
         [Required]
-        public byte[] PollImage { get; set; }
+        public string PollImage { get; set; }
 
         public Poll Poll { get; set; }
     }

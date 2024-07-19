@@ -17,8 +17,9 @@ namespace PollService.Business.Services.Dto
         public bool IsActive { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public byte[] profileImage { get; set; }
+        public string ProfileImage { get; set; }
         public DateTime ExpiryDate { get; set; }
+        public long TotalVotes { get; set; }
 
         public List<PollOptions> PollOptions { get; set; }
     }

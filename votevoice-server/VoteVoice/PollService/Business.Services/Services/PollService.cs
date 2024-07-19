@@ -48,7 +48,7 @@ namespace PollService.Business.Services.Services
 
             foreach (var poll in polls)
             {
-                var host = _configuration["GateService:Host"];
+                var host = _configuration["GateWayService:Host"];
                 var port = _configuration["GatewayService:Port"];
 
                 var baseAddress = $"https://{host}:{port}/";
@@ -57,10 +57,11 @@ namespace PollService.Business.Services.Services
 
                 var userResponse = await client.GetAsync($"/user/{poll.UserId}");
                 userResponse.EnsureSuccessStatusCode();
-                var userDetails = await userResponse.Content.ReadAsAsync<UserDetailDto>();
+                var userDetailList = await userResponse.Content.ReadAsAsync<List<UserDetailDto>>();
 
 
                 var optionsForPoll = pollOptions.Where(po => po.PollId == poll.PollId).ToList();
+                var totalVotes = optionsForPoll.Sum(po => po.VoteCount);
 
                 aggregatedPollDetails.Add(new PollDetailsDto
                 {
@@ -68,9 +69,15 @@ namespace PollService.Business.Services.Services
                     UserId = poll.UserId,
                     Title = poll.Title,
                     Description = poll.Description,
-                    FirstName = userDetails.FirstName,
-                    LastName = userDetails.LastName,
+                    FirstName = userDetailList[0].FirstName,
+                    LastName = userDetailList[0].LastName,
+                    ProfileImage = userDetailList[0].ProfileImage,
                     ExpiryDate = poll.ExpiryDate,
+                    TotalVotes = totalVotes,
+                    CreatedBy = poll.CreatedBy,
+                    CreatedDate = poll.CreatedDate,
+                    ModifiedBy = poll.ModifiedBy,
+                    ModifiedDate = poll.ModifiedDate,
                     PollOptions = optionsForPoll.Select(po => new PollOptions
                     {
                         PollOptionId = po.PollOptionId,
@@ -80,9 +87,10 @@ namespace PollService.Business.Services.Services
                         VoteCount = po.VoteCount,
                     }).ToList()
                 });
+
             }
 
-            return aggregatedPollDetails;
+            return aggregatedPollDetails.OrderByDescending(p => p.ModifiedDate).ToList();
         }
 
         public async Task<PollDetailsDto> GetPoll(long pollId)
@@ -147,20 +155,12 @@ namespace PollService.Business.Services.Services
                     await _context.SaveChangesAsync();
 
                     foreach(PollOptionsDetailDto pollOption in pollDetails.PollOptions) {
-                        byte[] profileImage = null;
-                        using (var ms = new MemoryStream())
-                        {
-                            if (pollOption.PollImage != null)
-                            {
-                                await pollOption.PollImage.CopyToAsync(ms);
-                                profileImage = ms.ToArray();
-                            }
-                        }
                         var pollOptionEntity = new PollOptions
                         {
+                            PollId = poll.PollId,
                             OptionText = pollOption.OptionText,
                             VoteCount = pollOption.VoteCount,
-                            PollImage = profileImage,
+                            PollImage = pollOption.PollImage,
                             CreatedBy = pollDetails.UserId,
                             CreatedDate = DateTime.Now,
                             ModifiedBy = pollDetails.UserId,
@@ -209,16 +209,7 @@ namespace PollService.Business.Services.Services
                        var pollOption = await this._context.PollOptions.FirstOrDefaultAsync(x => x.PollId == pollId && x.PollOptionId == pollOptions.PollOptionId);
                         if ((bool)pollOptions.isImageUpdated)
                         {
-                            byte[] profileImage = null;
-                            using (var ms = new MemoryStream())
-                            {
-                                if (pollOptions.PollImage != null)
-                                {
-                                    await pollOptions.PollImage.CopyToAsync(ms);
-                                    profileImage = ms.ToArray();
-                                }
-                            }
-                            pollOption.PollImage = profileImage;
+                            pollOption.PollImage = pollOptions.PollImage;
                         }
                         pollOption.OptionText = pollOptions.OptionText;
                         pollOption.VoteCount = pollOptions.VoteCount;

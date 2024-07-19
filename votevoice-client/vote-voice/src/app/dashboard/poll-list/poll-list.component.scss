@@ -1,4 +1,4 @@
-.facebook-post {
+.votevoice-post {
     font-family: Arial, sans-serif;
     width: 100%;
     margin-top: 5px;
@@ -8,14 +8,14 @@
     background-color: #fff;
   }
   
-  .facebook-header,
-  .facebook-post-footer {
+  .votevoice-header,
+  .votevoice-post-footer {
     padding: 15px;
     border-radius: 10px;
     display: flex;
   }
   
-  .facebook-header {
+  .votevoice-header {
     margin-bottom: 10px;
     background-color: #fff;
     width: 90%;
@@ -36,7 +36,7 @@
     text-align: left;
   }
   
-  .facebook-post-content {
+  .votevoice-post-content {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 1.0em;
@@ -156,7 +156,7 @@
   }  
 
   @media only screen and (max-width: 950px) {
-    .facebook-post {
+    .votevoice-post {
       width: 100%;
     }
 

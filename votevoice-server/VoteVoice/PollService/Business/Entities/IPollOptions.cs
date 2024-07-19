@@ -9,6 +9,6 @@ namespace PollService.Business.Entities
         long PollId { get; set; }
         string OptionText { get; set; }
         long VoteCount { get; set; }
-        byte[] PollImage { get; set; }
+        string PollImage { get; set; }
     }
 }

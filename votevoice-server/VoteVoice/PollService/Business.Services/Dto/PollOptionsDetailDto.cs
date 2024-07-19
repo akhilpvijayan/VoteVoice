@@ -8,12 +8,13 @@ namespace PollService.Business.Services.Dto
     public class PollOptionsDetailDto : BaseEntity
     {
         public long? PollOptionId { get; set; } = null;
+
         public string OptionText { get; set; }
 
         public long VoteCount { get; set; }
 
         [NotMapped]
-        public IFormFile? PollImage { get; set; }
+        public string? PollImage { get; set; }
 
         public bool? isImageUpdated { get; set; } = false;
     }

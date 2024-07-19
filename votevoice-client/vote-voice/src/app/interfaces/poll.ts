@@ -1,5 +1,6 @@
 import { PollOption } from './poll-option';
 export class Poll {
+    pollId!: number;
     userId!: number;
     title!: string;
     description!: number;
@@ -8,5 +9,6 @@ export class Poll {
     lastName!: string;
     profileImage!: any;
     expiryDate!: Date;
+    totalVotes!: number;
     pollOptions!: PollOption[];
 }

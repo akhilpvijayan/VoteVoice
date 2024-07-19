@@ -22,7 +22,7 @@ namespace UserService.Models
         [MaxLength]
         public string LastName { get; set; }
 
-        public byte[]? ProfileImage { get; set; } = null;
+        public string? ProfileImage { get; set; } = null;
 
         [Required]
         [MaxLength(100)]

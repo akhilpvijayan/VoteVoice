@@ -1,12 +1,15 @@
 <app-loader-skeleton *ngIf="loading"></app-loader-skeleton>
 <app-loader-skeleton *ngIf="loading"></app-loader-skeleton>
-<div class="facebook-post" #facebookPost *ngIf="!loading">
-    <div class="facebook-header">
-        <div class="post-profile-pic">
+<div class="votevoice-post" #votevoicePost *ngFor="let poll of polls">
+    <div class="votevoice-header">
+        <div class="post-profile-pic" *ngIf="poll.profileImage == null">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKUAAACUCAMAAADF0xngAAAAMFBMVEW6urr///+3t7fT09P39/f8/Py+vr60tLTm5ub09PTFxcXX19fBwcHv7+/Q0NDg4ODkTEn6AAADiklEQVR4nO2bi27rIAxAExcI4fn/fzsouWu7R8PTZLo+07RO6rYjEwzYbFkIgiAIgiAIgiAIYgYifgpxvLoosAUA0pfZMj8gguFinJd2Z4ztVnpnlmB6rZCCcN7y9RluvRMXiiiA0J+K/PhMolrAVUSFZkntOZjHt0xfY9BB7+s7dj0/mmDkyt9a8lWayZ7g2Ilk1GRupiaA5hmS4UNPnERRMg8+7+EEn+kY8ZM04VYgua63KZrgcof7GPQpU8icz+4XyZWZCZayKJIRiS+p16JQ3t+tsSXN+2XxZ3bkMd98aSjv7/cbpiQsFZGMLJjzHHSlJeoSJGqeysiOudssTOgPuEO0LFnAX/F4ktUDjjrkqnbAAwpr/hRuhl5B2xqFlF49e/D2mZttiKXFWn6gfvKE6YOW11mDJcOS/BuWoiERrRwrYbZZIkn+kRFvmuOM8uWLZf2WKBwk0bJ67U49grdbVw2WCkuy7pibwDzsltc1/oFY3ygtZD1ALWmZ2ryOWdESRfXVZzxgHnVFeQHm/hO4zZ9NVtWJ0FL6gap5MhleskyArxhxxJLBgSjfclj8liQUlw44WsHgWVOvPF80vHVCY0oUb42i5IwutChZzuW8Pnm+5oQuyie5+YjP6kIemlld3Ykd3QN1njct9pLzHQD/frFkfv41mDhz1bt9nFfLBe6T3QXUL/Fkd8f5kgnYhJZfj2y71OJq191gMU5bm2LKrNXOoLbzsoElXhiMLwC2ayoS/yXwYLbKVyDKLcIo5ZzTifBKKSPiFLqAb/ATyul40/bbxp3zePNWOyWmhjb8bXWTliW93zZHnFl5U8sc0ZjF5fO6+EMsn9dKiZ3l45nH3GRp3YDJm8E7+wjYjGc1tUHOvNlw6lkAKh13KupEAakwntDg2NKUigM/unogQJzszLM8vRg67OBa2mYP9pGFa4jX51tapQkeL9uP0+wTyMQ+RhEyzrQl2BGTaFMxku3DnYi/Z1fd69eg2Ld/6GiSjA9n72hCQ1Pvd/bOmjU9iTO69yyqu1BndK3FVfcdz+h5H7OiH5FLv75FrPMPkuzYE4BxoQzB7GQJbqDkunbaeAwNZbdgVjVG8+nUQm25l5NDn/lTf5UkD9nDMiTLUXko0SVlDn4sOz2YLZfTs+ixSg7OlpEOGbPpCn0eHS7akyVZkiVZkiVZkiVZkiVZkiVZkiVZkiVZXtjyA2TTMEwct/vIAAAAAElFTkSuQmCC">
         </div>
+        <div class="post-profile-pic" *ngIf="poll.profileImage != null">
+            <img src="poll.profileImage">
+        </div>
         <div>
-            <div><strong>john Luther</strong></div>
+            <div><strong>{{poll.firstName}} {{poll.lastName}}</strong></div>
             <div class="post-details">1 hour ago <i class="fa fa-clock"></i></div>
         </div>
         <div class="more">
@@ -25,21 +28,21 @@
             </mat-menu>
         </div>
     </div>
-    <div class="facebook-post-content">
-        Test Content
+    <div class="votevoice-post-content">
+        {{poll.description}}
         <div class="post-details">Ends in 1h <i class="fa-solid fa-hourglass-half"></i></div>
         <div class="poll-container">
-            <div class="poll-option" *ngFor="let option of pollOptions" (click)="vote(option)">
-                <img src="{{option.image}}" alt="{{option.text}}" class="poll-img">
+            <div class="poll-option" *ngFor="let option of poll.pollOptions" (click)="vote(poll.pollId, option.pollOptionId)">
+                <img src="{{option.pollImage}}" alt="{{option.optionText}}" class="poll-img">
                 <div class="poll-content">
-                    <p>{{ option.text }}</p>
+                    <p>{{ option.optionText }}</p>
                     <div *ngIf="showResults" class="result">
-                        <div class="percentage" [style.width.%]="option.votes / totalVotes * 100">{{ (option.votes / totalVotes * 100).toFixed(1) }}%</div>
+                        <div class="percentage" [style.width.%]="option.voteCount / poll.totalVotes * 100">{{ (option.voteCount / poll.totalVotes * 100).toFixed(1) }}%</div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="post-details">Total Votes : {{totalVotes}}</div>
+        <div class="post-details">Total Votes : {{poll.totalVotes}}</div>
     </div>
     <div class="loading-overlay" *ngIf="loading">
         <div class="spinner"></div>

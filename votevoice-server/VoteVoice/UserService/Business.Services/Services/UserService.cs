@@ -63,21 +63,11 @@ namespace UserService.Business.Services.Services
                     _context.Users.Add(user);
                     await _context.SaveChangesAsync();
 
-                    byte[] profileImage = null;
-                    using (var ms = new MemoryStream())
-                    {
-                        if (userDetails.ProfileImage != null)
-                        {
-                            await userDetails.ProfileImage.CopyToAsync(ms);
-                            profileImage = ms.ToArray();
-                        }
-                    }
-
                     UserDetails userDetail = new UserDetails();
                     userDetail.UserId = user.UserId;
                     userDetail.FirstName = userDetails.FirstName;
                     userDetail.LastName = userDetails.LastName;
-                    userDetail.ProfileImage = profileImage;
+                    userDetail.ProfileImage = userDetails.ProfileImage;
                     userDetail.Gender = userDetails.Gender;
                     userDetail.UserBio = userDetails.UserBio;
                     userDetail.Region = userDetails.Region;
@@ -125,16 +115,7 @@ namespace UserService.Business.Services.Services
                 user.ModifiedBy = userId;
                 user.ModifiedDate = DateTime.Now;
 
-                byte[] profileImage = null;
-                using (var ms = new MemoryStream())
-                {
-                    if (userDetails.ProfileImage != null)
-                    {
-                        await userDetails.ProfileImage.CopyToAsync(ms);
-                        profileImage = ms.ToArray();
-                    }
-                }
-                user.ProfileImage = profileImage;
+                user.ProfileImage = userDetails.ProfileImage;
 
                 await _context.SaveChangesAsync();
 

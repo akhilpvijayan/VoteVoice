@@ -39,6 +39,7 @@
             </div>
           </div>
         </div>
+        <small class="error" *ngIf="pollOptionForms.length < 2">*Atleast 2 poll options required</small><br>
         <button type="button" *ngIf="!hideNewPollOptionButton" class="add-experience" (click)="addPollOption()">Add Option</button>
       </form>
     </div>
@@ -46,8 +47,8 @@
     <div id="rightbox" #rightbox>
         <button id='close' type="button" (click)="closeDialog()">close</button>
         <br>
-        <div class="facebook-post">
-            <div class="facebook-post-content">
+        <div class="votevoice-post">
+            <div class="votevoice-post-content">
                 {{ addPollForm.value.description }}
                 <div class="poll-container">
                   <div class="poll-option-image" *ngFor="let option of addPollForm.value.pollOptions">
@@ -60,7 +61,7 @@
               </div>
         </div>
         <div class="buttons">
-            <button type="submit" (click)="onSubmit()" class="submit-button button-88">Create</button>
+            <button type="submit" (click)="onSubmit()" class="submit-button button-88" [disabled]="addPollForm.invalid || pollOptionForms.invalid || pollOptionForms.length < 2">Create</button>
         </div>
     </div>
   </div>

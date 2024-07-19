@@ -46,8 +46,7 @@ namespace UserService.Controllers
             }
         }
 
-        [Authorize]
-        [HttpGet("{userid}")]
+        [HttpGet("{userId}")]
         public async Task<IActionResult> GetUser(long userId)
         {
             try

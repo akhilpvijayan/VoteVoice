@@ -16,7 +16,7 @@
       <mat-icon matBadge="">notifications</mat-icon>
     </button>
   </div>
-  <button class="button-88" role="button">
+  <button class="button-88" role="button" *ngIf="!isLoggedIn">
     <span><i class="fa-solid fa-user"></i></span>&nbsp;Login
   </button>
   <button [matMenuTriggerFor]="profileMenu" mat-button class="nav-button" *ngIf="isLoggedIn">

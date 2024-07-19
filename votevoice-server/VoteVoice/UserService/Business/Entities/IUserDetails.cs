@@ -13,7 +13,7 @@ namespace UserService.Business.Entities
 
         string LastName { get; set; }
 
-        byte[]? ProfileImage { get; set; }
+        string ProfileImage { get; set; }
 
         string UserBio { get; set; }
 

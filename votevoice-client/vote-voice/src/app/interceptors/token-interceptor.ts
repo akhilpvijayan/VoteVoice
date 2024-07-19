@@ -43,7 +43,7 @@ export class TokenInterceptor implements HttpInterceptor {
               return this.handleUnauthError(request, next);
             }
           }
-          this.authService.signOut();
+          //this.authService.signOut();
           return throwError(()=> new Error("Unexpected Error occured"));
         })
       );
@@ -70,7 +70,7 @@ export class TokenInterceptor implements HttpInterceptor {
       catchError((err)=>{
         return throwError(()=>{
           this.toastr.error("Timeout expired. Login again.");
-          this.authService.signOut();
+          //this.authService.signOut();
           this.route.navigateByUrl('login');
         })
       })

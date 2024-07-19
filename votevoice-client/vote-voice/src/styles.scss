@@ -40,7 +40,11 @@ body {
 
       &:active {
         box-shadow: 0 0.3em 1em -0.5em #FF7C03;
-      }    
+      }   
+    
+    &:disabled{
+        background-color: grey;
+    }
   }
 
   #close {
@@ -77,4 +81,10 @@ body {
 	}
 	
 	&:after { transform: rotate(-45deg); }
+}
+
+.error{
+    color: red;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-small;
 }

@@ -32,7 +32,7 @@ namespace PollService.Business.Services.Dto
 
         public string LastName { get; set; }
 
-        public byte[]? ProfileImage { get; set; }
+        public string? ProfileImage { get; set; }
 
         public string UserBio { get; set; }
 

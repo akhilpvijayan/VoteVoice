@@ -32,7 +32,7 @@ namespace UserService.Business.Services.Dto
         public string LastName { get; set; }
 
         [NotMapped]
-        public IFormFile? ProfileImage { get; set; } = null;
+        public string? ProfileImage { get; set; } = null;
 
         public string UserBio { get; set; }
 

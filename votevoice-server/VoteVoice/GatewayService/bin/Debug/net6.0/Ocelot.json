@@ -23,10 +23,6 @@
       ],
       "UpstreamPathTemplate": "/user/{id}",
       "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": []
-      }
     },
     {
       "DownstreamPathTemplate": "/login",

@@ -1,3 +1,4 @@
+import { PollService } from './../../../../services/poll.service';
 import { PollOption } from './../../../../interfaces/poll-option';
 import { UserService } from './../../../../services/user.service';
 import { Component, Inject } from '@angular/core';
@@ -18,12 +19,14 @@ export class AddPollModalComponent {
   formData = new FormData();
   hideNewPollOptionButton = false;
   wordCount: number = 0;
+  userId = parseInt(this.userService.getUserId() ?? '0', 10);
 
   constructor(
     private formBuilder: FormBuilder,
     private toastr: ToastrService,
     private dialogRef: MatDialogRef<AddPollModalComponent>,
     private userService: UserService,
+    private pollService: PollService,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit(): void {
@@ -33,7 +36,6 @@ export class AddPollModalComponent {
 
   initializeForm() {
     this.addPollForm = this.formBuilder.group({
-      content: [this.data?.postDetails?.content ?? '', Validators.required],
       userId: this.userService.getUserId(),
       title: ['', [Validators.required, Validators.maxLength(100)]],
       description: ['', [Validators.required, Validators.maxLength(500)]],
@@ -58,7 +60,7 @@ export class AddPollModalComponent {
     }
   }
 
-  removeProfileImage(index: number) {
+  removePollOptionImage(index: number) {
     this.addPollForm.value.pollOptions[index].patchValue({
       pollImage: null
     })
@@ -70,9 +72,10 @@ export class AddPollModalComponent {
 
   addPollOption() {
     const pollOption = this.formBuilder.group({
+      pollOptionId: [],
       optionText: ['', Validators.required],
       voteCount: [0],
-      pollImage: [null, Validators.required],
+      pollImage: ['', Validators.required],
     });
 
     this.pollOptionForms.push(pollOption);
@@ -85,18 +88,28 @@ export class AddPollModalComponent {
   }
 
   saveFileInfo(){
-    const formData : FormData =new FormData();
-    formData.append('content', this.addPollForm.value.content);
-    formData.append('contentImage', this.selectedFile);
+    const formData: FormData = new FormData();
     formData.append('userId', this.addPollForm.value.userId);
-    if(this.data?.postDetails?.postId != null){
-      formData.append('postId', this.data.postDetails.postId);
-    };
+    formData.append('title', this.addPollForm.value.title);
+    formData.append('description', this.addPollForm.value.description);
+    formData.append('expiryDate', this.addPollForm.value.expiryDate);
+    formData.append('isActive', this.addPollForm.value.isActive);
+    this.addPollForm.value.pollOptions.forEach((option: any, index: number) => {
+      formData.append(`pollOptions[${index}].optionText`, option.optionText);
+      formData.append(`pollOptions[${index}].pollImage`, option.pollImage);
+      formData.append(`pollOptions[${index}].voteCount`, option.voteCount);
+    });
+
+    if (this.data?.postDetails?.postId != null) {
+      formData.append('pollId', this.data.pollDetails.pollId);
+    }
+
     return formData;
   }
 
   onSubmit() {
-    if (this.addPollForm.valid) {
+    if (this.addPollForm.valid && this.pollOptionForms.valid && this.pollOptionForms.length >= 2) {
+      console.log(this.addPollForm.value);
       if(this.data?.postDetails?.postId != null){
         // this.postService.updatePost(this.saveFileInfo()).subscribe((res: any) => {
         //   if (res) {
@@ -108,14 +121,12 @@ export class AddPollModalComponent {
         // })
       }
       else{
-        // this.postService.addPost(this.saveFileInfo()).subscribe((res: any) => {
-        //   if (res) {
-        //     this.toastr.success("New post created successfully");
-        //     this.closeDialog();
-        //     this.triggerReload();
-        //     this.spinner.hide();
-        //   }
-        // });
+        this.pollService.addPoll(this.saveFileInfo()).subscribe((res: any) => {
+          if (res) {
+            this.toastr.success(res.message);
+            this.closeDialog();
+          }
+        });
       }
     }
   }
