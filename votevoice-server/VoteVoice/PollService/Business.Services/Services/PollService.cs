@@ -30,13 +30,25 @@ namespace PollService.Business.Services.Services
         #endregion
 
         #region public functions
-        public async Task<IEnumerable<PollDetailsDto>> GetAllPolls(int skip, int take)
+        public async Task<IEnumerable<PollDetailsDto>> GetAllPolls(int skip, int take, long? userId = null)
         {
-            // Fetch polls with pagination
-            var polls = await _context.Polls
-                                      .Skip(skip)
-                                      .Take(take)
-                                      .ToListAsync();
+            var polls = new List<Poll>();
+            // Fetch polls
+            if (userId > 0)
+            {
+                polls = await _context.Polls
+                            .Where(p => p.UserId == userId)
+                              .Skip(skip)
+                              .Take(take)
+                              .ToListAsync();
+            }
+            else
+            {
+                polls = await _context.Polls
+                          .Skip(skip)
+                          .Take(take)
+                          .ToListAsync();
+            }
 
             // Fetch corresponding poll options for the fetched polls
             var pollIds = polls.Select(p => p.PollId).ToList();
@@ -98,7 +110,7 @@ namespace PollService.Business.Services.Services
             var poll = await _context.Polls.Where(x=>x.PollId == pollId).FirstOrDefaultAsync();
 
             var pollOptions = await _context.PollOptions
-                                            .Where(po => pollId == pollId)
+                                            .Where(po => po.PollId == pollId)
                                             .ToListAsync();
 
             var host = _configuration["GateWayService:Host"];
@@ -110,17 +122,23 @@ namespace PollService.Business.Services.Services
 
             var userResponse = await client.GetAsync($"/user/{poll.UserId}");
             userResponse.EnsureSuccessStatusCode();
-            var userDetails = await userResponse.Content.ReadAsAsync<UserDetailDto>();
+            var userDetails = await userResponse.Content.ReadAsAsync<List<UserDetailDto>>();
 
+            var totalVotes = pollOptions.Sum(po => po.VoteCount);
             var aggregatedPollDetails = new PollDetailsDto
             {
                 PollId = poll.PollId,
                 UserId = poll.UserId,
                 Title = poll.Title,
                 Description = poll.Description,
-                FirstName = userDetails.FirstName,
-                LastName = userDetails.LastName,
+                FirstName = userDetails[0].FirstName,
+                LastName = userDetails[0].LastName,
                 ExpiryDate = poll.ExpiryDate,
+                TotalVotes = totalVotes,
+                CreatedBy = poll.CreatedBy,
+                CreatedDate = poll.CreatedDate,
+                ModifiedBy = poll.ModifiedBy,
+                ModifiedDate = poll.ModifiedDate,
                 PollOptions = pollOptions.Select(po => new PollOptions
                 {
                     PollOptionId = po.PollOptionId,
@@ -206,15 +224,30 @@ namespace PollService.Business.Services.Services
 
                     foreach(PollOptionsDetailDto pollOptions in pollDetails.PollOptions)
                     {
-                       var pollOption = await this._context.PollOptions.FirstOrDefaultAsync(x => x.PollId == pollId && x.PollOptionId == pollOptions.PollOptionId);
-                        if ((bool)pollOptions.isImageUpdated)
+                        var pollOption = await this._context.PollOptions.FirstOrDefaultAsync(x => x.PollId == pollId && x.PollOptionId == pollOptions.PollOptionId);
+                        if (pollOption != null)
                         {
                             pollOption.PollImage = pollOptions.PollImage;
+                            pollOption.OptionText = pollOptions.OptionText;
+                            pollOption.VoteCount = pollOptions.VoteCount;
+                            pollOption.ModifiedBy = pollDetails.UserId;
+                            pollOption.ModifiedDate = DateTime.Now;
                         }
-                        pollOption.OptionText = pollOptions.OptionText;
-                        pollOption.VoteCount = pollOptions.VoteCount;
-                        pollOption.ModifiedBy = pollDetails.UserId;
-                        pollOption.ModifiedDate = DateTime.Now;
+                        else
+                        {
+                            var pollOptionEntity = new PollOptions
+                            {
+                                PollId = poll.PollId,
+                                OptionText = pollOptions.OptionText,
+                                VoteCount = pollOptions.VoteCount,
+                                PollImage = pollOptions.PollImage,
+                                CreatedBy = pollDetails.UserId,
+                                CreatedDate = DateTime.Now,
+                                ModifiedBy = pollDetails.UserId,
+                                ModifiedDate = DateTime.Now,
+                            };
+                            _context.PollOptions.Add(pollOptionEntity);
+                        }
 
                         await _context.SaveChangesAsync();
                     }
@@ -237,14 +270,18 @@ namespace PollService.Business.Services.Services
             {
                 List<long> pollIdList = new List<long>();
                 pollIdList.Add(pollId);
-                if (await DeleteVoteByPollId(pollIdList))
+                try
                 {
+                    await DeleteVoteByPollId(pollIdList);
                     bool isDeletePoll = true;
                     var sqlQuery = $"Exec spDeletePoll {pollId}, {isDeletePoll}";
                     await _context.Database.ExecuteSqlRawAsync(sqlQuery);
                     return true;
                 }
-                throw new Exception("An Unexpected error occured in deleting votes");
+                catch(Exception ex)
+                {
+                    throw new Exception("An Unexpected error occured in deleting votes");
+                }
             }
             catch(Exception ex)
             {
@@ -312,7 +349,12 @@ namespace PollService.Business.Services.Services
             var client = _httpClientFactory.CreateClient();
             client.BaseAddress = new Uri(baseAddress);
 
-            var response = await client.PostAsJsonAsync($"/vote/poll/", pollIds);
+            var request = new HttpRequestMessage(HttpMethod.Delete, "vote/poll")
+            {
+                Content = JsonContent.Create(pollIds)
+            };
+
+            var response = await client.SendAsync(request);
 
             return response.IsSuccessStatusCode;
         }

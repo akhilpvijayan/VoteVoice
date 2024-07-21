@@ -20,6 +20,43 @@
     padding: 10px;
 }
 
+.chat{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 100px;
+    height: 200px;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #d55003 0%, #FF7C03 100%);
+    color: white;
+    border: none;
+    box-shadow: 0 0.5em 1.5em -0.5em #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 99999;
+
+    &:hover {
+        box-shadow: 0 0.5em 1.5em -0.5em #FF7C03;
+        transform: scale(1.05); 
+      }
+    
+    img{
+        padding: 5px;
+    }
+  }  
+
 @media only screen and (max-width: 950px) {
 
     #leftbox {

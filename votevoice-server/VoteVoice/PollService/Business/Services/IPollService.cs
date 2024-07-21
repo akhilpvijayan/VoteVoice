@@ -4,7 +4,7 @@ namespace PollService.Business.Services
 {
     public interface IPollService
     {
-        Task<IEnumerable<PollDetailsDto>> GetAllPolls(int skip, int take);
+        Task<IEnumerable<PollDetailsDto>> GetAllPolls(int skip, int take, long? userId = null);
         Task<PollDetailsDto> GetPoll(long pollId);
         Task<long> AddPoll(AddPollOptionsDto pollDetails);
         Task<bool> UpdatePoll(AddPollOptionsDto pollDetails, long pollId);

@@ -1,0 +1,56 @@
+
+.warning-dialog {
+    background-color: #f44336;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.warning-header {
+    padding: 20px;
+    color: white;
+    align-items: center;
+}
+
+.warning-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.warning-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.warning-footer button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-yes {
+    background-color: #e57373; /* lighter red */
+    color: white;
+}
+
+.btn-no {
+    background-color: #e0e0e0; /* gray */
+    color: black;
+}
+
+.btn-yes:hover {
+    background-color: #d32f2f; /* darker red */
+}
+
+.btn-no:hover {
+    background-color: #bdbdbd; /* darker gray */
+}
+
+.content b{
+    padding: 10px;
+}

@@ -12,16 +12,16 @@
             <div><strong>{{poll.firstName}} {{poll.lastName}}</strong></div>
             <div class="post-details">1 hour ago <i class="fa fa-clock"></i></div>
         </div>
-        <div class="more">
+        <div class="more" *ngIf="userId === poll.userId">
             <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
                 <mat-icon>more_vert</mat-icon>
             </button>
             <mat-menu #menu="matMenu">
-                <button mat-menu-item>
+                <button mat-menu-item (click)="updatePoll(poll.pollId)">
                     <mat-icon>edit</mat-icon>
                     <span>Edit</span>
                 </button>
-                <button mat-menu-item>
+                <button mat-menu-item (click)="deletePoll(poll.pollId)">
                     <mat-icon>delete</mat-icon>
                     <span>Delete</span>
                 </button>
@@ -36,8 +36,8 @@
                 <img src="{{option.pollImage}}" alt="{{option.optionText}}" class="poll-img">
                 <div class="poll-content">
                     <p>{{ option.optionText }}</p>
-                    <div *ngIf="showResults" class="result">
-                        <div class="percentage" [style.width.%]="option.voteCount / poll.totalVotes * 100">{{ (option.voteCount / poll.totalVotes * 100).toFixed(1) }}%</div>
+                    <div *ngIf="poll.showResults || isFromMyPolls" class="result">
+                        <div class="percentage" [style.width.%]="option.voteCount / poll.totalVotes * 100">{{ poll.totalVotes === 0 ? '0' : (option.voteCount / poll.totalVotes * 100).toFixed(1) }}%</div>
                     </div>
                 </div>
             </div>

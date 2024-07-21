@@ -22,7 +22,7 @@
         }
       ],
       "UpstreamPathTemplate": "/user/{id}",
-      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ]
     },
     {
       "DownstreamPathTemplate": "/login",
@@ -65,6 +65,22 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/poll/user/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7241"
+        }
+      ],
+      "UpstreamPathTemplate": "/poll/user/{id}",
+      "UpstreamHttpMethod": [ "GET"],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
       "DownstreamPathTemplate": "/vote/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
@@ -81,7 +97,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/vote/poll/{id}",
+      "DownstreamPathTemplate": "/vote/poll",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -90,11 +106,7 @@
         }
       ],
       "UpstreamPathTemplate": "/vote/poll",
-      "UpstreamHttpMethod": [ "DELETE" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": []
-      }
+      "UpstreamHttpMethod": [ "DELETE" ]
     },
     {
       "DownstreamPathTemplate": "/vote/polloption/{id}",

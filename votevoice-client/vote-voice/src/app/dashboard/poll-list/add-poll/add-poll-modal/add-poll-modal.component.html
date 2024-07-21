@@ -26,7 +26,7 @@
             <div [formGroupName]="i">
               <div class="head">
                 <h5>Poll Option {{i+1}}</h5>
-                <button id='close' type="button" (click)="removePollOption(i)">close</button>
+                <button id='close' type="button" (click)="removePollOption(i)" *ngIf="pollOption.value.pollOptionId == null">close</button>
               </div>
               <div class="container-small-unit leftbox">
                 <div class="input title">
@@ -61,7 +61,7 @@
               </div>
         </div>
         <div class="buttons">
-            <button type="submit" (click)="onSubmit()" class="submit-button button-88" [disabled]="addPollForm.invalid || pollOptionForms.invalid || pollOptionForms.length < 2">Create</button>
+            <button type="submit" (click)="onSubmit()" class="submit-button button-88" [disabled]="addPollForm.invalid || pollOptionForms.invalid || pollOptionForms.length < 2">{{ data?.pollDetails?.pollId ? 'Update' : 'Create' }}</button>
         </div>
     </div>
   </div>

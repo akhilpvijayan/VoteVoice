@@ -1,0 +1,36 @@
+/* chat-modal.component.css */
+.chat-modal {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color: aqua;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0.5em 1.5em -0.5em #000000;
+  }
+  
+  .chat-content {
+    background-color: white;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  

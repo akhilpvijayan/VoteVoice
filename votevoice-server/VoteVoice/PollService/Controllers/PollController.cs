@@ -40,6 +40,25 @@ namespace PollService.Controllers
         }
 
         [Authorize]
+        [HttpGet("user/{userId}")]
+        public async Task<IActionResult> GetAllPollsByUser([FromQuery] int skip, [FromQuery] int take, long userId)
+        {
+            try
+            {
+                var polls = await _pollService.GetAllPolls(skip, take, userId);
+                if (polls == null)
+                {
+                    return NotFound();
+                }
+                return Ok(polls);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        [Authorize]
         [HttpGet("{pollId}")]
         public async Task<IActionResult> GetPoll(long pollId)
         {
@@ -93,7 +112,7 @@ namespace PollService.Controllers
                     {
                         return Ok(new
                         {
-                            Message = "Poll Creation Success.",
+                            Message = "Poll Updated Successfully.",
                             PollId = result,
                         });
                     };

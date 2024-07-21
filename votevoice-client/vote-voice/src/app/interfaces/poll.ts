@@ -10,5 +10,6 @@ export class Poll {
     profileImage!: any;
     expiryDate!: Date;
     totalVotes!: number;
+    showResults = false;
     pollOptions!: PollOption[];
 }

@@ -5,6 +5,7 @@ import { Component, Inject } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ToastrService } from 'ngx-toastr';
+import { ReloadService } from 'src/app/services/reload.service';
 
 @Component({
   selector: 'app-add-poll-modal',
@@ -27,20 +28,23 @@ export class AddPollModalComponent {
     private dialogRef: MatDialogRef<AddPollModalComponent>,
     private userService: UserService,
     private pollService: PollService,
+    private reloadService: ReloadService,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit(): void {
     this.initializeForm();
-    //this.imageUrl = this.data?.postDetails?.contentImage ?? this.imgConverter.convertImageToDataURL(this.data.postDetails.contentImage)
+    if (this.data?.pollDetails?.pollOptions) {
+      this.patchPollOptions(this.data.pollDetails.pollOptions);
+    }
   }
 
   initializeForm() {
     this.addPollForm = this.formBuilder.group({
       userId: this.userService.getUserId(),
-      title: ['', [Validators.required, Validators.maxLength(100)]],
-      description: ['', [Validators.required, Validators.maxLength(500)]],
+      title: [this.data?.pollDetails?.title ?? '', [Validators.required, Validators.maxLength(100)]],
+      description: [this.data?.pollDetails?.description ?? '', [Validators.required, Validators.maxLength(500)]],
       isActive: true,
-      expiryDate: [, Validators.required],
+      expiryDate: [this.data?.pollDetails?.expiryDate ?? '', Validators.required],
       pollOptions: this.formBuilder.array([])
     });
   }
@@ -62,7 +66,8 @@ export class AddPollModalComponent {
 
   removePollOptionImage(index: number) {
     this.addPollForm.value.pollOptions[index].patchValue({
-      pollImage: null
+      pollImage: null,
+      optionText: null
     })
   }
 
@@ -94,14 +99,23 @@ export class AddPollModalComponent {
     formData.append('description', this.addPollForm.value.description);
     formData.append('expiryDate', this.addPollForm.value.expiryDate);
     formData.append('isActive', this.addPollForm.value.isActive);
-    this.addPollForm.value.pollOptions.forEach((option: any, index: number) => {
-      formData.append(`pollOptions[${index}].optionText`, option.optionText);
-      formData.append(`pollOptions[${index}].pollImage`, option.pollImage);
-      formData.append(`pollOptions[${index}].voteCount`, option.voteCount);
-    });
-
-    if (this.data?.postDetails?.postId != null) {
-      formData.append('pollId', this.data.pollDetails.pollId);
+    if(this.data?.pollDetails?.pollId){
+      this.addPollForm.value.pollOptions.forEach((option: any, index: number) => {
+        formData.append(`pollOptions[${index}].optionText`, option.optionText);
+        formData.append(`pollOptions[${index}].pollImage`, option.pollImage);
+        formData.append(`pollOptions[${index}].voteCount`, option.voteCount);
+        formData.append(`pollOptions[${index}].pollOptionId`, option.pollOptionId);
+        formData.append(`pollOptions[${index}].pollId`, option.pollId);
+      });
+    }
+    else{
+      this.addPollForm.value.pollOptions.forEach((option: any, index: number) => {
+        formData.append(`pollOptions[${index}].optionText`, option.optionText);
+        formData.append(`pollOptions[${index}].pollImage`, option.pollImage);
+        formData.append(`pollOptions[${index}].voteCount`, option.voteCount);
+        formData.append(`pollOptions[${index}].pollOptionId`, option.pollOptionId);
+        formData.append(`pollOptions[${index}].pollId`, option.pollId);
+      });
     }
 
     return formData;
@@ -110,25 +124,33 @@ export class AddPollModalComponent {
   onSubmit() {
     if (this.addPollForm.valid && this.pollOptionForms.valid && this.pollOptionForms.length >= 2) {
       console.log(this.addPollForm.value);
-      if(this.data?.postDetails?.postId != null){
-        // this.postService.updatePost(this.saveFileInfo()).subscribe((res: any) => {
-        //   if (res) {
-        //     this.toastr.warning("Post updated successfully");
-        //     this.closeDialog();
-        //     this.triggerUpdateReload(this.data?.postDetails?.postId);
-        //     this.spinner.hide();
-        //   }
-        // })
+      if(this.data?.pollDetails?.pollId != null){
+        this.pollService.updatePoll(this.saveFileInfo(), this.data?.pollDetails?.pollId).subscribe((res: any) => {
+          if (res) {
+            this.toastr.warning(res.message);
+            this.closeDialog();
+            this.triggerUpdateReload(this.data?.pollDetails?.pollId);
+          }
+        })
       }
       else{
         this.pollService.addPoll(this.saveFileInfo()).subscribe((res: any) => {
           if (res) {
             this.toastr.success(res.message);
             this.closeDialog();
+            this.triggerReload();
           }
         });
       }
     }
+  }
+
+  triggerUpdateReload(pollId : number): void {
+    this.reloadService.reloadComponent('app-poll-list-update', { key: pollId });
+  }
+
+  triggerReload(): void {
+    this.reloadService.reloadComponent('app-poll-list-add');
   }
 
   closeDialog(){
@@ -151,5 +173,23 @@ export class AddPollModalComponent {
         this.wordCount = 500;
       }
     }
+  }
+
+  createPollOption(option: any): FormGroup {
+    return this.formBuilder.group({
+      optionText: [option.optionText],
+      pollImage: [option.pollImage],
+      voteCount: [option.voteCount],
+      pollOptionId: [option.pollOptionId],
+      pollId: [option.pollId]
+    });
+  }
+
+  patchPollOptions(pollOptions: any[]): void {
+    const pollOptionsArray = this.addPollForm.get('pollOptions') as FormArray;
+    pollOptions.forEach(option => {
+      pollOptionsArray.push(this.createPollOption(option));
+    });
+    this.hideNewPollOptionButton = this.addPollForm?.get('pollOptions')?.value?.length > 3 ? true : false;
   }
 }

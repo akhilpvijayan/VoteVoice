@@ -4,21 +4,28 @@
     </div>
 
     <div id="middlebox" #middlebox>
-        <mat-tab-group [color]="'warn'">
+        <app-add-poll *ngIf="!isLoggedIn"></app-add-poll>
+        <app-poll-list *ngIf="!isLoggedIn"></app-poll-list>
+        <mat-tab-group [color]="'warn'" (selectedTabChange)="onTabChange($event)" *ngIf="isLoggedIn">
             <mat-tab>
                 <ng-template mat-tab-label>
                     <mat-icon>home</mat-icon>
                     &nbsp;Feeds
                 </ng-template>
-                <app-add-poll></app-add-poll>
-                <app-poll-list class="poll hide-scrollbar"></app-poll-list>
+                <ng-container *ngIf="activeTabIndex === 0">
+                    <app-add-poll></app-add-poll>
+                    <app-poll-list></app-poll-list>
+                </ng-container>
             </mat-tab>
             <mat-tab>
                 <ng-template mat-tab-label>
                     <mat-icon>poll</mat-icon>
                     &nbsp;My polls
                 </ng-template>
-                Content 2
+                <ng-container *ngIf="activeTabIndex === 1">
+                    <app-add-poll></app-add-poll>
+                    <app-poll-list [isFromMyPolls]="true"></app-poll-list>
+                </ng-container>
             </mat-tab>
         </mat-tab-group>
     </div>
@@ -28,4 +35,8 @@
             <app-loader-skeleton></app-loader-skeleton>
         </div>
     </div>
+<button class="floating-button" (click)="openChat()">
+    <img src="https://firebasestorage.googleapis.com/v0/b/turftime-745bc.appspot.com/o/ai-technology-robot-cyborg-illustrations.png?alt=media&token=e53aecd8-9068-4124-a5b1-e0cebb2d6898">
+</button>
+<app-assistant-chat class="chat" *ngIf="isAssistantOpen"></app-assistant-chat>
 </div>

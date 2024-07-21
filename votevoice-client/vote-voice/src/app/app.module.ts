@@ -26,6 +26,8 @@ import { ProfileSideBarComponent } from './dashboard/profile-side-bar/profile-si
 import { AddPollComponent } from './dashboard/poll-list/add-poll/add-poll.component';
 import { AddPollModalComponent } from './dashboard/poll-list/add-poll/add-poll-modal/add-poll-modal.component';
 import { LoaderSkeletonComponent } from './loader-skeleton/loader-skeleton.component';
+import { ConfirmationPopupModalComponent } from './shared/confirmation-popup-modal/confirmation-popup-modal.component';
+import { AssistantChatComponent } from './dashboard/assistant-chat/assistant-chat.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { LoaderSkeletonComponent } from './loader-skeleton/loader-skeleton.compo
     ProfileSideBarComponent,
     AddPollComponent,
     AddPollModalComponent,
-    LoaderSkeletonComponent
+    LoaderSkeletonComponent,
+    ConfirmationPopupModalComponent,
+    AssistantChatComponent
   ],
   imports: [
     BrowserModule,

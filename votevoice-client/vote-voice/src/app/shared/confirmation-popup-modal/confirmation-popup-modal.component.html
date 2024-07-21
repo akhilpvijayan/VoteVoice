@@ -1,0 +1,14 @@
+
+<div class="content">
+    <div class="warning-dialog">
+        <div class="warning-header">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/error.png" alt="Warning Icon" class="warning-icon">
+            <h1>WARNING!</h1>
+            <p>{{this.data.message}}</p>
+        </div>
+        <div class="warning-footer">
+            <button class="btn-yes" (click)="closeDialog(true)">YES</button>
+            <button class="btn-no" (click)="closeDialog(false)">No</button>
+        </div>
+    </div>
+</div>
