@@ -1,3 +1,4 @@
+import { AuthService } from './../../Auth/auth.service';
 import { ConfirmationPopupModalComponent } from './../../shared/confirmation-popup-modal/confirmation-popup-modal.component';
 import { MatDialog } from '@angular/material/dialog';
 import { PollOption } from './../../interfaces/poll-option';
@@ -9,6 +10,7 @@ import { ToastrService } from 'ngx-toastr';
 import { AddPollModalComponent } from './add-poll/add-poll-modal/add-poll-modal.component';
 import { ReloadService } from 'src/app/services/reload.service';
 import { Subscription } from 'rxjs';
+import { LoginComponent } from 'src/app/login/login.component';
 
 @Component({
   selector: 'app-poll-list',
@@ -23,13 +25,15 @@ export class PollListComponent implements OnInit {
   take = 6;
   userId = parseInt(this.userService.getUserId() ?? '0', 10);
   polls!: Poll[];
+  isLoggedIn = false;
 
   private reloadSubscription: Subscription;
   constructor(private pollService: PollService,
     private userService: UserService,
     private toastr: ToastrService,
     private reloadService: ReloadService,
-    private dialog: MatDialog) { 
+    private dialog: MatDialog,
+    private authService: AuthService) { 
       this.reloadSubscription = this.reloadService.getReloadObservable()
       .subscribe(reloadData => {
         if (reloadData.componentName === 'app-poll-list-update') {
@@ -44,6 +48,10 @@ export class PollListComponent implements OnInit {
   ngOnInit(): void {
     this.loading = true;
     this.loadPolls();
+    this.authService.isLoggedInObservable$.subscribe((isLoggedInSubject: any) => {
+      this.isLoggedIn = isLoggedInSubject;
+    });
+    this.isLoggedIn = this.authService.isLoggedIn();
   }
 
   loadPolls(){
@@ -68,27 +76,43 @@ export class PollListComponent implements OnInit {
     }
 
   vote(pollId: number, pollOptionId: number) {
-    this.loading = false;
+    if(this.isLoggedIn){
+      this.loading = false;
 
-    // Find the index of the poll by pollId
-    const currentPollIndex = this.polls.findIndex(poll => poll.pollId === pollId);
-
-    if (currentPollIndex !== -1) {
-      // Find the specific poll option within the found poll by pollOptionId
-      const currentPoll = this.polls[currentPollIndex];
-      const currentPollOption = currentPoll.pollOptions.find(option => option.pollOptionId === pollOptionId);
-
-      if (currentPollOption) {
-        // Increment the vote count for the founded poll option
-        currentPollOption.voteCount += 1;
-        currentPoll.totalVotes += 1;
-        currentPoll.showResults = true;
+      // Find the index of the poll by pollId
+      const currentPollIndex = this.polls.findIndex(poll => poll.pollId === pollId);
+  
+      if (currentPollIndex !== -1) {
+        // Find the specific poll option within the found poll by pollOptionId
+        const currentPoll = this.polls[currentPollIndex];
+        const currentPollOption = currentPoll.pollOptions.find(option => option.pollOptionId === pollOptionId);
+  
+        if (currentPollOption) {
+          // Increment the vote count for the founded poll option
+          currentPollOption.voteCount += 1;
+          currentPoll.totalVotes += 1;
+          currentPoll.showResults = true;
+        } else {
+          console.error('Poll option not found');
+        }
       } else {
-        console.error('Poll option not found');
+        console.error('Poll not found');
       }
-    } else {
-      console.error('Poll not found');
     }
+    else{
+      this.login();
+    }
+  }
+
+  login(){
+    this.dialog.open(LoginComponent,{
+      width:'70%',
+      height:'95%',
+      hasBackdrop: true,
+      panelClass: 'custom-dialog-container',
+      enterAnimationDuration: '300ms',
+      exitAnimationDuration: '300ms',
+    });
   }
 
   updatePoll(pollId: number){

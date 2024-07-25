@@ -35,8 +35,9 @@
             <app-loader-skeleton></app-loader-skeleton>
         </div>
     </div>
-<button class="floating-button" (click)="openChat()">
-    <img src="https://firebasestorage.googleapis.com/v0/b/turftime-745bc.appspot.com/o/ai-technology-robot-cyborg-illustrations.png?alt=media&token=e53aecd8-9068-4124-a5b1-e0cebb2d6898">
+<button class="floating-button" (click)="openChat()" [class.rotating]="!isAssistantOpen">
+    <i *ngIf="!isAssistantOpen" class="fa-brands fa-rocketchat" style="color: #ffffff;"></i>
+    <i *ngIf="isAssistantOpen" class="fa-solid fa-xmark" style="color: #fafafa;"></i>
 </button>
-<app-assistant-chat class="chat" *ngIf="isAssistantOpen"></app-assistant-chat>
+<app-assistant-chat class="chat" [isAssistantOpen]="isAssistantOpen"></app-assistant-chat>
 </div>

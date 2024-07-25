@@ -2,6 +2,8 @@ import { AuthService } from './../Auth/auth.service';
 import { UserService } from './../services/user.service';
 import { Component, OnInit } from '@angular/core';
 import { MatTabChangeEvent } from '@angular/material/tabs';
+import { ReloadService } from '../services/reload.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-dashboard',
@@ -18,6 +20,9 @@ export class DashboardComponent implements OnInit{
   ){}
 
   ngOnInit(): void {
+    this.authService.isLoggedInObservable$.subscribe((isLoggedInSubject: any) => {
+      this.isLoggedIn = isLoggedInSubject;
+    });
     this.isLoggedIn = this.authService.isLoggedIn();
   }
 

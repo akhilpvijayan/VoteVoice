@@ -1,0 +1,16 @@
+.image {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+}
+
+#close{
+    float: right;
+}
+
+@media only screen and (max-width: 950px) {
+    .image{
+        display: none;
+    }
+}

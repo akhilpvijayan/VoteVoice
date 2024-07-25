@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { MatDialogRef } from '@angular/material/dialog';
+import { NavigationEnd, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { AuthService } from '../Auth/auth.service';
+import { ReloadService } from '../services/reload.service';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +18,9 @@ export class LoginComponent implements OnInit{
   constructor(private formBuilder: FormBuilder,
     private authService: AuthService,
     private toastr: ToastrService,
-    private router: Router){}
+    private dialogRef: MatDialogRef<LoginComponent>,
+    private router: Router,
+    private reloadService: ReloadService){}
 
   ngOnInit(): void {
     this.initializeForm();
@@ -40,6 +44,7 @@ export class LoginComponent implements OnInit{
             this.authService.setRefreshToken(result.refreshToken);
             this.toastr.success(result.message);
             this.loginForm.reset();
+            this.closeDialog();
             this.router.navigateByUrl('');
           } else {
             this.toastr.error('Login failed: Invalid response from server.');
@@ -57,5 +62,9 @@ export class LoginComponent implements OnInit{
       });
 
     }
+  }
+
+  closeDialog(){
+    this.dialogRef.close();
   }
 }

@@ -14,10 +14,10 @@
             <button class="button-88" id="profile">My Profile</button>
         </div>
     </div>
-    <img src="https://firebasestorage.googleapis.com/v0/b/turftime-745bc.appspot.com/o/401%20Error%20Unauthorized-rafiki.png?alt=media&token=2df8d3c4-4424-4bc7-b53e-0ea44881b102">
-    <div class="profile">
+    <img src="assets/401-error-unauthorized-animate.svg" *ngIf="!isLoggedIn">
+    <div class="profile" *ngIf="!isLoggedIn">
         <div>
-            <button class="button-88" id="profile"><span><i class="fa-solid fa-user"></i></span>&nbsp;Login</button>
+            <button class="button-88" id="profile" (click)="login()"><span><i class="fa-solid fa-user"></i></span>&nbsp;Login</button>
         </div>
     </div>
 </div>

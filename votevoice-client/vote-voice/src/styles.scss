@@ -16,6 +16,7 @@ body {
   .button-88 {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -58,7 +59,6 @@ body {
 	color: #ff0000;
 	font: inherit;
 	text-indent: 100%;
-	cursor: pointer;
 	
 	&:focus {
 		outline: solid 0 transparent;

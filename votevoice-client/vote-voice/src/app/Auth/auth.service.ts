@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { Subject } from 'rxjs';
+import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { TokenApi } from '../interfaces/token-api';
 
@@ -9,9 +9,9 @@ import { TokenApi } from '../interfaces/token-api';
   providedIn: 'root'
 })
 export class AuthService {
-  private isLoggedInSubject = new Subject<void>();
-
-  signOutObservable$ = this.isLoggedInSubject.asObservable();
+  private isLoggedInSubject = new BehaviorSubject<boolean>(false);
+  public isLoggedInObservable$: Observable<boolean> = this.isLoggedInSubject.asObservable();
+  
   constructor(
     private httpClient: HttpClient,
     private router: Router) { }
@@ -27,7 +27,7 @@ export class AuthService {
 
   setToken(tokenValue: string){
     localStorage.setItem('vote-voice-token', tokenValue);
-    this.isLoggedInSubject.next();
+    this.isLoggedInSubject.next(true);
   }
 
   setUser(userId: number){
@@ -44,8 +44,7 @@ export class AuthService {
 
   signOut(){
     localStorage.clear();
-    this.router.navigateByUrl('login');
-    this.isLoggedInSubject.next();
+    this.isLoggedInSubject.next(false);
   }
 
   renewToken(tokenApi: TokenApi){

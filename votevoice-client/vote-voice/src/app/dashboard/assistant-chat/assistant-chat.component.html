@@ -1,8 +1,17 @@
-<!-- chat-modal.component.html -->
-<div class="chat-modal">
-    <div class="chat-content">
-      <button class="close-button" (click)="closeChat()">×</button>
-
-    </div>
+<div [@openClose]="chatState" class="chat-modal">
+    <div class="chat">
+        <div class="chat-title">
+        </div>
+        <div class="messages">
+          <div class="messages-content">
+            <app-loader-skeleton></app-loader-skeleton>
+          </div>
+        </div>
+        <div class="message-box">
+          <textarea type="text" class="message-input" placeholder="Type message..."></textarea>
+          <button type="submit" class="message-submit button-88"><i class="material-icons" data-content="send">send</i></button>
+        </div>
+      
+      </div>
   </div>
   
