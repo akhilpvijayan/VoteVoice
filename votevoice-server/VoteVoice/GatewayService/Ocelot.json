@@ -58,11 +58,7 @@
         }
       ],
       "UpstreamPathTemplate": "/poll/{id}",
-      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": []
-      }
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ]
     },
     {
       "DownstreamPathTemplate": "/poll/user/{id}",
@@ -75,10 +71,6 @@
       ],
       "UpstreamPathTemplate": "/poll/user/{id}",
       "UpstreamHttpMethod": [ "GET"],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": []
-      }
     },
     {
       "DownstreamPathTemplate": "/vote/{id}",

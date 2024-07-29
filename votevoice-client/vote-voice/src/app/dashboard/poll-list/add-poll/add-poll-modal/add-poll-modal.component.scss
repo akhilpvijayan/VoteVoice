@@ -23,38 +23,36 @@
     width: 100%;
   }
 
-  .input {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  
-  input {
+input{
+    height: 35px;
     width: 100%;
-    padding: 8px 0;
-    border: none;
-    border-bottom: 1px solid #181824;
-    transition: 300ms;
-    color: #0d0d0d9f;
-    font-size: 14px;
-    font-weight: 400;
-  }
-  
-  input:focus {
     outline: none;
-    box-shadow: 0 1px 0 0 #FF7C03;
-    border-color: #FF7C03;
-  }
+    font-size: 14px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+
+    &:focus{
+        border-color: #FF7C03;
+    }
+}
 
   textarea {
+    height: 100%;
     width: 100%;
-    padding: 8px 0;
-    border: none;
-    border-bottom: 1px solid #181824;
-    transition: 300ms;
-    color: #0d0d0d9f;
+    outline: none;
     font-size: 14px;
-    font-weight: 400;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+
+    &:focus{
+        border-color: #FF7C03;
+    }
   }
   
   textarea:focus {
@@ -103,9 +101,10 @@
 
 .upload-button {
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 40px;
     cursor: pointer;
+    margin-left: 20px;
     background: transparent;
     border: none;
 }
@@ -290,6 +289,10 @@
       float: right;
   }
 
+  .submit-mobile{
+    display: none;
+  }
+
 @media only screen and (max-width: 950px) {
     .cancel{
         top: 5px;
@@ -304,4 +307,12 @@
       #rightbox{
         display: none;
     }
+
+    .upload-button::before {
+      content: '+ Upload Image *';
+  }
+
+  .submit-mobile{
+    display:flex;
+  }
 }

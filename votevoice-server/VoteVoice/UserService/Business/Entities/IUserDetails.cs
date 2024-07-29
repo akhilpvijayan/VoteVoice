@@ -26,5 +26,6 @@ namespace UserService.Business.Entities
         string Region { get; set; }
 
         int? FollowersCount { get; set; }
+
     }
 }

@@ -18,7 +18,10 @@
             </div>
           </div>
           <div class="input">
-            <input formControlName="expiryDate" type="text" placeholder="Expiry Date *" onfocus="(this.type='date')" onblur="(this.type='text')">
+            <input formControlName="expiryDate" type="text" placeholder="Expiry Date *" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+          </div>
+          <div *ngIf="addPollForm.controls['expiryDate'].touched && addPollForm.controls['expiryDate'].invalid" class="error-message">
+            <p>Please fill out this field.</p>
           </div>
         </div>
         <div formArrayName="pollOptions" class="poll-option">
@@ -42,6 +45,9 @@
         <small class="error" *ngIf="pollOptionForms.length < 2">*Atleast 2 poll options required</small><br>
         <button type="button" *ngIf="!hideNewPollOptionButton" class="add-experience" (click)="addPollOption()">Add Option</button>
       </form>
+      <div class="buttons submit-mobile">
+        <button type="submit" (click)="onSubmit()" class="submit-button button-88" [disabled]="addPollForm.invalid || pollOptionForms.invalid || pollOptionForms.length < 2">{{ data?.pollDetails?.pollId ? 'Update' : 'Create' }}</button>
+    </div>
     </div>
   
     <div id="rightbox" #rightbox>

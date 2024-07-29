@@ -13,7 +13,6 @@ import { Subscription } from 'rxjs';
 export class DashboardComponent implements OnInit{
   activeTabIndex = 0;
   isLoggedIn = false;
-  isAssistantOpen = false;
 
   constructor(
     private authService: AuthService
@@ -28,9 +27,5 @@ export class DashboardComponent implements OnInit{
 
   onTabChange(event: MatTabChangeEvent) {
     this.activeTabIndex = event.index;
-  }
-
-  openChat() {
-    this.isAssistantOpen = !this.isAssistantOpen;
   }
 }

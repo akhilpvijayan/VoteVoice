@@ -143,6 +143,9 @@ export class AddPollModalComponent {
         });
       }
     }
+    else{
+      this.addPollForm.markAllAsTouched();
+    }
   }
 
   triggerUpdateReload(pollId : number): void {

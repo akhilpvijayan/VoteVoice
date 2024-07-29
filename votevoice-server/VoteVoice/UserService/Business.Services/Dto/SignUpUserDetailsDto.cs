@@ -19,9 +19,9 @@ namespace UserService.Business.Services.Dto
 
         public DateTime? CreatedDate { get; set; } = DateTime.Now;
 
-        public bool IsActive { get; set; } = true;
+        public bool? IsActive { get; set; } = true;
 
-        public bool IsVerified { get; set; } = false;
+        public bool? IsVerified { get; set; } = false;
 
         public long RoleId { get; set; }
 

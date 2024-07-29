@@ -1,3 +1,4 @@
+import { ActivatedRoute, Router } from '@angular/router';
 import { AuthService } from './../../Auth/auth.service';
 import { ConfirmationPopupModalComponent } from './../../shared/confirmation-popup-modal/confirmation-popup-modal.component';
 import { MatDialog } from '@angular/material/dialog';
@@ -33,7 +34,9 @@ export class PollListComponent implements OnInit {
     private toastr: ToastrService,
     private reloadService: ReloadService,
     private dialog: MatDialog,
-    private authService: AuthService) { 
+    private authService: AuthService,
+    private router: Router,
+    private route: ActivatedRoute) { 
       this.reloadSubscription = this.reloadService.getReloadObservable()
       .subscribe(reloadData => {
         if (reloadData.componentName === 'app-poll-list-update') {
@@ -47,6 +50,10 @@ export class PollListComponent implements OnInit {
 
   ngOnInit(): void {
     this.loading = true;
+    //If clicks from profile button, get the userId from url
+    this.route?.queryParams?.subscribe(params => {
+      this.userId = parseInt(params['userId'] ?? this.userId, 10);
+    });
     this.loadPolls();
     this.authService.isLoggedInObservable$.subscribe((isLoggedInSubject: any) => {
       this.isLoggedIn = isLoggedInSubject;
@@ -107,7 +114,7 @@ export class PollListComponent implements OnInit {
   login(){
     this.dialog.open(LoginComponent,{
       width:'70%',
-      height:'95%',
+      height:'auto',
       hasBackdrop: true,
       panelClass: 'custom-dialog-container',
       enterAnimationDuration: '300ms',
@@ -118,7 +125,7 @@ export class PollListComponent implements OnInit {
   updatePoll(pollId: number){
     this.dialog.open(AddPollModalComponent,{
       width:'70%',
-      height:'95%',
+      height:'auto',
       hasBackdrop: true,
       panelClass: 'custom-dialog-container',
       enterAnimationDuration: '300ms',
@@ -167,5 +174,9 @@ export class PollListComponent implements OnInit {
         })
       }
     });
+  }
+  
+  showProfile(userId: number) {
+    this.router.navigate(['profile'], { queryParams: { userId: userId } });
   }
 }

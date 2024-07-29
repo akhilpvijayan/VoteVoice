@@ -19,7 +19,7 @@ namespace UserService.Models
         public string FirstName { get; set; }
 
         [Required]
-        [MaxLength]
+        [MaxLength(50)]
         public string LastName { get; set; }
 
         public string? ProfileImage { get; set; } = null;

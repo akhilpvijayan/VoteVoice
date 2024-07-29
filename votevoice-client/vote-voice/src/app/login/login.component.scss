@@ -9,6 +9,28 @@
     float: right;
 }
 
+.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input-area input{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+
+    &:focus{
+        border-color: #FF7C03;
+    }
+}
+
 @media only screen and (max-width: 950px) {
     .image{
         display: none;

@@ -39,7 +39,6 @@ namespace PollService.Controllers
             }
         }
 
-        [Authorize]
         [HttpGet("user/{userId}")]
         public async Task<IActionResult> GetAllPollsByUser([FromQuery] int skip, [FromQuery] int take, long userId)
         {
@@ -58,7 +57,6 @@ namespace PollService.Controllers
             }
         }
 
-        [Authorize]
         [HttpGet("{pollId}")]
         public async Task<IActionResult> GetPoll(long pollId)
         {

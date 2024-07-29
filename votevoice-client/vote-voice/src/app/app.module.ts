@@ -28,6 +28,8 @@ import { AddPollModalComponent } from './dashboard/poll-list/add-poll/add-poll-m
 import { LoaderSkeletonComponent } from './loader-skeleton/loader-skeleton.component';
 import { ConfirmationPopupModalComponent } from './shared/confirmation-popup-modal/confirmation-popup-modal.component';
 import { AssistantChatComponent } from './dashboard/assistant-chat/assistant-chat.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { AssistantChatComponent } from './dashboard/assistant-chat/assistant-cha
     AddPollModalComponent,
     LoaderSkeletonComponent,
     ConfirmationPopupModalComponent,
-    AssistantChatComponent
+    AssistantChatComponent,
+    ProfileComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

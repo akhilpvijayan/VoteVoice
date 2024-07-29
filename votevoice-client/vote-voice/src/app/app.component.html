@@ -1,4 +1,9 @@
 <div [attr.data-bs-theme]="darkModeService.darkModeSignal">
     <app-nav-bar></app-nav-bar>
     <router-outlet></router-outlet>
+    <button class="floating-button" (click)="openChat()" [class.rotating]="!isAssistantOpen">
+        <i *ngIf="!isAssistantOpen" class="fa-brands fa-rocketchat" style="color: #ffffff;"></i>
+        <i *ngIf="isAssistantOpen" class="fa-solid fa-xmark" style="color: #fafafa;"></i>
+    </button>
+    <app-assistant-chat class="chat" [isAssistantOpen]="isAssistantOpen"></app-assistant-chat>
 </div>

@@ -1,12 +1,22 @@
 <mat-toolbar class="mat-elevation-z6">
-  <img class="logo"
-    src="https://firebasestorage.googleapis.com/v0/b/turftime-745bc.appspot.com/o/HL%20(1).png?alt=media&token=ac75591a-c478-4966-95b7-4f49283fb37d" />
+  <img
+    class="logo"
+    (click)="goToDashboard()"
+    src="https://firebasestorage.googleapis.com/v0/b/turftime-745bc.appspot.com/o/HL%20(1).png?alt=media&token=ac75591a-c478-4966-95b7-4f49283fb37d"
+  />
 
   <a href="" class="nav-button">
-    <span class="main-title"><i>VOTE</i><span class="title"><i>VOICE</i></span></span>
+    <span class="main-title"
+      ><i>VOTE</i><span class="title"><i>VOICE</i></span></span
+    >
   </a>
   <div class="search">
-    <input type="text" class="searchTerm" placeholder="What are you looking for?" (keyup.enter)="search()" />
+    <input
+      type="text"
+      class="searchTerm"
+      placeholder="What are you looking for?"
+      (keyup.enter)="search()"
+    />
     <button type="submit" class="searchButton" (click)="search()">
       <i class="fa fa-search"></i>
     </button>
@@ -19,13 +29,27 @@
   <button class="button-88" role="button" *ngIf="!isLoggedIn" (click)="login()">
     <span><i class="fa-solid fa-user"></i></span>&nbsp;Login
   </button>
-  <button [matMenuTriggerFor]="profileMenu" mat-button class="nav-button" *ngIf="isLoggedIn">
+  <button
+    [matMenuTriggerFor]="profileMenu"
+    mat-button
+    class="nav-button"
+    *ngIf="isLoggedIn"
+  >
     <img
+      *ngIf="userDetails?.profileImage === null"
       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKUAAACUCAMAAADF0xngAAAAMFBMVEW6urr///+3t7fT09P39/f8/Py+vr60tLTm5ub09PTFxcXX19fBwcHv7+/Q0NDg4ODkTEn6AAADiklEQVR4nO2bi27rIAxAExcI4fn/fzsouWu7R8PTZLo+07RO6rYjEwzYbFkIgiAIgiAIgiAIYgYifgpxvLoosAUA0pfZMj8gguFinJd2Z4ztVnpnlmB6rZCCcN7y9RluvRMXiiiA0J+K/PhMolrAVUSFZkntOZjHt0xfY9BB7+s7dj0/mmDkyt9a8lWayZ7g2Ilk1GRupiaA5hmS4UNPnERRMg8+7+EEn+kY8ZM04VYgua63KZrgcof7GPQpU8icz+4XyZWZCZayKJIRiS+p16JQ3t+tsSXN+2XxZ3bkMd98aSjv7/cbpiQsFZGMLJjzHHSlJeoSJGqeysiOudssTOgPuEO0LFnAX/F4ktUDjjrkqnbAAwpr/hRuhl5B2xqFlF49e/D2mZttiKXFWn6gfvKE6YOW11mDJcOS/BuWoiERrRwrYbZZIkn+kRFvmuOM8uWLZf2WKBwk0bJ67U49grdbVw2WCkuy7pibwDzsltc1/oFY3ygtZD1ALWmZ2ryOWdESRfXVZzxgHnVFeQHm/hO4zZ9NVtWJ0FL6gap5MhleskyArxhxxJLBgSjfclj8liQUlw44WsHgWVOvPF80vHVCY0oUb42i5IwutChZzuW8Pnm+5oQuyie5+YjP6kIemlld3Ykd3QN1njct9pLzHQD/frFkfv41mDhz1bt9nFfLBe6T3QXUL/Fkd8f5kgnYhJZfj2y71OJq191gMU5bm2LKrNXOoLbzsoElXhiMLwC2ayoS/yXwYLbKVyDKLcIo5ZzTifBKKSPiFLqAb/ATyul40/bbxp3zePNWOyWmhjb8bXWTliW93zZHnFl5U8sc0ZjF5fO6+EMsn9dKiZ3l45nH3GRp3YDJm8E7+wjYjGc1tUHOvNlw6lkAKh13KupEAakwntDg2NKUigM/unogQJzszLM8vRg67OBa2mYP9pGFa4jX51tapQkeL9uP0+wTyMQ+RhEyzrQl2BGTaFMxku3DnYi/Z1fd69eg2Ld/6GiSjA9n72hCQ1Pvd/bOmjU9iTO69yyqu1BndK3FVfcdz+h5H7OiH5FLv75FrPMPkuzYE4BxoQzB7GQJbqDkunbaeAwNZbdgVjVG8+nUQm25l5NDn/lTf5UkD9nDMiTLUXko0SVlDn4sOz2YLZfTs+ixSg7OlpEOGbPpCn0eHS7akyVZkiVZkiVZkiVZkiVZkiVZkiVZkiVZXtjyA2TTMEwct/vIAAAAAElFTkSuQmCC"
-      alt="Profile Picture" class="profile-photo nav-button" />
+      alt="Profile Picture"
+      class="profile-photo nav-button"
+    />
+    <img
+      *ngIf="userDetails?.profileImage !== null"
+      src="{{userDetails?.profileImage}}"
+      alt="Profile Picture"
+      class="profile-photo nav-button"
+    />
   </button>
   <mat-menu #profileMenu="matMenu" class="nav-button">
-    <button mat-menu-item class="nav-button">
+    <button mat-menu-item class="nav-button" (click)="showProfile()">
       <mat-icon> person_pin</mat-icon>View Profile
     </button>
     <button mat-menu-item class="nav-button" (click)="signOut()">
@@ -40,19 +64,19 @@
       <span class="icon-label">Home</span>
     </button>
   </div>
-  <div class="icon-button" (click)="addPoll()"> 
+  <div class="icon-button" (click)="addPoll()">
     <button mat-button class="icon-button-content">
       <i class="fa-solid fa-plus plus" style="color: #ff9500"></i>
     </button>
   </div>
   <div class="icon-button" (click)="login()" *ngIf="!isLoggedIn">
-    <button mat-button class="icon-button-content">
+    <button mat-button class="icon-button-content" (click)="login()">
       <mat-icon matBadge="">person</mat-icon>
       <span class="icon-label">Login</span>
     </button>
   </div>
   <div class="icon-button" *ngIf="isLoggedIn">
-    <button mat-button class="icon-button-content">
+    <button mat-button class="icon-button-content" (click)="showProfile()">
       <mat-icon matBadge="">person</mat-icon>
       <span class="icon-label">My Profile</span>
     </button>

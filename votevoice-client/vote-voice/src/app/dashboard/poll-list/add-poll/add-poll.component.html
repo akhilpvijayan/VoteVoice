@@ -1,3 +1,3 @@
-<div class="wrapper container" (click)="addPoll()">
+<div class="wrapper container" (click)="addPoll()" *ngIf="!isFromProfile || isLoggedInUser">
      <button class="add-poll" id="btn"><i class="fa-solid fa-plus plus" style="color: #FF7C03;"></i>&nbsp;<b>Start a poll..</b></button>
 </div>

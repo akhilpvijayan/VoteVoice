@@ -1,0 +1,52 @@
+<i class="fa-solid fa-arrow-left back" (click)="goBack()"></i>
+<div class="profile-page">
+    <div class="content">
+        <div class="content__cover">
+            <img *ngIf="userDetails?.profileImage === null" class="content__avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKUAAACUCAMAAADF0xngAAAAMFBMVEW6urr///+3t7fT09P39/f8/Py+vr60tLTm5ub09PTFxcXX19fBwcHv7+/Q0NDg4ODkTEn6AAADiklEQVR4nO2bi27rIAxAExcI4fn/fzsouWu7R8PTZLo+07RO6rYjEwzYbFkIgiAIgiAIgiAIYgYifgpxvLoosAUA0pfZMj8gguFinJd2Z4ztVnpnlmB6rZCCcN7y9RluvRMXiiiA0J+K/PhMolrAVUSFZkntOZjHt0xfY9BB7+s7dj0/mmDkyt9a8lWayZ7g2Ilk1GRupiaA5hmS4UNPnERRMg8+7+EEn+kY8ZM04VYgua63KZrgcof7GPQpU8icz+4XyZWZCZayKJIRiS+p16JQ3t+tsSXN+2XxZ3bkMd98aSjv7/cbpiQsFZGMLJjzHHSlJeoSJGqeysiOudssTOgPuEO0LFnAX/F4ktUDjjrkqnbAAwpr/hRuhl5B2xqFlF49e/D2mZttiKXFWn6gfvKE6YOW11mDJcOS/BuWoiERrRwrYbZZIkn+kRFvmuOM8uWLZf2WKBwk0bJ67U49grdbVw2WCkuy7pibwDzsltc1/oFY3ygtZD1ALWmZ2ryOWdESRfXVZzxgHnVFeQHm/hO4zZ9NVtWJ0FL6gap5MhleskyArxhxxJLBgSjfclj8liQUlw44WsHgWVOvPF80vHVCY0oUb42i5IwutChZzuW8Pnm+5oQuyie5+YjP6kIemlld3Ykd3QN1njct9pLzHQD/frFkfv41mDhz1bt9nFfLBe6T3QXUL/Fkd8f5kgnYhJZfj2y71OJq191gMU5bm2LKrNXOoLbzsoElXhiMLwC2ayoS/yXwYLbKVyDKLcIo5ZzTifBKKSPiFLqAb/ATyul40/bbxp3zePNWOyWmhjb8bXWTliW93zZHnFl5U8sc0ZjF5fO6+EMsn9dKiZ3l45nH3GRp3YDJm8E7+wjYjGc1tUHOvNlw6lkAKh13KupEAakwntDg2NKUigM/unogQJzszLM8vRg67OBa2mYP9pGFa4jX51tapQkeL9uP0+wTyMQ+RhEyzrQl2BGTaFMxku3DnYi/Z1fd69eg2Ld/6GiSjA9n72hCQ1Pvd/bOmjU9iTO69yyqu1BndK3FVfcdz+h5H7OiH5FLv75FrPMPkuzYE4BxoQzB7GQJbqDkunbaeAwNZbdgVjVG8+nUQm25l5NDn/lTf5UkD9nDMiTLUXko0SVlDn4sOz2YLZfTs+ixSg7OlpEOGbPpCn0eHS7akyVZkiVZkiVZkiVZkiVZkiVZkiVZkiVZXtjyA2TTMEwct/vIAAAAAElFTkSuQmCC">
+            <img *ngIf="userDetails?.profileImage !== null" class="content__avatar" src="{{userDetails?.profileImage}}">
+            <div class="content__bull"><span></span><span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="content__actions"><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                    <path fill="currentColor"
+                        d="M192 256A112 112 0 1 0 80 144a111.94 111.94 0 0 0 112 112zm76.8 32h-8.3a157.53 157.53 0 0 1-68.5 16c-24.6 0-47.6-6-68.5-16h-8.3A115.23 115.23 0 0 0 0 403.2V432a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48v-28.8A115.23 115.23 0 0 0 268.8 288z">
+                    </path>
+                    <path fill="currentColor"
+                        d="M480 256a96 96 0 1 0-96-96 96 96 0 0 0 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592a48 48 0 0 0 48-48 111.94 111.94 0 0 0-112-112z">
+                    </path>
+                </svg><span>Connect</span></a><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path fill="currentColor"
+                        d="M208 352c-41 0-79.1-9.3-111.3-25-21.8 12.7-52.1 25-88.7 25a7.83 7.83 0 0 1-7.3-4.8 8 8 0 0 1 1.5-8.7c.3-.3 22.4-24.3 35.8-54.5-23.9-26.1-38-57.7-38-92C0 103.6 93.1 32 208 32s208 71.6 208 160-93.1 160-208 160z">
+                    </path>
+                    <path fill="currentColor"
+                        d="M576 320c0 34.3-14.1 66-38 92 13.4 30.3 35.5 54.2 35.8 54.5a8 8 0 0 1 1.5 8.7 7.88 7.88 0 0 1-7.3 4.8c-36.6 0-66.9-12.3-88.7-25-32.2 15.8-70.3 25-111.3 25-86.2 0-160.2-40.4-191.7-97.9A299.82 299.82 0 0 0 208 384c132.3 0 240-86.1 240-192a148.61 148.61 0 0 0-1.3-20.1C522.5 195.8 576 253.1 576 320z">
+                    </path>
+                </svg><span>Message</span></a></div>
+        <div class="content__title">
+            <h1>{{userDetails?.firstName}} {{userDetails?.lastName}}</h1>
+            <br>
+            <span>{{userDetails?.region}}, {{userDetails?.state}}, {{userDetails?.country}}</span>
+        </div>
+        <div class="content__description">
+            <p>{{userDetails?.userBio}}</p>
+        </div>
+        <ul class="content__list">
+            <li><span>65</span>Total Polls</li>
+            <li><span>43</span>Active Polls</li>
+        </ul>
+        <div class="content__button"><mat-tab-group [color]="'warn'" (selectedTabChange)="onTabChange($event)">
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon>poll</mat-icon>
+                    &nbsp;Active Polls
+                </ng-template>
+                <ng-container *ngIf="activeTabIndex === 0">
+                    <app-add-poll [isFromProfile]="true"></app-add-poll>
+                    <app-poll-list [isFromMyPolls]="true"></app-poll-list>
+                </ng-container>
+            </mat-tab>
+        </mat-tab-group></div>
+    </div>
+</div>

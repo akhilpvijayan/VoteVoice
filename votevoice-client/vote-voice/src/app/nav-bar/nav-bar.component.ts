@@ -1,3 +1,4 @@
+import { UserService } from './../services/user.service';
 import { LoginComponent } from './../login/login.component';
 import { AuthService } from './../Auth/auth.service';
 import { Component, OnInit } from '@angular/core';
@@ -5,6 +6,7 @@ import { DarkModeService } from '../services/dark-mode.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ConfirmationPopupModalComponent } from '../shared/confirmation-popup-modal/confirmation-popup-modal.component';
 import { AddPollModalComponent } from '../dashboard/poll-list/add-poll/add-poll-modal/add-poll-modal.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
@@ -14,16 +16,31 @@ import { AddPollModalComponent } from '../dashboard/poll-list/add-poll/add-poll-
 export class NavBarComponent implements OnInit{
   isOpen = false;
   isLoggedIn = false;
+  userDetails: any;
+  userId =parseInt(this.userService.getUserId() ?? '0', 10)
 
   constructor(public darkModeService: DarkModeService,
     private authService: AuthService,
-    private dialog: MatDialog) {}
+    private dialog: MatDialog,
+    private router: Router,
+    private userService: UserService) {}
 
   ngOnInit(): void {
     this.authService.isLoggedInObservable$.subscribe((isLoggedInSubject: any) => {
       this.isLoggedIn = isLoggedInSubject;
+      setTimeout(() => {
+        this.userId = parseInt(this.userService.getUserId() ?? '0', 10)
+        this.getUserDetails();
+      }, 100);
     });
     this.isLoggedIn = this.authService.isLoggedIn();
+    this.getUserDetails();
+  }
+
+  getUserDetails(){
+    this.userService.getUser(this.userId).subscribe((res: any)=>{
+      this.userDetails = res[0];
+    })
   }
 
   toggleDarkMode() {
@@ -41,7 +58,7 @@ export class NavBarComponent implements OnInit{
   login(){
     this.dialog.open(LoginComponent,{
       width:'70%',
-      height:'95%',
+      height:'auto',
       hasBackdrop: true,
       panelClass: 'custom-dialog-container',
       enterAnimationDuration: '300ms',
@@ -53,7 +70,7 @@ export class NavBarComponent implements OnInit{
     if(this.isLoggedIn){
       this.dialog.open(AddPollModalComponent,{
         width:'70%',
-        height:'95%',
+        height:'auto',
         hasBackdrop: true,
         panelClass: 'custom-dialog-container',
         enterAnimationDuration: '300ms',
@@ -63,13 +80,17 @@ export class NavBarComponent implements OnInit{
     else{
       this.dialog.open(LoginComponent,{
         width:'70%',
-        height:'95%',
+        height:'auto',
         hasBackdrop: true,
         panelClass: 'custom-dialog-container',
         enterAnimationDuration: '300ms',
         exitAnimationDuration: '300ms',
       });
     }
+  }
+
+  showProfile() {
+    this.router.navigate(['profile'], { queryParams: { userId: this.userService.getUserId() } });
   }
 
   signOut(){
@@ -89,5 +110,9 @@ export class NavBarComponent implements OnInit{
         this.authService.signOut();
       }
     });
+  }
+
+  goToDashboard(){
+    this.router.navigateByUrl('');
   }
 }

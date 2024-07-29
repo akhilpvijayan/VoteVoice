@@ -9,6 +9,11 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class AppComponent{
   title = 'vote-voice';
+  isAssistantOpen = false;
 
   darkModeService: DarkModeService = Inject(DarkModeService);
+
+  openChat() {
+    this.isAssistantOpen = !this.isAssistantOpen;
+  }
 }

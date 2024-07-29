@@ -1,6 +1,7 @@
+import { SignupComponent } from './../signup/signup.component';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { MatDialogRef } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { NavigationEnd, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { AuthService } from '../Auth/auth.service';
@@ -20,7 +21,8 @@ export class LoginComponent implements OnInit{
     private toastr: ToastrService,
     private dialogRef: MatDialogRef<LoginComponent>,
     private router: Router,
-    private reloadService: ReloadService){}
+    private reloadService: ReloadService,
+    private dialog: MatDialog){}
 
   ngOnInit(): void {
     this.initializeForm();
@@ -45,7 +47,6 @@ export class LoginComponent implements OnInit{
             this.toastr.success(result.message);
             this.loginForm.reset();
             this.closeDialog();
-            this.router.navigateByUrl('');
           } else {
             this.toastr.error('Login failed: Invalid response from server.');
           }
@@ -62,6 +63,18 @@ export class LoginComponent implements OnInit{
       });
 
     }
+  }
+
+  signUp(){
+    this.closeDialog();
+    this.dialog.open(SignupComponent,{
+      width:'70%',
+      height:'auto',
+      hasBackdrop: true,
+      panelClass: 'custom-dialog-container',
+      enterAnimationDuration: '300ms',
+      exitAnimationDuration: '300ms',
+    });
   }
 
   closeDialog(){

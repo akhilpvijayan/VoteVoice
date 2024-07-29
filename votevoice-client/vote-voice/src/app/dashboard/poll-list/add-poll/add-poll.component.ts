@@ -1,8 +1,10 @@
+import { UserService } from './../../../services/user.service';
 import { AuthService } from './../../../Auth/auth.service';
 import { AddPollModalComponent } from './add-poll-modal/add-poll-modal.component';
 import { MatDialog } from '@angular/material/dialog';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { LoginComponent } from 'src/app/login/login.component';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-add-poll',
@@ -10,23 +12,30 @@ import { LoginComponent } from 'src/app/login/login.component';
   styleUrls: ['./add-poll.component.scss']
 })
 export class AddPollComponent implements OnInit{
+  @Input() isFromProfile: boolean = false;
   isLoggedIn = false;
+  isLoggedInUser = false;
 
 constructor(private dialog: MatDialog,
-  private authService: AuthService){}
+  private authService: AuthService,
+  private userservice: UserService,
+  private route: ActivatedRoute){}
 
   ngOnInit(): void {
-    this.isLoggedIn = this.authService.isLoggedIn();
+    this.route?.queryParams?.subscribe(params => {
+      this.isLoggedInUser = params['userId'] === this.userservice.getUserId() ? true : false;
+    });
     this.authService.isLoggedInObservable$.subscribe((isLoggedIn: any) => {
       this.isLoggedIn = isLoggedIn;
     });
+    this.isLoggedIn = this.authService.isLoggedIn();
   }
 
 addPoll(){
   if(this.isLoggedIn){
     this.dialog.open(AddPollModalComponent,{
       width:'70%',
-      height:'95%',
+      height:'auto',
       hasBackdrop: true,
       panelClass: 'custom-dialog-container',
       enterAnimationDuration: '300ms',
@@ -36,7 +45,7 @@ addPoll(){
   else{
     this.dialog.open(LoginComponent,{
       width:'70%',
-      height:'95%',
+      height:'auto',
       hasBackdrop: true,
       panelClass: 'custom-dialog-container',
       enterAnimationDuration: '300ms',

@@ -8,11 +8,11 @@
         <div class="post-profile-pic" *ngIf="poll.profileImage != null">
             <img src="poll.profileImage">
         </div>
-        <div>
+        <div (click)="showProfile(poll.userId)">
             <div><strong>{{poll.firstName}} {{poll.lastName}}</strong></div>
             <div class="post-details">1 hour ago <i class="fa fa-clock"></i></div>
         </div>
-        <div class="more" *ngIf="userId === poll.userId">
+        <div class="more" *ngIf="userId === poll.userId && isLoggedIn">
             <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
                 <mat-icon>more_vert</mat-icon>
             </button>

@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { AuthService } from './../../Auth/auth.service';
 import { UserService } from './../../services/user.service';
@@ -17,14 +18,18 @@ export class ProfileSideBarComponent implements OnInit{
   constructor(
     private userService: UserService,
     private authService: AuthService,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private router: Router
   ){}
 
   ngOnInit(): void {
     this.getUserDetails();
     this.authService.isLoggedInObservable$.subscribe((isLoggedInObservable: any) => {
       this.isLoggedIn = isLoggedInObservable;
-      this.getUserDetails();
+      setTimeout(() => {
+        this.userId = parseInt(this.userService.getUserId() ?? '0', 10)
+        this.getUserDetails();
+      }, 100);
     });
     this.isLoggedIn = this.authService.isLoggedIn();
   }
@@ -40,11 +45,15 @@ export class ProfileSideBarComponent implements OnInit{
   login(){
     this.dialog.open(LoginComponent,{
       width:'70%',
-      height:'95%',
+      height:'auto',
       hasBackdrop: true,
       panelClass: 'custom-dialog-container',
       enterAnimationDuration: '300ms',
       exitAnimationDuration: '300ms',
     });
+  }
+
+  showProfile() {
+    this.router.navigate(['profile'], { queryParams: { userId: this.userService.getUserId() } });
   }
 }
