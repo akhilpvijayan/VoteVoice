@@ -27,50 +27,72 @@ namespace VoteService.Business.Services.Services
         #endregion
 
         #region public functions
-        public async Task<long> AddVote(Vote voteDetails)
+        public async Task<long> AddVote(Vote voteDetails, string token)
         {
             using (var transaction = await _context.Database.BeginTransactionAsync())
             {
                 try
                 {
-                    if (await ValidateUserIdAsync(voteDetails.UserId) && await ValidatePollOptionIdAsync(voteDetails.PollOptionId) && await ValidatePollIdAsync(voteDetails.PollId))
+                    if (await ValidateUserIdAsync(voteDetails.UserId, token) &&
+                        await ValidatePollOptionIdAsync(voteDetails.PollOptionId, token) &&
+                        await ValidatePollIdAsync(voteDetails.PollId, token))
                     {
                         var existingVote = await _context.Votes.FirstOrDefaultAsync(x => x.PollId == voteDetails.PollId && x.UserId == voteDetails.UserId);
+                        
+                        if(existingVote?.PollOptionId == voteDetails.PollOptionId && existingVote?.UserId == voteDetails.UserId)
+                        {
+                            return 0;
+                        }
+
                         var host = _configuration["GatewayService:Host"];
                         var port = _configuration["GatewayService:Port"];
-
                         var baseAddress = $"https://{host}:{port}/";
                         var client = _httpClientFactory.CreateClient();
                         client.BaseAddress = new Uri(baseAddress);
 
-                        //If already a vote exists for user for same poll, then remove it and update count in pollOption table, else add new vote and update count in pollOption table
+                        if (token.StartsWith("bearer ", StringComparison.OrdinalIgnoreCase))
+                        {
+                            token = token.Substring("bearer ".Length).Trim();
+                        }
+
+                        client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+                        // If a vote already exists for the user for the same poll, remove it and update count in the pollOption table
                         if (existingVote != null)
                         {
-
-                            var removeResponse = await client.GetAsync($"/poll/polloption/{existingVote.PollOptionId}/{false}");
+                            var requestUriToUpdate = $"/poll/polloption/{existingVote.PollOptionId}/{false}";
+                            var contentToRemove = new StringContent("");
+                            var removeResponse = await client.PutAsync(requestUriToUpdate, contentToRemove);
                             if (removeResponse.IsSuccessStatusCode)
                             {
                                 _context.Votes.Remove(existingVote);
+                                await _context.SaveChangesAsync();
                             }
                         }
-                        Vote vote = new Vote();
-                        vote.PollOptionId = voteDetails.PollOptionId;
-                        vote.UserId = voteDetails.UserId;
-                        vote.CreatedDate = DateTime.Now;
 
-                        var addResponse = await client.GetAsync($"/poll/polloption/{voteDetails.PollOptionId}/{true}");
+                        Vote vote = new Vote
+                        {
+                            PollOptionId = voteDetails.PollOptionId,
+                            UserId = voteDetails.UserId,
+                            PollId = voteDetails.PollId,
+                            CreatedDate = DateTime.Now
+                        };
+
+                        var requestUri = $"/poll/polloption/{voteDetails.PollOptionId}/{true}";
+                        var content = new StringContent(""); // Replace with actual content if needed
+                        var addResponse = await client.PutAsync(requestUri, content);
                         if (addResponse.IsSuccessStatusCode)
                         {
                             _context.Votes.Add(vote);
-
-                            _context.SaveChangesAsync();
+                            await _context.SaveChangesAsync();
                         }
+
                         await transaction.CommitAsync();
                         return vote.VoteId;
                     }
                     else
                     {
-                        throw new Exception("Invalid, User or Poll or Poll Option");
+                        throw new Exception("Invalid User, Poll, or Poll Option");
                     }
                 }
                 catch (Exception ex)
@@ -80,6 +102,7 @@ namespace VoteService.Business.Services.Services
                 }
             }
         }
+
 
         public async Task<long> GetVotesCount(long pollOptionId)
         {
@@ -114,7 +137,7 @@ namespace VoteService.Business.Services.Services
             return false;
         }
 
-        private async Task<bool> ValidatePollOptionIdAsync(long pollOptionId)
+        private async Task<bool> ValidatePollOptionIdAsync(long pollOptionId, string token)
         {
             var host = _configuration["GatewayService:Host"];
             var port = _configuration["GatewayService:Port"];
@@ -122,13 +145,20 @@ namespace VoteService.Business.Services.Services
             var baseAddress = $"https://{host}:{port}/";
             var client = _httpClientFactory.CreateClient();
             client.BaseAddress = new Uri(baseAddress);
+
+            if (token.StartsWith("bearer ", StringComparison.OrdinalIgnoreCase))
+            {
+                token = token.Substring("bearer ".Length).Trim();
+            }
+
+            client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
 
             var response = await client.GetAsync($"/poll/polloption/{pollOptionId}");
 
             return response.IsSuccessStatusCode;
         }
 
-        private async Task<bool> ValidateUserIdAsync(long userId)
+        private async Task<bool> ValidateUserIdAsync(long userId, string token)
         {
             var host = _configuration["GatewayService:Host"];
             var port = _configuration["GatewayService:Port"];
@@ -136,13 +166,20 @@ namespace VoteService.Business.Services.Services
             var baseAddress = $"https://{host}:{port}/";
             var client = _httpClientFactory.CreateClient();
             client.BaseAddress = new Uri(baseAddress);
+
+            if (token.StartsWith("bearer ", StringComparison.OrdinalIgnoreCase))
+            {
+                token = token.Substring("bearer ".Length).Trim();
+            }
+
+            client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
 
             var response = await client.GetAsync($"/user/{userId}");
 
             return response.IsSuccessStatusCode;
         }
 
-        private async Task<bool> ValidatePollIdAsync(long pollId)
+        private async Task<bool> ValidatePollIdAsync(long pollId, string token)
         {
             var host = _configuration["GatewayService:Host"];
             var port = _configuration["GatewayService:Port"];
@@ -150,6 +187,13 @@ namespace VoteService.Business.Services.Services
             var baseAddress = $"https://{host}:{port}/";
             var client = _httpClientFactory.CreateClient();
             client.BaseAddress = new Uri(baseAddress);
+
+            if (token.StartsWith("bearer ", StringComparison.OrdinalIgnoreCase))
+            {
+                token = token.Substring("bearer ".Length).Trim();
+            }
+
+            client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
 
             var response = await client.GetAsync($"/poll/{pollId}");
 

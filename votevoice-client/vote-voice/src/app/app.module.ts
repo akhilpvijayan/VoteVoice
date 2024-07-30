@@ -30,6 +30,7 @@ import { ConfirmationPopupModalComponent } from './shared/confirmation-popup-mod
 import { AssistantChatComponent } from './dashboard/assistant-chat/assistant-chat.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
+import { MiscSideBarComponent } from './dashboard/misc-side-bar/misc-side-bar.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { SignupComponent } from './signup/signup.component';
     ConfirmationPopupModalComponent,
     AssistantChatComponent,
     ProfileComponent,
-    SignupComponent
+    SignupComponent,
+    MiscSideBarComponent
   ],
   imports: [
     BrowserModule,

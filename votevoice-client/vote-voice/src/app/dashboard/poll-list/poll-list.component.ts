@@ -1,3 +1,4 @@
+import { VoteService } from './../../services/vote.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AuthService } from './../../Auth/auth.service';
 import { ConfirmationPopupModalComponent } from './../../shared/confirmation-popup-modal/confirmation-popup-modal.component';
@@ -27,6 +28,7 @@ export class PollListComponent implements OnInit {
   userId = parseInt(this.userService.getUserId() ?? '0', 10);
   polls!: Poll[];
   isLoggedIn = false;
+  loadingOptionId: number | null = null;
 
   private reloadSubscription: Subscription;
   constructor(private pollService: PollService,
@@ -36,7 +38,8 @@ export class PollListComponent implements OnInit {
     private dialog: MatDialog,
     private authService: AuthService,
     private router: Router,
-    private route: ActivatedRoute) { 
+    private route: ActivatedRoute,
+    private voteService: VoteService) { 
       this.reloadSubscription = this.reloadService.getReloadObservable()
       .subscribe(reloadData => {
         if (reloadData.componentName === 'app-poll-list-update') {
@@ -86,6 +89,8 @@ export class PollListComponent implements OnInit {
     if(this.isLoggedIn){
       this.loading = false;
 
+      this.loadingOptionId = pollOptionId;
+      
       // Find the index of the poll by pollId
       const currentPollIndex = this.polls.findIndex(poll => poll.pollId === pollId);
   
@@ -95,15 +100,55 @@ export class PollListComponent implements OnInit {
         const currentPollOption = currentPoll.pollOptions.find(option => option.pollOptionId === pollOptionId);
   
         if (currentPollOption) {
-          // Increment the vote count for the founded poll option
-          currentPollOption.voteCount += 1;
-          currentPoll.totalVotes += 1;
-          currentPoll.showResults = true;
+          const formData: FormData = new FormData();
+          formData.append('userId', this.userId.toString());
+          formData.append('pollId', pollId.toString());
+          formData.append('pollOptionId', pollOptionId.toString());
+
+          this.voteService.addVote(formData).subscribe((res: any) => {
+            currentPoll.showResults = true;
+            if (res.pollId) {
+              this.pollService.getPoll(pollId).subscribe((res: any)=>{
+                currentPoll.totalVotes = res.totalVotes;
+                currentPoll.pollOptions.forEach((updatedOption: any) => {
+                  const localOption = res.pollOptions.find((option: any) => option.pollOptionId === updatedOption.pollOptionId);
+                  if (localOption) {
+                     updatedOption.voteCount = localOption.voteCount;
+                  }
+                });
+                this.loadingOptionId = null;
+              });
+              // Check if the user has already voted in this poll
+              // const userVote = currentPoll.pollOptions.find(option => option.votedByUser === this.userId);
+
+              // if (userVote) {
+              //   // Decrement the vote count for the previous option
+              //   userVote.voteCount -= 1;
+              // }
+
+              // // Increment the vote count for the new option
+              // currentPollOption.voteCount += 1;
+              // currentPoll.totalVotes = currentPoll.pollOptions.reduce((total, option) => total + option.voteCount, 0);
+              // currentPoll.showResults = true;
+
+              // // Mark the current option as voted by the user
+              // currentPoll.pollOptions.forEach(option => {
+              //   if (option.pollOptionId === pollOptionId) {
+              //     option.votedByUser = this.userId;
+              //   } else {
+              //     option.votedByUser = 0;
+              //   }
+              // });
+            }
+            this.loadingOptionId = null;
+          });
         } else {
           console.error('Poll option not found');
+          this.loadingOptionId = null;
         }
       } else {
         console.error('Poll not found');
+        this.loadingOptionId = null;
       }
     }
     else{
@@ -178,5 +223,9 @@ export class PollListComponent implements OnInit {
   
   showProfile(userId: number) {
     this.router.navigate(['profile'], { queryParams: { userId: userId } });
+  }
+
+  isLoggedInUser(userId: number){
+    return parseInt(this.userService.getUserId() ?? '0', 10) === userId && this.isLoggedIn ? true : false;
   }
 }

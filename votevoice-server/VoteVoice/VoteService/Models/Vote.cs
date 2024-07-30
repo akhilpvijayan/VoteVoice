@@ -17,7 +17,6 @@ namespace VoteService.Models
         [Required]
         public long PollId { get; set; }
 
-        [Required]
-        public DateTime CreatedDate { get; set; }
+        public DateTime? CreatedDate { get; set; } = DateTime.Now;
     }
 }

@@ -4,4 +4,5 @@ export class PollOption {
     pollImage!: string;
     voteCount!: number;
     isImageUpdated!: boolean;
+    votedByUser!: number;
 }

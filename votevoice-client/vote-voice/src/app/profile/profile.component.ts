@@ -25,12 +25,12 @@ export class ProfileComponent implements OnInit{
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
       this.userId = params['userId'];
+      this.getUserDetails(this.userId);
     });
-    this.getUserDetails(this.userId);
     this.authService.isLoggedInObservable$.subscribe((isLoggedInObservable: any) => {
       this.isLoggedIn = isLoggedInObservable;
       setTimeout(() => {
-        this.getUserDetails(parseInt(this.userService.getUserId() ?? '0', 10));
+        this.getUserDetails(this.userId);
       }, 100);
     });
     this.isLoggedIn = this.authService.isLoggedIn();

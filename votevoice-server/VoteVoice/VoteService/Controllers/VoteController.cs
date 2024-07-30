@@ -48,21 +48,33 @@ namespace VoteService.Controllers
         {
             try
             {
-                var result = await _voteService.AddVote(voteDetails);
-                if (result != null)
+                if (Request.Headers.ContainsKey("Authorization"))
                 {
-                    return Ok(new
+                    var token = Request.Headers["Authorization"].ToString();
+                    var result = await _voteService.AddVote(voteDetails, token);
+                    if (result > 0)
                     {
-                        Message = "Vote Added Successfully.",
-                        PollId = result,
-                    });
-                };
-                return BadRequest();
+                        return Ok(new
+                        {
+                            Message = "Vote Added Successfully.",
+                            PollId = result,
+                        });
+                    }
+                    else
+                    {
+                        return Ok(new
+                        {
+                            Message = "Vote Already Added."
+                        });
+                    }
+                }
+                return BadRequest(new { Message = "Invalid request or missing authorization header." });
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                throw ex;
+                return StatusCode(StatusCodes.Status500InternalServerError, new { Message = "An error occurred while processing your request." });
             }
+
         }
 
         [HttpDelete("poll")]

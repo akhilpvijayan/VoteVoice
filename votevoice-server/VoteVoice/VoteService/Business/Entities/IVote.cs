@@ -6,6 +6,6 @@
         long PollOptionId { get; set; }
         long UserId { get; set; }
         long PollId { get; set; }
-        DateTime CreatedDate { get; set; }
+        DateTime? CreatedDate { get; set; }
     }
 }
