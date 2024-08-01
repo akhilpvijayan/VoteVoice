@@ -174,6 +174,43 @@
     animation: spin 0.8s linear infinite;
 }
 
+.footer{
+  display: flex;
+  flex-direction: row;
+}
+
+.reload-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.reload-icon {
+  fill: currentColor;
+}
+
+.rotating {
+  animation: rotate 2s linear infinite;
+}
+
+.refresh{
+  font-size: 1.2em;
+  color: #FF7C03;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover{
+    color: #d55003;
+    transform: scale(1.05); 
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }

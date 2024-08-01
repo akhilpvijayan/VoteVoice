@@ -4,6 +4,7 @@ import { UserService } from './../services/user.service';
 import { Component, OnInit } from '@angular/core';
 import { MatTabChangeEvent } from '@angular/material/tabs';
 import { Location } from '@angular/common';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 
 @Component({
@@ -21,8 +22,10 @@ export class ProfileComponent implements OnInit{
     private authService: AuthService,
     private route: ActivatedRoute,
     private location: Location,
-    private router: Router){}
+    private router: Router,
+    private spinner: NgxSpinnerService){}
   ngOnInit(): void {
+    this.spinner.show();
     this.route.queryParams.subscribe(params => {
       this.userId = params['userId'];
       this.getUserDetails(this.userId);
@@ -43,6 +46,7 @@ export class ProfileComponent implements OnInit{
   getUserDetails(userId: number){
     this.userService.getUser(userId).subscribe((res: any)=>{
       this.userDetails = res[0];
+      this.spinner.hide();
     });
   }
 

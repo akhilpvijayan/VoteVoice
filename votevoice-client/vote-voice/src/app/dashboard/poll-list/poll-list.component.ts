@@ -29,6 +29,7 @@ export class PollListComponent implements OnInit {
   polls!: Poll[];
   isLoggedIn = false;
   loadingOptionId: number | null = null;
+  isReLoading = false;
 
   private reloadSubscription: Subscription;
   constructor(private pollService: PollService,
@@ -79,6 +80,21 @@ export class PollListComponent implements OnInit {
     }
   }
 
+  onReload(pollId: number){
+    this.isReLoading = true;
+    const currentPollIndex = this.polls.findIndex(poll => poll.pollId === pollId);
+      if (currentPollIndex !== -1) {
+          this.pollService.getPoll(pollId).subscribe((res: any)=>{
+            this.polls[currentPollIndex] = res;
+            this.isReLoading = false;
+            this.polls[currentPollIndex].showResults = true;
+          });
+      }
+      else{
+        this.isReLoading = false;
+      }
+  }
+
   // Detect scroll event and load more posts when the user reaches the bottom
   onWindowScroll() {
     this.skip += this.take;
@@ -118,27 +134,6 @@ export class PollListComponent implements OnInit {
                 });
                 this.loadingOptionId = null;
               });
-              // Check if the user has already voted in this poll
-              // const userVote = currentPoll.pollOptions.find(option => option.votedByUser === this.userId);
-
-              // if (userVote) {
-              //   // Decrement the vote count for the previous option
-              //   userVote.voteCount -= 1;
-              // }
-
-              // // Increment the vote count for the new option
-              // currentPollOption.voteCount += 1;
-              // currentPoll.totalVotes = currentPoll.pollOptions.reduce((total, option) => total + option.voteCount, 0);
-              // currentPoll.showResults = true;
-
-              // // Mark the current option as voted by the user
-              // currentPoll.pollOptions.forEach(option => {
-              //   if (option.pollOptionId === pollOptionId) {
-              //     option.votedByUser = this.userId;
-              //   } else {
-              //     option.votedByUser = 0;
-              //   }
-              // });
             }
             this.loadingOptionId = null;
           });

@@ -133,6 +133,7 @@ namespace PollService.Business.Services.Services
                 Description = poll.Description,
                 FirstName = userDetails[0].FirstName,
                 LastName = userDetails[0].LastName,
+                ProfileImage = userDetails[0].ProfileImage,
                 ExpiryDate = poll.ExpiryDate,
                 TotalVotes = totalVotes,
                 CreatedBy = poll.CreatedBy,

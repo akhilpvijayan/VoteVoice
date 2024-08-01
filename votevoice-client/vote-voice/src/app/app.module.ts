@@ -31,7 +31,8 @@ import { AssistantChatComponent } from './dashboard/assistant-chat/assistant-cha
 import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
 import { MiscSideBarComponent } from './dashboard/misc-side-bar/misc-side-bar.component';
-
+import { NgxSpinnerModule } from "ngx-spinner";
+import { MatTooltipModule } from '@angular/material/tooltip';
 @NgModule({
   declarations: [
     AppComponent,
@@ -70,7 +71,9 @@ import { MiscSideBarComponent } from './dashboard/misc-side-bar/misc-side-bar.co
     MatListModule,
     MatCardModule,
     MatTabsModule,
-    FormsModule
+    FormsModule,
+    NgxSpinnerModule,
+    MatTooltipModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
