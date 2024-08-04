@@ -8,7 +8,7 @@ namespace UserService.Business.Services
     public interface IUserService
     {
         Task<IEnumerable<UserDetailDto>> GetAllUsers();
-        Task<IEnumerable<UserDetailDto>> GetUser(long userId);
+        Task<UserDetailDto> GetUser(long userId);
         Task<Tuple<string, string, long>> SignUpUser(SignUpUserDetailsDto userDetails);
         Task<bool> UpdateUser(SignUpUserDetailsDto userDetails, long userId);
         Task<bool> DeleteUser(long userId);

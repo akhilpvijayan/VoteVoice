@@ -1,7 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MassTransit;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
+using System.Text.Json;
 using VoteService.Data;
 using VoteService.Models;
+using VoteService.RabbitMQ.ProducerModel;
+using VoteService.RabbitMQ;
+using VoteService.Business.Services.Dto;
 
 namespace VoteService.Business.Services.Services
 {
@@ -12,16 +17,18 @@ namespace VoteService.Business.Services.Services
         private readonly DataContext _context;
         private readonly IConfiguration _configuration;
         private readonly IHttpClientFactory _httpClientFactory;
+        private readonly RabbitMQPublisher _rabbitMQPublisher;
 
         #endregion
 
         #region constructor
-        public VoteService(ILogger<VoteService> logger, DataContext context, IConfiguration configuration, IHttpClientFactory httpClientFactory)
+        public VoteService(ILogger<VoteService> logger, DataContext context, IConfiguration configuration, IHttpClientFactory httpClientFactory, RabbitMQPublisher rabbitMQPublisher)
         {
             this._logger = logger;
             this._context = context;
             _configuration = configuration;
             _httpClientFactory = httpClientFactory;
+            _rabbitMQPublisher = rabbitMQPublisher;
         }
 
         #endregion
@@ -88,6 +95,16 @@ namespace VoteService.Business.Services.Services
                         }
 
                         await transaction.CommitAsync();
+
+                        var pollDetails = await GetPollDetailsAsync(client, voteDetails.PollId);
+                        if (pollDetails?.UserId != null)
+                        {
+                            var userDetails = await GetUserDetailsAsync(client, voteDetails.UserId);
+                            var message = $"<b>{userDetails.FirstName} {userDetails.LastName}</b> added a new vote";
+                            var notificationEvent = new NotificationEvent { TargetUser = pollDetails.UserId, Message = message };
+                            _rabbitMQPublisher.Publish(notificationEvent);
+                        }
+
                         return vote.VoteId;
                     }
                     else
@@ -137,6 +154,8 @@ namespace VoteService.Business.Services.Services
             return false;
         }
 
+        #endregion
+        #region private methods
         private async Task<bool> ValidatePollOptionIdAsync(long pollOptionId, string token)
         {
             var host = _configuration["GatewayService:Host"];
@@ -198,6 +217,20 @@ namespace VoteService.Business.Services.Services
             var response = await client.GetAsync($"/poll/{pollId}");
 
             return response.IsSuccessStatusCode;
+        }
+
+        private async Task<PollDetailsDto> GetPollDetailsAsync(HttpClient client, long pollId)
+        {
+            var response = await client.GetAsync($"/poll/{pollId}");
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<PollDetailsDto>();
+        }
+
+        private async Task<UserDetailDto> GetUserDetailsAsync(HttpClient client, long userId)
+        {
+            var response = await client.GetAsync($"/user/{userId}");
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<UserDetailDto>();
         }
         #endregion
     }

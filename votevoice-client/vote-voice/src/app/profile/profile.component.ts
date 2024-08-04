@@ -45,7 +45,7 @@ export class ProfileComponent implements OnInit{
 
   getUserDetails(userId: number){
     this.userService.getUser(userId).subscribe((res: any)=>{
-      this.userDetails = res[0];
+      this.userDetails = res;
       this.spinner.hide();
     });
   }

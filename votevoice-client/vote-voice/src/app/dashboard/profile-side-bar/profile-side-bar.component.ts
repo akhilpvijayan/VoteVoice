@@ -37,7 +37,7 @@ export class ProfileSideBarComponent implements OnInit{
   getUserDetails(){
     if(this.isLoggedIn){
       this.userService.getUser(this.userId).subscribe((res: any)=>{
-        this.userDetails = res[0];
+        this.userDetails = res;
       });
     }
   }

@@ -1,3 +1,4 @@
+using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -5,6 +6,9 @@ using Serilog;
 using System.Text;
 using VoteService.Business.Services;
 using VoteService.Data;
+using VoteService.RabbitMQ;
+using static MassTransit.Logging.LogCategoryName;
+using static MassTransit.Logging.OperationName;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -53,6 +57,18 @@ var logger = new LoggerConfiguration()
 builder.Logging.AddSerilog(logger);
 
 builder.Services.AddHttpClient();
+
+builder.Services.AddSingleton<RabbitMQPublisher>();
+builder.Services.AddMassTransit(x =>
+{
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host("rabbitmq://localhost", h =>
+        {});
+
+        cfg.ConfigureEndpoints(context);
+    });
+});
 
 builder.Services.AddScoped<IVoteService, VoteService.Business.Services.Services.VoteService>();
 

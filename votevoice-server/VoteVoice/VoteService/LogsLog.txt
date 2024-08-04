@@ -3190,3 +3190,738 @@ System.InvalidOperationException: There is already an open DataReader associated
 2024-08-01 22:29:28.073 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/27/True"
 2024-08-01 22:29:28.103 +05:30 [INF] Received HTTP response headers after 28.2186ms - 200
 2024-08-01 22:29:28.105 +05:30 [INF] End processing HTTP request after 33.2443ms - 200
+2024-08-03 22:04:59.810 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-03 22:06:03.394 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-03 22:07:02.174 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-03 22:10:16.684 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-03 22:14:49.899 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-03 22:16:34.788 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:16:34.800 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:16:35.090 +05:30 [INF] Received HTTP response headers after 267.9121ms - 200
+2024-08-03 22:16:35.100 +05:30 [INF] End processing HTTP request after 349.904ms - 200
+2024-08-03 22:16:35.116 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/29"
+2024-08-03 22:16:35.120 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/29"
+2024-08-03 22:16:35.352 +05:30 [INF] Received HTTP response headers after 225.9555ms - 200
+2024-08-03 22:16:35.357 +05:30 [INF] End processing HTTP request after 239.7907ms - 200
+2024-08-03 22:16:35.363 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-03 22:16:35.367 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-03 22:16:35.719 +05:30 [INF] Received HTTP response headers after 347.5311ms - 200
+2024-08-03 22:16:35.724 +05:30 [INF] End processing HTTP request after 360.2682ms - 200
+2024-08-03 22:17:08.970 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:17:08.978 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:17:09.137 +05:30 [INF] Received HTTP response headers after 151.6536ms - 200
+2024-08-03 22:17:09.141 +05:30 [INF] End processing HTTP request after 171.1005ms - 200
+2024-08-03 22:17:09.147 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/28"
+2024-08-03 22:17:09.153 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/28"
+2024-08-03 22:17:09.201 +05:30 [INF] Received HTTP response headers after 45.6861ms - 200
+2024-08-03 22:17:09.203 +05:30 [INF] End processing HTTP request after 59.2859ms - 200
+2024-08-03 22:17:09.205 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-03 22:17:09.207 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-03 22:17:09.510 +05:30 [INF] Received HTTP response headers after 298.3374ms - 200
+2024-08-03 22:17:09.513 +05:30 [INF] End processing HTTP request after 306.5437ms - 200
+2024-08-03 22:17:12.603 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/29/False"
+2024-08-03 22:17:12.606 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/29/False"
+2024-08-03 22:17:12.954 +05:30 [INF] Received HTTP response headers after 344.8934ms - 200
+2024-08-03 22:17:12.957 +05:30 [INF] End processing HTTP request after 354.7685ms - 200
+2024-08-03 22:17:13.185 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/28/True"
+2024-08-03 22:17:13.188 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/28/True"
+2024-08-03 22:17:13.263 +05:30 [INF] Received HTTP response headers after 73.4399ms - 200
+2024-08-03 22:17:13.265 +05:30 [INF] End processing HTTP request after 80.1489ms - 200
+2024-08-03 22:30:19.619 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-03 22:46:26.582 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-03 22:47:56.979 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-03 23:08:25.199 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 01:25:22.315 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 01:27:49.047 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 01:45:29.723 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 01:46:47.040 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:46:47.053 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:46:47.547 +05:30 [INF] Received HTTP response headers after 459.0524ms - 200
+2024-08-04 01:46:47.563 +05:30 [INF] End processing HTTP request after 567.1807ms - 200
+2024-08-04 01:46:47.588 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/28"
+2024-08-04 01:46:47.593 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/28"
+2024-08-04 01:46:47.912 +05:30 [INF] Received HTTP response headers after 315.3439ms - 200
+2024-08-04 01:46:47.921 +05:30 [INF] End processing HTTP request after 333.1052ms - 200
+2024-08-04 01:46:47.933 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 01:46:47.937 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 01:46:48.409 +05:30 [INF] Received HTTP response headers after 465.9177ms - 200
+2024-08-04 01:46:48.414 +05:30 [INF] End processing HTTP request after 483.4693ms - 200
+2024-08-04 01:47:29.969 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:47:29.976 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:47:30.227 +05:30 [INF] Received HTTP response headers after 236.0618ms - 200
+2024-08-04 01:47:30.235 +05:30 [INF] End processing HTTP request after 265.8093ms - 200
+2024-08-04 01:47:30.241 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/29"
+2024-08-04 01:47:30.245 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/29"
+2024-08-04 01:47:30.491 +05:30 [INF] Received HTTP response headers after 240.4127ms - 200
+2024-08-04 01:47:30.494 +05:30 [INF] End processing HTTP request after 254.1691ms - 200
+2024-08-04 01:47:30.499 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 01:47:30.504 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 01:47:30.908 +05:30 [INF] Received HTTP response headers after 396.5611ms - 200
+2024-08-04 01:47:30.912 +05:30 [INF] End processing HTTP request after 413.1524ms - 200
+2024-08-04 01:47:30.948 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/28/False"
+2024-08-04 01:47:30.957 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/28/False"
+2024-08-04 01:47:31.555 +05:30 [INF] Received HTTP response headers after 589.7195ms - 200
+2024-08-04 01:47:31.561 +05:30 [INF] End processing HTTP request after 612.6293ms - 200
+2024-08-04 01:47:32.009 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/29/True"
+2024-08-04 01:47:32.012 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/29/True"
+2024-08-04 01:47:32.205 +05:30 [INF] Received HTTP response headers after 184.7953ms - 200
+2024-08-04 01:47:32.211 +05:30 [INF] End processing HTTP request after 201.6559ms - 200
+2024-08-04 01:53:24.624 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 01:56:41.821 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 02:10:25.221 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 02:14:00.834 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 02:17:27.425 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 02:19:33.165 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:19:33.171 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:19:33.388 +05:30 [INF] Received HTTP response headers after 204.3696ms - 200
+2024-08-04 02:19:33.394 +05:30 [INF] End processing HTTP request after 242.0281ms - 200
+2024-08-04 02:19:33.400 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/26"
+2024-08-04 02:19:33.403 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/26"
+2024-08-04 02:19:33.603 +05:30 [INF] Received HTTP response headers after 196.9447ms - 200
+2024-08-04 02:19:33.605 +05:30 [INF] End processing HTTP request after 204.9944ms - 200
+2024-08-04 02:19:33.607 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 02:19:33.609 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 02:19:33.811 +05:30 [INF] Received HTTP response headers after 200.0865ms - 200
+2024-08-04 02:19:33.813 +05:30 [INF] End processing HTTP request after 205.216ms - 200
+2024-08-04 02:19:34.424 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/27/False"
+2024-08-04 02:19:34.426 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/27/False"
+2024-08-04 02:19:34.630 +05:30 [INF] Received HTTP response headers after 200.0489ms - 200
+2024-08-04 02:19:34.633 +05:30 [INF] End processing HTTP request after 208.5644ms - 200
+2024-08-04 02:19:34.804 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/26/True"
+2024-08-04 02:19:34.806 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/26/True"
+2024-08-04 02:19:34.930 +05:30 [INF] Received HTTP response headers after 122.0015ms - 200
+2024-08-04 02:19:34.932 +05:30 [INF] End processing HTTP request after 130.5501ms - 200
+2024-08-04 02:29:54.720 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 02:30:43.844 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 02:35:21.596 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 02:36:42.769 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:36:42.783 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:36:43.121 +05:30 [INF] Received HTTP response headers after 326.1499ms - 200
+2024-08-04 02:36:43.128 +05:30 [INF] End processing HTTP request after 401.9685ms - 200
+2024-08-04 02:36:43.136 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/29"
+2024-08-04 02:36:43.138 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/29"
+2024-08-04 02:36:43.355 +05:30 [INF] Received HTTP response headers after 211.8978ms - 200
+2024-08-04 02:36:43.361 +05:30 [INF] End processing HTTP request after 221.155ms - 200
+2024-08-04 02:36:43.367 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 02:36:43.372 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 02:36:43.642 +05:30 [INF] Received HTTP response headers after 265.6705ms - 200
+2024-08-04 02:36:43.648 +05:30 [INF] End processing HTTP request after 278.567ms - 200
+2024-08-04 02:36:46.843 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:36:46.846 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:36:46.954 +05:30 [INF] Received HTTP response headers after 102.8598ms - 200
+2024-08-04 02:36:46.956 +05:30 [INF] End processing HTTP request after 114.4475ms - 200
+2024-08-04 02:36:46.959 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/28"
+2024-08-04 02:36:46.963 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/28"
+2024-08-04 02:36:47.039 +05:30 [INF] Received HTTP response headers after 71.9954ms - 200
+2024-08-04 02:36:47.042 +05:30 [INF] End processing HTTP request after 81.8198ms - 200
+2024-08-04 02:36:47.045 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 02:36:47.050 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 02:36:47.273 +05:30 [INF] Received HTTP response headers after 218.4046ms - 200
+2024-08-04 02:36:47.278 +05:30 [INF] End processing HTTP request after 230.8466ms - 200
+2024-08-04 02:36:47.309 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/29/False"
+2024-08-04 02:36:47.315 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/29/False"
+2024-08-04 02:36:47.797 +05:30 [INF] Received HTTP response headers after 479.0054ms - 200
+2024-08-04 02:36:47.800 +05:30 [INF] End processing HTTP request after 493.2009ms - 200
+2024-08-04 02:36:48.220 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/28/True"
+2024-08-04 02:36:48.224 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/28/True"
+2024-08-04 02:36:48.322 +05:30 [INF] Received HTTP response headers after 91.4529ms - 200
+2024-08-04 02:36:48.328 +05:30 [INF] End processing HTTP request after 108.6696ms - 200
+2024-08-04 02:37:45.992 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:37:45.997 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:37:46.117 +05:30 [INF] Received HTTP response headers after 118.3334ms - 200
+2024-08-04 02:37:46.119 +05:30 [INF] End processing HTTP request after 130.1775ms - 200
+2024-08-04 02:37:46.121 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/29"
+2024-08-04 02:37:46.123 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/29"
+2024-08-04 02:37:46.262 +05:30 [INF] Received HTTP response headers after 132.8608ms - 200
+2024-08-04 02:37:46.269 +05:30 [INF] End processing HTTP request after 142.387ms - 200
+2024-08-04 02:37:46.276 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 02:37:46.284 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 02:37:46.638 +05:30 [INF] Received HTTP response headers after 350.8248ms - 200
+2024-08-04 02:37:46.640 +05:30 [INF] End processing HTTP request after 368.8033ms - 200
+2024-08-04 02:37:46.654 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/28/False"
+2024-08-04 02:37:46.656 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/28/False"
+2024-08-04 02:37:46.703 +05:30 [INF] Received HTTP response headers after 44.9201ms - 200
+2024-08-04 02:37:46.704 +05:30 [INF] End processing HTTP request after 51.2082ms - 200
+2024-08-04 02:37:46.712 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/29/True"
+2024-08-04 02:37:46.714 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/29/True"
+2024-08-04 02:37:46.808 +05:30 [INF] Received HTTP response headers after 90.1868ms - 200
+2024-08-04 02:37:46.812 +05:30 [INF] End processing HTTP request after 99.9038ms - 200
+2024-08-04 02:40:05.405 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:40:05.407 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:40:05.577 +05:30 [INF] Received HTTP response headers after 164.808ms - 200
+2024-08-04 02:40:05.585 +05:30 [INF] End processing HTTP request after 174.7711ms - 200
+2024-08-04 02:40:05.592 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/25"
+2024-08-04 02:40:05.597 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/25"
+2024-08-04 02:40:05.698 +05:30 [INF] Received HTTP response headers after 93.9435ms - 200
+2024-08-04 02:40:05.704 +05:30 [INF] End processing HTTP request after 111.605ms - 200
+2024-08-04 02:40:05.711 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 02:40:05.718 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 02:40:05.954 +05:30 [INF] Received HTTP response headers after 232.7048ms - 200
+2024-08-04 02:40:05.957 +05:30 [INF] End processing HTTP request after 249.2649ms - 200
+2024-08-04 02:40:08.158 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:40:08.163 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:40:08.245 +05:30 [INF] Received HTTP response headers after 77.0504ms - 200
+2024-08-04 02:40:08.252 +05:30 [INF] End processing HTTP request after 91.1673ms - 200
+2024-08-04 02:40:08.258 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/24"
+2024-08-04 02:40:08.265 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/24"
+2024-08-04 02:40:08.420 +05:30 [INF] Received HTTP response headers after 151.5074ms - 200
+2024-08-04 02:40:08.424 +05:30 [INF] End processing HTTP request after 167.7843ms - 200
+2024-08-04 02:40:08.430 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 02:40:08.433 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 02:40:08.621 +05:30 [INF] Received HTTP response headers after 185.0843ms - 200
+2024-08-04 02:40:08.624 +05:30 [INF] End processing HTTP request after 197.3713ms - 200
+2024-08-04 02:40:08.633 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/25/False"
+2024-08-04 02:40:08.635 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/25/False"
+2024-08-04 02:40:08.667 +05:30 [INF] Received HTTP response headers after 30.2877ms - 200
+2024-08-04 02:40:08.669 +05:30 [INF] End processing HTTP request after 36.8177ms - 200
+2024-08-04 02:40:08.676 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/24/True"
+2024-08-04 02:40:08.678 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/24/True"
+2024-08-04 02:40:08.784 +05:30 [INF] Received HTTP response headers after 101.8423ms - 200
+2024-08-04 02:40:08.788 +05:30 [INF] End processing HTTP request after 111.0884ms - 200
+2024-08-04 18:12:20.304 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 18:13:22.465 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 18:13:22.469 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 18:13:22.634 +05:30 [INF] Received HTTP response headers after 155.4727ms - 200
+2024-08-04 18:13:22.641 +05:30 [INF] End processing HTTP request after 186.3634ms - 200
+2024-08-04 18:13:22.648 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/24"
+2024-08-04 18:13:22.650 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/24"
+2024-08-04 18:13:22.776 +05:30 [INF] Received HTTP response headers after 123.5346ms - 200
+2024-08-04 18:13:22.777 +05:30 [INF] End processing HTTP request after 128.9348ms - 200
+2024-08-04 18:13:22.780 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 18:13:22.781 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 18:13:22.881 +05:30 [INF] Received HTTP response headers after 97.9125ms - 200
+2024-08-04 18:13:22.882 +05:30 [INF] End processing HTTP request after 102.8207ms - 200
+2024-08-04 18:13:26.546 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 18:13:26.547 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 18:13:26.664 +05:30 [INF] Received HTTP response headers after 114.2497ms - 200
+2024-08-04 18:13:26.666 +05:30 [INF] End processing HTTP request after 119.7437ms - 200
+2024-08-04 18:13:26.668 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/25"
+2024-08-04 18:13:26.669 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/25"
+2024-08-04 18:13:26.693 +05:30 [INF] Received HTTP response headers after 22.299ms - 200
+2024-08-04 18:13:26.695 +05:30 [INF] End processing HTTP request after 27.1766ms - 200
+2024-08-04 18:13:26.696 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 18:13:26.698 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 18:13:26.811 +05:30 [INF] Received HTTP response headers after 111.3522ms - 200
+2024-08-04 18:13:26.812 +05:30 [INF] End processing HTTP request after 115.9991ms - 200
+2024-08-04 18:13:26.826 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/24/False"
+2024-08-04 18:13:26.827 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/24/False"
+2024-08-04 18:13:27.046 +05:30 [INF] Received HTTP response headers after 215.5823ms - 200
+2024-08-04 18:13:27.049 +05:30 [INF] End processing HTTP request after 223.3715ms - 200
+2024-08-04 18:13:27.194 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/25/True"
+2024-08-04 18:13:27.196 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/25/True"
+2024-08-04 18:13:27.225 +05:30 [INF] Received HTTP response headers after 27.762ms - 200
+2024-08-04 18:13:27.227 +05:30 [INF] End processing HTTP request after 33.8182ms - 200
+2024-08-04 19:06:16.254 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 19:08:33.570 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 19:09:26.614 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:09:26.629 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:09:26.950 +05:30 [INF] Received HTTP response headers after 291.3223ms - 200
+2024-08-04 19:09:26.961 +05:30 [INF] End processing HTTP request after 383.128ms - 200
+2024-08-04 19:09:26.978 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/24"
+2024-08-04 19:09:26.980 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/24"
+2024-08-04 19:09:27.249 +05:30 [INF] Received HTTP response headers after 265.5351ms - 200
+2024-08-04 19:09:27.252 +05:30 [INF] End processing HTTP request after 273.877ms - 200
+2024-08-04 19:09:27.259 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 19:09:27.261 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 19:09:27.392 +05:30 [INF] Received HTTP response headers after 127.4259ms - 200
+2024-08-04 19:09:27.394 +05:30 [INF] End processing HTTP request after 137.8027ms - 200
+2024-08-04 19:09:28.470 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/25/False"
+2024-08-04 19:09:28.475 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/25/False"
+2024-08-04 19:09:28.797 +05:30 [INF] Received HTTP response headers after 318.6889ms - 200
+2024-08-04 19:09:28.801 +05:30 [INF] End processing HTTP request after 331.2588ms - 200
+2024-08-04 19:09:29.152 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/24/True"
+2024-08-04 19:09:29.156 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/24/True"
+2024-08-04 19:09:29.301 +05:30 [INF] Received HTTP response headers after 142.1967ms - 200
+2024-08-04 19:09:29.305 +05:30 [INF] End processing HTTP request after 153.463ms - 200
+2024-08-04 19:14:40.767 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 19:15:37.759 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 19:18:01.922 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 19:19:07.529 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 19:21:11.434 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:21:11.445 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:21:11.699 +05:30 [INF] Received HTTP response headers after 237.7696ms - 200
+2024-08-04 19:21:11.707 +05:30 [INF] End processing HTTP request after 286.8357ms - 200
+2024-08-04 19:21:11.720 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/24"
+2024-08-04 19:21:11.726 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/24"
+2024-08-04 19:21:11.966 +05:30 [INF] Received HTTP response headers after 236.6884ms - 200
+2024-08-04 19:21:11.967 +05:30 [INF] End processing HTTP request after 252.4839ms - 200
+2024-08-04 19:21:11.972 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 19:21:11.974 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 19:21:12.129 +05:30 [INF] Received HTTP response headers after 153.9183ms - 200
+2024-08-04 19:21:12.131 +05:30 [INF] End processing HTTP request after 160.007ms - 200
+2024-08-04 19:21:14.186 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:21:14.189 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:21:14.320 +05:30 [INF] Received HTTP response headers after 126.9291ms - 200
+2024-08-04 19:21:14.324 +05:30 [INF] End processing HTTP request after 135.5808ms - 200
+2024-08-04 19:21:14.329 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/25"
+2024-08-04 19:21:14.330 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/25"
+2024-08-04 19:21:14.354 +05:30 [INF] Received HTTP response headers after 21.9988ms - 200
+2024-08-04 19:21:14.357 +05:30 [INF] End processing HTTP request after 29.7578ms - 200
+2024-08-04 19:21:14.359 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 19:21:14.360 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 19:21:14.566 +05:30 [INF] Received HTTP response headers after 203.6169ms - 200
+2024-08-04 19:21:14.569 +05:30 [INF] End processing HTTP request after 209.1074ms - 200
+2024-08-04 19:21:14.583 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/24/False"
+2024-08-04 19:21:14.584 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/24/False"
+2024-08-04 19:21:15.142 +05:30 [INF] Received HTTP response headers after 553.783ms - 200
+2024-08-04 19:21:15.146 +05:30 [INF] End processing HTTP request after 561.493ms - 200
+2024-08-04 19:21:15.295 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/25/True"
+2024-08-04 19:21:15.297 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/25/True"
+2024-08-04 19:21:15.326 +05:30 [INF] Received HTTP response headers after 26.8739ms - 200
+2024-08-04 19:21:15.328 +05:30 [INF] End processing HTTP request after 33.7744ms - 200
+2024-08-04 19:24:32.607 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 19:24:43.672 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:24:43.685 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:24:44.143 +05:30 [INF] Received HTTP response headers after 442.9693ms - 200
+2024-08-04 19:24:44.151 +05:30 [INF] End processing HTTP request after 518.4475ms - 200
+2024-08-04 19:24:44.161 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/26"
+2024-08-04 19:24:44.164 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/26"
+2024-08-04 19:24:44.352 +05:30 [INF] Received HTTP response headers after 183.4554ms - 200
+2024-08-04 19:24:44.354 +05:30 [INF] End processing HTTP request after 193.403ms - 200
+2024-08-04 19:24:44.360 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 19:24:44.363 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 19:24:44.560 +05:30 [INF] Received HTTP response headers after 194.4216ms - 200
+2024-08-04 19:24:44.563 +05:30 [INF] End processing HTTP request after 203.8121ms - 200
+2024-08-04 19:24:47.482 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:24:47.486 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:24:47.599 +05:30 [INF] Received HTTP response headers after 108.9615ms - 200
+2024-08-04 19:24:47.602 +05:30 [INF] End processing HTTP request after 123.5584ms - 200
+2024-08-04 19:24:47.607 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/27"
+2024-08-04 19:24:47.609 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/27"
+2024-08-04 19:24:47.634 +05:30 [INF] Received HTTP response headers after 22.4583ms - 200
+2024-08-04 19:24:47.636 +05:30 [INF] End processing HTTP request after 29.7779ms - 200
+2024-08-04 19:24:47.637 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 19:24:47.639 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 19:24:47.771 +05:30 [INF] Received HTTP response headers after 130.4057ms - 200
+2024-08-04 19:24:47.772 +05:30 [INF] End processing HTTP request after 135.1587ms - 200
+2024-08-04 19:24:47.786 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/26/False"
+2024-08-04 19:24:47.787 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/26/False"
+2024-08-04 19:24:48.074 +05:30 [INF] Received HTTP response headers after 281.617ms - 200
+2024-08-04 19:24:48.078 +05:30 [INF] End processing HTTP request after 290.1424ms - 200
+2024-08-04 19:24:48.428 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/27/True"
+2024-08-04 19:24:48.433 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/27/True"
+2024-08-04 19:24:48.473 +05:30 [INF] Received HTTP response headers after 36.4668ms - 200
+2024-08-04 19:24:48.476 +05:30 [INF] End processing HTTP request after 49.3086ms - 200
+2024-08-04 19:26:15.681 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 19:26:36.348 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:26:36.353 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:26:36.636 +05:30 [INF] Received HTTP response headers after 271.0376ms - 200
+2024-08-04 19:26:36.642 +05:30 [INF] End processing HTTP request after 309.7826ms - 200
+2024-08-04 19:26:36.651 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/29"
+2024-08-04 19:26:36.653 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/29"
+2024-08-04 19:26:36.885 +05:30 [INF] Received HTTP response headers after 228.6027ms - 200
+2024-08-04 19:26:36.886 +05:30 [INF] End processing HTTP request after 236.2425ms - 200
+2024-08-04 19:26:36.890 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 19:26:36.891 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 19:26:37.151 +05:30 [INF] Received HTTP response headers after 256.5499ms - 200
+2024-08-04 19:26:37.153 +05:30 [INF] End processing HTTP request after 263.5439ms - 200
+2024-08-04 19:26:39.722 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:26:39.726 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:26:39.833 +05:30 [INF] Received HTTP response headers after 104.6999ms - 200
+2024-08-04 19:26:39.837 +05:30 [INF] End processing HTTP request after 114.9848ms - 200
+2024-08-04 19:26:39.840 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/28"
+2024-08-04 19:26:39.842 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/28"
+2024-08-04 19:26:39.909 +05:30 [INF] Received HTTP response headers after 63.1153ms - 200
+2024-08-04 19:26:39.912 +05:30 [INF] End processing HTTP request after 71.8572ms - 200
+2024-08-04 19:26:39.915 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 19:26:39.917 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 19:26:40.211 +05:30 [INF] Received HTTP response headers after 291.5373ms - 200
+2024-08-04 19:26:40.216 +05:30 [INF] End processing HTTP request after 299.5613ms - 200
+2024-08-04 19:26:40.231 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/29/False"
+2024-08-04 19:26:40.233 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/29/False"
+2024-08-04 19:26:40.639 +05:30 [INF] Received HTTP response headers after 402.8957ms - 200
+2024-08-04 19:26:40.641 +05:30 [INF] End processing HTTP request after 411.2489ms - 200
+2024-08-04 19:26:40.798 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/28/True"
+2024-08-04 19:26:40.800 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/28/True"
+2024-08-04 19:26:40.868 +05:30 [INF] Received HTTP response headers after 65.8503ms - 200
+2024-08-04 19:26:40.870 +05:30 [INF] End processing HTTP request after 73.261ms - 200
+2024-08-04 19:28:51.980 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 19:29:12.495 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:29:12.502 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:29:12.763 +05:30 [INF] Received HTTP response headers after 248.3627ms - 200
+2024-08-04 19:29:12.770 +05:30 [INF] End processing HTTP request after 292.4736ms - 200
+2024-08-04 19:29:12.780 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/27"
+2024-08-04 19:29:12.783 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/27"
+2024-08-04 19:29:12.925 +05:30 [INF] Received HTTP response headers after 139.4531ms - 200
+2024-08-04 19:29:12.929 +05:30 [INF] End processing HTTP request after 149.0074ms - 200
+2024-08-04 19:29:12.933 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 19:29:12.935 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 19:29:13.167 +05:30 [INF] Received HTTP response headers after 229.4851ms - 200
+2024-08-04 19:29:13.171 +05:30 [INF] End processing HTTP request after 236.2965ms - 200
+2024-08-04 19:29:15.673 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:29:15.678 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:29:15.778 +05:30 [INF] Received HTTP response headers after 97.2479ms - 200
+2024-08-04 19:29:15.782 +05:30 [INF] End processing HTTP request after 111.3906ms - 200
+2024-08-04 19:29:15.788 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/26"
+2024-08-04 19:29:15.793 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/26"
+2024-08-04 19:29:15.951 +05:30 [INF] Received HTTP response headers after 155.7384ms - 200
+2024-08-04 19:29:15.953 +05:30 [INF] End processing HTTP request after 166.6088ms - 200
+2024-08-04 19:29:15.955 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 19:29:15.957 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 19:29:16.104 +05:30 [INF] Received HTTP response headers after 146.1766ms - 200
+2024-08-04 19:29:16.106 +05:30 [INF] End processing HTTP request after 151.5123ms - 200
+2024-08-04 19:29:16.118 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/27/False"
+2024-08-04 19:29:16.120 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/27/False"
+2024-08-04 19:29:16.297 +05:30 [INF] Received HTTP response headers after 174.8849ms - 200
+2024-08-04 19:29:16.300 +05:30 [INF] End processing HTTP request after 181.7643ms - 200
+2024-08-04 19:29:16.440 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/26/True"
+2024-08-04 19:29:16.444 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/26/True"
+2024-08-04 19:29:16.612 +05:30 [INF] Received HTTP response headers after 165.5216ms - 200
+2024-08-04 19:29:16.615 +05:30 [INF] End processing HTTP request after 176.4774ms - 200
+2024-08-04 19:32:43.038 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 19:33:16.028 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:33:16.041 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:33:16.351 +05:30 [INF] Received HTTP response headers after 283.4191ms - 200
+2024-08-04 19:33:16.358 +05:30 [INF] End processing HTTP request after 376.5761ms - 200
+2024-08-04 19:33:16.375 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/25"
+2024-08-04 19:33:16.378 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/25"
+2024-08-04 19:33:16.525 +05:30 [INF] Received HTTP response headers after 143.8543ms - 200
+2024-08-04 19:33:16.529 +05:30 [INF] End processing HTTP request after 152.6656ms - 200
+2024-08-04 19:33:16.537 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 19:33:16.542 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 19:33:16.743 +05:30 [INF] Received HTTP response headers after 197.0967ms - 200
+2024-08-04 19:33:16.747 +05:30 [INF] End processing HTTP request after 212.0986ms - 200
+2024-08-04 19:33:19.749 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:33:19.754 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:33:19.875 +05:30 [INF] Received HTTP response headers after 116.2334ms - 200
+2024-08-04 19:33:19.880 +05:30 [INF] End processing HTTP request after 131.5722ms - 200
+2024-08-04 19:33:19.885 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/24"
+2024-08-04 19:33:19.887 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/24"
+2024-08-04 19:33:19.989 +05:30 [INF] Received HTTP response headers after 97.9893ms - 200
+2024-08-04 19:33:19.994 +05:30 [INF] End processing HTTP request after 107.7418ms - 200
+2024-08-04 19:33:19.998 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 19:33:20.002 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 19:33:20.163 +05:30 [INF] Received HTTP response headers after 158.8347ms - 200
+2024-08-04 19:33:20.166 +05:30 [INF] End processing HTTP request after 168.7306ms - 200
+2024-08-04 19:33:20.187 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/25/False"
+2024-08-04 19:33:20.190 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/25/False"
+2024-08-04 19:33:20.605 +05:30 [INF] Received HTTP response headers after 409.0648ms - 200
+2024-08-04 19:33:20.611 +05:30 [INF] End processing HTTP request after 421.2651ms - 200
+2024-08-04 19:33:20.975 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/24/True"
+2024-08-04 19:33:20.978 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/24/True"
+2024-08-04 19:33:21.086 +05:30 [INF] Received HTTP response headers after 103.6109ms - 200
+2024-08-04 19:33:21.091 +05:30 [INF] End processing HTTP request after 116.2543ms - 200
+2024-08-04 19:34:51.859 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:34:51.863 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:34:51.950 +05:30 [INF] Received HTTP response headers after 84.9568ms - 200
+2024-08-04 19:34:51.952 +05:30 [INF] End processing HTTP request after 92.8894ms - 200
+2024-08-04 19:34:51.955 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/28"
+2024-08-04 19:34:51.957 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/28"
+2024-08-04 19:34:52.005 +05:30 [INF] Received HTTP response headers after 43.867ms - 200
+2024-08-04 19:34:52.007 +05:30 [INF] End processing HTTP request after 52.4992ms - 200
+2024-08-04 19:34:52.009 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 19:34:52.011 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 19:34:52.331 +05:30 [INF] Received HTTP response headers after 317.0208ms - 200
+2024-08-04 19:34:52.333 +05:30 [INF] End processing HTTP request after 323.6931ms - 200
+2024-08-04 19:34:55.916 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:34:55.918 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:34:56.000 +05:30 [INF] Received HTTP response headers after 80.0167ms - 200
+2024-08-04 19:34:56.002 +05:30 [INF] End processing HTTP request after 87.2614ms - 200
+2024-08-04 19:34:56.005 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/29"
+2024-08-04 19:34:56.007 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/29"
+2024-08-04 19:34:56.067 +05:30 [INF] Received HTTP response headers after 57.8221ms - 200
+2024-08-04 19:34:56.069 +05:30 [INF] End processing HTTP request after 63.9007ms - 200
+2024-08-04 19:34:56.071 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 19:34:56.073 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 19:34:56.322 +05:30 [INF] Received HTTP response headers after 244.5383ms - 200
+2024-08-04 19:34:56.326 +05:30 [INF] End processing HTTP request after 252.6625ms - 200
+2024-08-04 19:34:56.340 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/28/False"
+2024-08-04 19:34:56.344 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/28/False"
+2024-08-04 19:34:56.415 +05:30 [INF] Received HTTP response headers after 68.1692ms - 200
+2024-08-04 19:34:56.417 +05:30 [INF] End processing HTTP request after 78.4872ms - 200
+2024-08-04 19:34:56.423 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/29/True"
+2024-08-04 19:34:56.425 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/29/True"
+2024-08-04 19:34:56.541 +05:30 [INF] Received HTTP response headers after 109.941ms - 200
+2024-08-04 19:34:56.546 +05:30 [INF] End processing HTTP request after 120.0545ms - 200
+2024-08-04 21:46:33.174 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 21:47:21.581 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:47:21.592 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:47:21.911 +05:30 [INF] Received HTTP response headers after 291.9815ms - 200
+2024-08-04 21:47:21.923 +05:30 [INF] End processing HTTP request after 375.945ms - 200
+2024-08-04 21:47:21.941 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/27"
+2024-08-04 21:47:21.945 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/27"
+2024-08-04 21:47:22.079 +05:30 [INF] Received HTTP response headers after 130.089ms - 200
+2024-08-04 21:47:22.082 +05:30 [INF] End processing HTTP request after 140.9739ms - 200
+2024-08-04 21:47:22.089 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 21:47:22.092 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 21:47:22.375 +05:30 [INF] Received HTTP response headers after 279.1872ms - 200
+2024-08-04 21:47:22.379 +05:30 [INF] End processing HTTP request after 290.0674ms - 200
+2024-08-04 21:47:23.741 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/26/False"
+2024-08-04 21:47:23.745 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/26/False"
+2024-08-04 21:47:24.305 +05:30 [INF] Received HTTP response headers after 556.1951ms - 200
+2024-08-04 21:47:24.310 +05:30 [INF] End processing HTTP request after 568.3702ms - 200
+2024-08-04 21:47:24.668 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/27/True"
+2024-08-04 21:47:24.674 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/27/True"
+2024-08-04 21:47:24.736 +05:30 [INF] Received HTTP response headers after 55.3494ms - 200
+2024-08-04 21:47:24.741 +05:30 [INF] End processing HTTP request after 73.9041ms - 200
+2024-08-04 21:47:24.945 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 21:47:24.949 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 21:47:25.241 +05:30 [INF] Received HTTP response headers after 288.3161ms - 200
+2024-08-04 21:47:25.244 +05:30 [INF] End processing HTTP request after 300.5166ms - 200
+2024-08-04 21:57:06.549 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 21:58:49.439 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:58:49.454 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:58:49.777 +05:30 [INF] Received HTTP response headers after 300.2668ms - 200
+2024-08-04 21:58:49.785 +05:30 [INF] End processing HTTP request after 373.8487ms - 200
+2024-08-04 21:58:49.796 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/24"
+2024-08-04 21:58:49.799 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/24"
+2024-08-04 21:58:49.948 +05:30 [INF] Received HTTP response headers after 144.9674ms - 200
+2024-08-04 21:58:49.951 +05:30 [INF] End processing HTTP request after 155.0942ms - 200
+2024-08-04 21:58:49.957 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 21:58:49.959 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 21:58:50.053 +05:30 [INF] Received HTTP response headers after 91.77ms - 200
+2024-08-04 21:58:50.056 +05:30 [INF] End processing HTTP request after 99.5578ms - 200
+2024-08-04 21:58:52.654 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:58:52.660 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:58:52.799 +05:30 [INF] Received HTTP response headers after 133.7523ms - 200
+2024-08-04 21:58:52.803 +05:30 [INF] End processing HTTP request after 150.9055ms - 200
+2024-08-04 21:58:52.809 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/25"
+2024-08-04 21:58:52.815 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/25"
+2024-08-04 21:58:52.849 +05:30 [INF] Received HTTP response headers after 32.3647ms - 200
+2024-08-04 21:58:52.851 +05:30 [INF] End processing HTTP request after 44.391ms - 200
+2024-08-04 21:58:52.854 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 21:58:52.857 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 21:58:52.963 +05:30 [INF] Received HTTP response headers after 104.3265ms - 200
+2024-08-04 21:58:52.965 +05:30 [INF] End processing HTTP request after 111.6632ms - 200
+2024-08-04 21:58:52.978 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/24/False"
+2024-08-04 21:58:52.981 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/24/False"
+2024-08-04 21:58:53.187 +05:30 [INF] Received HTTP response headers after 203.0211ms - 200
+2024-08-04 21:58:53.190 +05:30 [INF] End processing HTTP request after 210.9544ms - 200
+2024-08-04 21:58:53.421 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/25/True"
+2024-08-04 21:58:53.426 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/25/True"
+2024-08-04 21:58:53.467 +05:30 [INF] Received HTTP response headers after 39.1553ms - 200
+2024-08-04 21:58:53.469 +05:30 [INF] End processing HTTP request after 48.4373ms - 200
+2024-08-04 21:58:53.707 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 21:58:53.710 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 21:58:53.831 +05:30 [INF] Received HTTP response headers after 118.5483ms - 200
+2024-08-04 21:58:53.832 +05:30 [INF] End processing HTTP request after 127.0865ms - 200
+2024-08-04 21:58:53.904 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:58:53.909 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:58:54.035 +05:30 [INF] Received HTTP response headers after 122.3075ms - 200
+2024-08-04 21:58:54.038 +05:30 [INF] End processing HTTP request after 135.9807ms - 200
+2024-08-04 21:58:54.309 +05:30 [ERR] An error occurred using a transaction.
+2024-08-04 21:59:31.770 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:59:31.773 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:59:31.855 +05:30 [INF] Received HTTP response headers after 79.5978ms - 200
+2024-08-04 21:59:31.857 +05:30 [INF] End processing HTTP request after 88.7339ms - 200
+2024-08-04 21:59:31.862 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/25"
+2024-08-04 21:59:31.864 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/25"
+2024-08-04 21:59:31.889 +05:30 [INF] Received HTTP response headers after 23.2873ms - 200
+2024-08-04 21:59:31.891 +05:30 [INF] End processing HTTP request after 31.2468ms - 200
+2024-08-04 21:59:31.893 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 21:59:31.894 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 21:59:32.024 +05:30 [INF] Received HTTP response headers after 126.9898ms - 200
+2024-08-04 21:59:32.025 +05:30 [INF] End processing HTTP request after 132.5089ms - 200
+2024-08-04 21:59:34.400 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:59:34.404 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:59:34.481 +05:30 [INF] Received HTTP response headers after 74.8697ms - 200
+2024-08-04 21:59:34.483 +05:30 [INF] End processing HTTP request after 83.9307ms - 200
+2024-08-04 21:59:34.485 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/24"
+2024-08-04 21:59:34.487 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/24"
+2024-08-04 21:59:34.550 +05:30 [INF] Received HTTP response headers after 57.6333ms - 200
+2024-08-04 21:59:34.555 +05:30 [INF] End processing HTTP request after 66.623ms - 200
+2024-08-04 21:59:34.560 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 21:59:34.564 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 21:59:34.665 +05:30 [INF] Received HTTP response headers after 98.7487ms - 200
+2024-08-04 21:59:34.666 +05:30 [INF] End processing HTTP request after 109.0441ms - 200
+2024-08-04 21:59:34.672 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/25/False"
+2024-08-04 21:59:34.674 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/25/False"
+2024-08-04 21:59:34.700 +05:30 [INF] Received HTTP response headers after 24.4499ms - 200
+2024-08-04 21:59:34.702 +05:30 [INF] End processing HTTP request after 29.3587ms - 200
+2024-08-04 21:59:34.707 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/24/True"
+2024-08-04 21:59:34.709 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/24/True"
+2024-08-04 21:59:34.803 +05:30 [INF] Received HTTP response headers after 92.0579ms - 200
+2024-08-04 21:59:34.805 +05:30 [INF] End processing HTTP request after 97.5843ms - 200
+2024-08-04 21:59:34.820 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 21:59:34.823 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 21:59:34.960 +05:30 [INF] Received HTTP response headers after 135.3391ms - 200
+2024-08-04 21:59:34.962 +05:30 [INF] End processing HTTP request after 143.0529ms - 200
+2024-08-04 21:59:42.693 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:59:42.697 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:59:42.824 +05:30 [INF] Received HTTP response headers after 123.9011ms - 200
+2024-08-04 21:59:42.826 +05:30 [INF] End processing HTTP request after 135.5421ms - 200
+2024-08-04 22:00:23.740 +05:30 [ERR] An error occurred using a transaction.
+2024-08-04 22:00:34.373 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:00:34.380 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:00:34.582 +05:30 [INF] Received HTTP response headers after 195.514ms - 200
+2024-08-04 22:00:34.589 +05:30 [INF] End processing HTTP request after 213.6745ms - 200
+2024-08-04 22:00:34.598 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/24"
+2024-08-04 22:00:34.604 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/24"
+2024-08-04 22:00:34.736 +05:30 [INF] Received HTTP response headers after 125.8992ms - 200
+2024-08-04 22:00:34.742 +05:30 [INF] End processing HTTP request after 144.6738ms - 200
+2024-08-04 22:00:34.749 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 22:00:34.756 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 22:00:34.986 +05:30 [INF] Received HTTP response headers after 224.3542ms - 200
+2024-08-04 22:00:34.992 +05:30 [INF] End processing HTTP request after 243.7477ms - 200
+2024-08-04 22:00:36.187 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:00:36.189 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:00:36.307 +05:30 [INF] Received HTTP response headers after 113.7351ms - 200
+2024-08-04 22:00:36.312 +05:30 [INF] End processing HTTP request after 125.6174ms - 200
+2024-08-04 22:00:36.320 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/25"
+2024-08-04 22:00:36.324 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/25"
+2024-08-04 22:00:36.356 +05:30 [INF] Received HTTP response headers after 28.7455ms - 200
+2024-08-04 22:00:36.359 +05:30 [INF] End processing HTTP request after 41.591ms - 200
+2024-08-04 22:00:36.360 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 22:00:36.362 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 22:00:36.455 +05:30 [INF] Received HTTP response headers after 91.1234ms - 200
+2024-08-04 22:00:36.458 +05:30 [INF] End processing HTTP request after 95.9636ms - 200
+2024-08-04 22:00:36.464 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/24/False"
+2024-08-04 22:00:36.466 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/24/False"
+2024-08-04 22:00:36.589 +05:30 [INF] Received HTTP response headers after 117.5548ms - 200
+2024-08-04 22:00:36.597 +05:30 [INF] End processing HTTP request after 127.7915ms - 200
+2024-08-04 22:00:36.618 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/25/True"
+2024-08-04 22:00:36.626 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/25/True"
+2024-08-04 22:00:36.676 +05:30 [INF] Received HTTP response headers after 45.3158ms - 200
+2024-08-04 22:00:36.679 +05:30 [INF] End processing HTTP request after 66.3884ms - 200
+2024-08-04 22:00:36.695 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 22:00:36.701 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/12"
+2024-08-04 22:00:36.842 +05:30 [INF] Received HTTP response headers after 137.7976ms - 200
+2024-08-04 22:00:36.845 +05:30 [INF] End processing HTTP request after 150.7467ms - 200
+2024-08-04 22:00:39.645 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:00:39.648 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:00:39.764 +05:30 [INF] Received HTTP response headers after 112.3154ms - 200
+2024-08-04 22:00:39.767 +05:30 [INF] End processing HTTP request after 121.3197ms - 200
+2024-08-04 22:01:32.014 +05:30 [ERR] An error occurred using a transaction.
+2024-08-04 22:01:35.156 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:01:35.164 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:01:35.415 +05:30 [INF] Received HTTP response headers after 244.5298ms - 200
+2024-08-04 22:01:35.420 +05:30 [INF] End processing HTTP request after 265.5485ms - 200
+2024-08-04 22:01:35.428 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/28"
+2024-08-04 22:01:35.433 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/28"
+2024-08-04 22:01:35.508 +05:30 [INF] Received HTTP response headers after 72.6665ms - 200
+2024-08-04 22:01:35.509 +05:30 [INF] End processing HTTP request after 84.2817ms - 200
+2024-08-04 22:01:35.511 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 22:01:35.513 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 22:01:35.881 +05:30 [INF] Received HTTP response headers after 363.1954ms - 200
+2024-08-04 22:01:35.887 +05:30 [INF] End processing HTTP request after 371.6515ms - 200
+2024-08-04 22:01:35.905 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/29/False"
+2024-08-04 22:01:35.907 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/29/False"
+2024-08-04 22:01:36.008 +05:30 [INF] Received HTTP response headers after 99.2976ms - 200
+2024-08-04 22:01:36.010 +05:30 [INF] End processing HTTP request after 107.8113ms - 200
+2024-08-04 22:01:36.015 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/28/True"
+2024-08-04 22:01:36.017 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/28/True"
+2024-08-04 22:01:36.046 +05:30 [INF] Received HTTP response headers after 27.7029ms - 200
+2024-08-04 22:01:36.048 +05:30 [INF] End processing HTTP request after 33.1266ms - 200
+2024-08-04 22:01:36.055 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 22:01:36.057 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 22:01:36.322 +05:30 [INF] Received HTTP response headers after 261.3259ms - 200
+2024-08-04 22:01:36.328 +05:30 [INF] End processing HTTP request after 269.2424ms - 200
+2024-08-04 22:01:36.336 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:01:36.340 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:01:36.483 +05:30 [INF] Received HTTP response headers after 139.6108ms - 200
+2024-08-04 22:01:36.490 +05:30 [INF] End processing HTTP request after 152.4325ms - 200
+2024-08-04 22:02:06.066 +05:30 [ERR] An error occurred using a transaction.
+2024-08-04 22:02:09.000 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:02:09.004 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:04:42.232 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 22:09:37.867 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 22:12:17.365 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 22:19:11.300 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-04 22:20:18.020 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:20:18.028 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:20:18.210 +05:30 [INF] Received HTTP response headers after 170.953ms - 200
+2024-08-04 22:20:18.219 +05:30 [INF] End processing HTTP request after 213.4681ms - 200
+2024-08-04 22:20:18.227 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/28"
+2024-08-04 22:20:18.230 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/28"
+2024-08-04 22:20:18.355 +05:30 [INF] Received HTTP response headers after 123.3078ms - 200
+2024-08-04 22:20:18.357 +05:30 [INF] End processing HTTP request after 132.0156ms - 200
+2024-08-04 22:20:18.360 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 22:20:18.365 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 22:20:18.592 +05:30 [INF] Received HTTP response headers after 225.011ms - 200
+2024-08-04 22:20:18.594 +05:30 [INF] End processing HTTP request after 233.401ms - 200
+2024-08-04 22:20:20.610 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:20:20.615 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:20:20.715 +05:30 [INF] Received HTTP response headers after 95.6744ms - 200
+2024-08-04 22:20:20.717 +05:30 [INF] End processing HTTP request after 107.6947ms - 200
+2024-08-04 22:20:20.720 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/29"
+2024-08-04 22:20:20.722 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/29"
+2024-08-04 22:20:20.818 +05:30 [INF] Received HTTP response headers after 92.2037ms - 200
+2024-08-04 22:20:20.820 +05:30 [INF] End processing HTTP request after 100.1817ms - 200
+2024-08-04 22:20:20.822 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 22:20:20.823 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 22:20:21.098 +05:30 [INF] Received HTTP response headers after 270.561ms - 200
+2024-08-04 22:20:21.101 +05:30 [INF] End processing HTTP request after 278.2395ms - 200
+2024-08-04 22:20:21.122 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/28/False"
+2024-08-04 22:20:21.126 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/28/False"
+2024-08-04 22:20:21.448 +05:30 [INF] Received HTTP response headers after 319.066ms - 200
+2024-08-04 22:20:21.450 +05:30 [INF] End processing HTTP request after 329.1507ms - 200
+2024-08-04 22:20:21.589 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/29/True"
+2024-08-04 22:20:21.590 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/29/True"
+2024-08-04 22:20:21.689 +05:30 [INF] Received HTTP response headers after 93.387ms - 200
+2024-08-04 22:20:21.691 +05:30 [INF] End processing HTTP request after 103.032ms - 200
+2024-08-04 22:20:21.793 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 22:20:21.797 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 22:20:21.986 +05:30 [INF] Received HTTP response headers after 186.8926ms - 200
+2024-08-04 22:20:21.988 +05:30 [INF] End processing HTTP request after 195.1681ms - 200
+2024-08-04 22:20:22.038 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:20:22.040 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:20:22.109 +05:30 [INF] Received HTTP response headers after 65.8632ms - 200
+2024-08-04 22:20:22.111 +05:30 [INF] End processing HTTP request after 72.7643ms - 200
+2024-08-04 22:21:30.110 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:21:30.113 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:21:30.181 +05:30 [INF] Received HTTP response headers after 65.0108ms - 200
+2024-08-04 22:21:30.182 +05:30 [INF] End processing HTTP request after 74.8583ms - 200
+2024-08-04 22:21:30.184 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/28"
+2024-08-04 22:21:30.188 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/28"
+2024-08-04 22:21:30.222 +05:30 [INF] Received HTTP response headers after 30.8115ms - 200
+2024-08-04 22:21:30.224 +05:30 [INF] End processing HTTP request after 39.3581ms - 200
+2024-08-04 22:21:30.226 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 22:21:30.228 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 22:21:30.457 +05:30 [INF] Received HTTP response headers after 222.7797ms - 200
+2024-08-04 22:21:30.460 +05:30 [INF] End processing HTTP request after 232.4333ms - 200
+2024-08-04 22:21:30.475 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/29/False"
+2024-08-04 22:21:30.478 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/29/False"
+2024-08-04 22:21:30.563 +05:30 [INF] Received HTTP response headers after 82.851ms - 200
+2024-08-04 22:21:30.565 +05:30 [INF] End processing HTTP request after 91.4433ms - 200
+2024-08-04 22:21:30.576 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/28/True"
+2024-08-04 22:21:30.578 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/28/True"
+2024-08-04 22:21:30.638 +05:30 [INF] Received HTTP response headers after 56.9351ms - 200
+2024-08-04 22:21:30.641 +05:30 [INF] End processing HTTP request after 65.5809ms - 200
+2024-08-04 22:21:30.652 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 22:21:30.654 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/14"
+2024-08-04 22:21:30.869 +05:30 [INF] Received HTTP response headers after 211.7995ms - 200
+2024-08-04 22:21:30.873 +05:30 [INF] End processing HTTP request after 220.522ms - 200
+2024-08-04 22:21:30.876 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:21:30.878 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:21:30.962 +05:30 [INF] Received HTTP response headers after 80.9829ms - 200
+2024-08-04 22:21:30.965 +05:30 [INF] End processing HTTP request after 87.9036ms - 200
+2024-08-04 22:22:12.896 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:22:12.898 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:22:13.011 +05:30 [INF] Received HTTP response headers after 107.28ms - 200
+2024-08-04 22:22:13.018 +05:30 [INF] End processing HTTP request after 116.5307ms - 200
+2024-08-04 22:22:13.026 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/27"
+2024-08-04 22:22:13.032 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/27"
+2024-08-04 22:22:13.078 +05:30 [INF] Received HTTP response headers after 43.3535ms - 200
+2024-08-04 22:22:13.079 +05:30 [INF] End processing HTTP request after 58.36ms - 200
+2024-08-04 22:22:13.081 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 22:22:13.083 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 22:22:13.376 +05:30 [INF] Received HTTP response headers after 291.727ms - 200
+2024-08-04 22:22:13.378 +05:30 [INF] End processing HTTP request after 296.7976ms - 200
+2024-08-04 22:22:14.885 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:22:14.889 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:22:14.962 +05:30 [INF] Received HTTP response headers after 69.3568ms - 200
+2024-08-04 22:22:14.965 +05:30 [INF] End processing HTTP request after 82.2936ms - 200
+2024-08-04 22:22:14.968 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/polloption/26"
+2024-08-04 22:22:14.970 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/polloption/26"
+2024-08-04 22:22:15.179 +05:30 [INF] Received HTTP response headers after 206.6595ms - 200
+2024-08-04 22:22:15.181 +05:30 [INF] End processing HTTP request after 212.955ms - 200
+2024-08-04 22:22:15.183 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 22:22:15.184 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 22:22:15.412 +05:30 [INF] Received HTTP response headers after 225.3711ms - 200
+2024-08-04 22:22:15.414 +05:30 [INF] End processing HTTP request after 231.3285ms - 200
+2024-08-04 22:22:15.421 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/27/False"
+2024-08-04 22:22:15.425 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/27/False"
+2024-08-04 22:22:15.451 +05:30 [INF] Received HTTP response headers after 24.4023ms - 200
+2024-08-04 22:22:15.454 +05:30 [INF] End processing HTTP request after 33.1536ms - 200
+2024-08-04 22:22:15.462 +05:30 [INF] Start processing HTTP request PUT "https://localhost:7253/poll/polloption/26/True"
+2024-08-04 22:22:15.464 +05:30 [INF] Sending HTTP request PUT "https://localhost:7253/poll/polloption/26/True"
+2024-08-04 22:22:15.677 +05:30 [INF] Received HTTP response headers after 211.0723ms - 200
+2024-08-04 22:22:15.679 +05:30 [INF] End processing HTTP request after 217.5385ms - 200
+2024-08-04 22:22:15.687 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 22:22:15.690 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/poll/13"
+2024-08-04 22:22:15.961 +05:30 [INF] Received HTTP response headers after 269.4914ms - 200
+2024-08-04 22:22:15.963 +05:30 [INF] End processing HTTP request after 277.0184ms - 200
+2024-08-04 22:22:15.966 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:22:15.968 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:22:16.056 +05:30 [INF] Received HTTP response headers after 84.518ms - 200
+2024-08-04 22:22:16.061 +05:30 [INF] End processing HTTP request after 92.6086ms - 200

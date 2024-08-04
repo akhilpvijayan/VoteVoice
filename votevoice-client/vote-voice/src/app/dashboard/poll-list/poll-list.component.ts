@@ -125,6 +125,7 @@ export class PollListComponent implements OnInit {
             currentPoll.showResults = true;
             if (res.pollId) {
               this.pollService.getPoll(pollId).subscribe((res: any)=>{
+                
                 currentPoll.totalVotes = res.totalVotes;
                 currentPoll.pollOptions.forEach((updatedOption: any) => {
                   const localOption = res.pollOptions.find((option: any) => option.pollOptionId === updatedOption.pollOptionId);

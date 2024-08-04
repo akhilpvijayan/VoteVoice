@@ -123,6 +123,44 @@ a span .title {
     margin-right: 2px;
 }
 
+.icon-button {
+    position: relative;
+  }
+  
+  .notification-menu {
+    width: 300px;
+  }
+  
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .notification-menu .mat-list-item {
+    padding: 10px;
+  }
+  
+  .notification-content {
+    flex: 1;
+    margin-left: 10px;
+  }
+  
+  .notification-message {
+    font-weight: bold;
+  }
+  
+  .notification-timestamp {
+    color: #888;
+    font-size: 0.9em;
+  }
+  
+  .mat-icon {
+    font-size: 20px;
+  }  
+
 @media only screen and (max-width: 950px) {
     .mat-elevation-z6{
         background-color: #ffffff;
@@ -151,7 +189,7 @@ a span .title {
     }
 
     .icon-button-content mat-icon{
-        font-size: 20px;
+        font-size: 10px;
         bottom: 8px;
         float: right;
     }

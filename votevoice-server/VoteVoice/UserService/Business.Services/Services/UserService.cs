@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -37,10 +38,17 @@ namespace UserService.Business.Services.Services
             return await this._context.UserDetailDto.FromSqlRaw(sqlQuery).AsNoTracking().ToListAsync();
         }
 
-        public async Task<IEnumerable<UserDetailDto>> GetUser(long userId)
+        public async Task<UserDetailDto> GetUser(long userId)
         {
-            var sqlQuery = $"Exec spGetUserDetails {userId}";
-            return await this._context.UserDetailDto.FromSqlRaw(sqlQuery).AsNoTracking().ToListAsync();
+            var sqlQuery = $"Exec spGetUserDetails @UserId";
+            var userIdParam = new SqlParameter("@UserId", userId);
+
+            var userDetailsList = await _context.UserDetailDto
+                                                    .FromSqlRaw(sqlQuery, userIdParam)
+                                                    .AsNoTracking()
+                                                    .ToListAsync();
+
+            return userDetailsList.FirstOrDefault();
         }
 
         public async Task<Tuple<string, string, long>> SignUpUser(SignUpUserDetailsDto userDetails)

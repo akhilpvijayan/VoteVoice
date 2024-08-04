@@ -131,6 +131,30 @@
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
       }
+    },
+    {
+      "DownstreamPathTemplate": "/notificationHub",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7036"
+        }
+      ],
+      "UpstreamPathTemplate": "/notificationHub",
+      "UpstreamHttpMethod": [ "GET", "POST"]
+    },
+    {
+      "DownstreamPathTemplate": "/notificationHub/negotiate",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7036"
+        }
+      ],
+      "UpstreamPathTemplate": "/notificationHub/negotiate",
+      "UpstreamHttpMethod": [ "POST" ]
     }
   ]
 }

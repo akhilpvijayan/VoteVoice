@@ -13,15 +13,17 @@ Environment.SetEnvironmentVariable("POLL_SERVICE_HOST", builder.Configuration["P
 Environment.SetEnvironmentVariable("POLL_SERVICE_PORT", builder.Configuration["PollService:Port"]);
 Environment.SetEnvironmentVariable("VOTE_SERVICE_HOST", builder.Configuration["VoteService:Host"]);
 Environment.SetEnvironmentVariable("VOTE_SERVICE_PORT", builder.Configuration["VoteService:Port"]);
+Environment.SetEnvironmentVariable("NOTIFICATION_SERVICE_HOST", builder.Configuration["NotificationService:Host"]);
+Environment.SetEnvironmentVariable("NOTIFICATION_SERVICE_PORT", builder.Configuration["NotificationService:Port"]);
 
-builder.Services.AddCors(p => p.AddDefaultPolicy(build =>
+builder.Services.AddCors(options =>
 {
-    build.WithOrigins("http://localhost:4200", "https://votevoice.vercel.app")
-    .AllowAnyHeader().
-    AllowAnyMethod()
-    .AllowCredentials();
-}));
-
+    options.AddPolicy("CorsPolicy",
+        builder => builder.WithOrigins("http://localhost:4200")
+                          .AllowAnyMethod()
+                          .AllowAnyHeader()
+                          .AllowCredentials());
+});
 // Configure JWT Authentication
 var securityKey = builder.Configuration.GetValue<string>("JwtSettings:SecretKey");
 builder.Services.AddAuthentication(options =>
@@ -57,7 +59,9 @@ var ocelotConfig = ocelotTemplate
     .Replace("{PollServiceHost}", Environment.GetEnvironmentVariable("POLL_SERVICE_HOST"))
     .Replace("{PollServicePort}", Environment.GetEnvironmentVariable("POLL_SERVICE_PORT"))
     .Replace("{VoteServiceHost}", Environment.GetEnvironmentVariable("VOTE_SERVICE_HOST"))
-    .Replace("{VoteServicePort}", Environment.GetEnvironmentVariable("VOTE_SERVICE_PORT"));
+    .Replace("{VoteServicePort}", Environment.GetEnvironmentVariable("VOTE_SERVICE_PORT"))
+    .Replace("{NotificationServiceHost}", Environment.GetEnvironmentVariable("NOTIFICATION_SERVICE_HOST"))
+    .Replace("{NotificationServicePort}", Environment.GetEnvironmentVariable("NOTIFICATION_SERVICE_PORT")); ;
 
 // Write the modified content to ocelot.json
 File.WriteAllText("Ocelot.json", ocelotConfig);
@@ -75,7 +79,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors();
+app.UseCors("CorsPolicy");
 
 app.UseHttpsRedirection();
 

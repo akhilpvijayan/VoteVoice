@@ -22,10 +22,23 @@
     </button>
   </div>
   <div>
-    <button mat-button class="icon-button icon-button-content web-icon" matTooltip="Notifications">
-      <mat-icon matBadge="">notifications</mat-icon>
+    <button mat-button class="icon-button icon-button-content web-icon" matTooltip="Notifications" [matMenuTriggerFor]="menu">
+      <mat-icon matBadge="3" matBadgePosition="before" matBadgeColor="warn">notifications</mat-icon>
     </button>
   </div>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item class="nav-button" *ngFor="let notification of notifications">
+      <mat-icon>info</mat-icon>
+      <div class="notification-content">
+        <div class="notification-message">{{ notification.message }}</div>
+        <div class="notification-timestamp">{{ notification.timestamp | date:'short' }}</div>
+      </div>
+    </button>
+    <button mat-menu-item class="nav-button">
+      <mat-icon></mat-icon>See All
+    </button>
+  </mat-menu>
+  
   <button class="button-88" role="button" *ngIf="!isLoggedIn" (click)="login()">
     <span><i class="fa-solid fa-user"></i></span>&nbsp;Login
   </button>

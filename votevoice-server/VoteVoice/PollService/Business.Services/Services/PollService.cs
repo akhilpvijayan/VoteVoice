@@ -69,7 +69,7 @@ namespace PollService.Business.Services.Services
 
                 var userResponse = await client.GetAsync($"/user/{poll.UserId}");
                 userResponse.EnsureSuccessStatusCode();
-                var userDetailList = await userResponse.Content.ReadAsAsync<List<UserDetailDto>>();
+                var userDetail = await userResponse.Content.ReadFromJsonAsync<UserDetailDto>();
 
 
                 var optionsForPoll = pollOptions.Where(po => po.PollId == poll.PollId).ToList();
@@ -81,9 +81,9 @@ namespace PollService.Business.Services.Services
                     UserId = poll.UserId,
                     Title = poll.Title,
                     Description = poll.Description,
-                    FirstName = userDetailList[0].FirstName,
-                    LastName = userDetailList[0].LastName,
-                    ProfileImage = userDetailList[0].ProfileImage,
+                    FirstName = userDetail.FirstName,
+                    LastName = userDetail.LastName,
+                    ProfileImage = userDetail.ProfileImage,
                     ExpiryDate = poll.ExpiryDate,
                     TotalVotes = totalVotes,
                     CreatedBy = poll.CreatedBy,
@@ -122,7 +122,7 @@ namespace PollService.Business.Services.Services
 
             var userResponse = await client.GetAsync($"/user/{poll.UserId}");
             userResponse.EnsureSuccessStatusCode();
-            var userDetails = await userResponse.Content.ReadAsAsync<List<UserDetailDto>>();
+            var userDetail = await userResponse.Content.ReadFromJsonAsync<UserDetailDto>();
 
             var totalVotes = pollOptions.Sum(po => po.VoteCount);
             var aggregatedPollDetails = new PollDetailsDto
@@ -131,9 +131,9 @@ namespace PollService.Business.Services.Services
                 UserId = poll.UserId,
                 Title = poll.Title,
                 Description = poll.Description,
-                FirstName = userDetails[0].FirstName,
-                LastName = userDetails[0].LastName,
-                ProfileImage = userDetails[0].ProfileImage,
+                FirstName = userDetail.FirstName,
+                LastName = userDetail.LastName,
+                ProfileImage = userDetail.ProfileImage,
                 ExpiryDate = poll.ExpiryDate,
                 TotalVotes = totalVotes,
                 CreatedBy = poll.CreatedBy,

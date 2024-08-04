@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
     "@ckeditor/ckeditor5-angular": "^8.0.0",
+    "@microsoft/signalr": "^8.0.7",
     "@ng-icons/core": "^28.1.0",
     "@ng-icons/heroicons": "^28.1.0",
     "@ng-select/ng-select": "^11.0.0",

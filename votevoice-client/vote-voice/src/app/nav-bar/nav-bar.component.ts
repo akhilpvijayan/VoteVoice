@@ -1,3 +1,4 @@
+import { SignalrService } from './../services/signalr.service';
 import { UserService } from './../services/user.service';
 import { LoginComponent } from './../login/login.component';
 import { AuthService } from './../Auth/auth.service';
@@ -17,15 +18,28 @@ export class NavBarComponent implements OnInit{
   isOpen = false;
   isLoggedIn = false;
   userDetails: any;
+  notifications: { message: string, timestamp: Date }[] = [];
   userId =parseInt(this.userService.getUserId() ?? '0', 10)
 
   constructor(public darkModeService: DarkModeService,
     private authService: AuthService,
     private dialog: MatDialog,
     private router: Router,
-    private userService: UserService) {}
+    private userService: UserService,
+    private signalRService: SignalrService) {}
 
   ngOnInit(): void {
+    this.notifications = [
+      { message: 'New comment on your post', timestamp: new Date() },
+      { message: 'You have a new follower', timestamp: new Date() },
+      { message: 'Server maintenance scheduled for tonight', timestamp: new Date() }
+    ];
+    this.signalRService.startConnection();
+    this.signalRService.addReceiveNotificationListener((targetUser: number, message: string) => {
+      if(this.userId == targetUser){
+        console.log(message);
+      }
+    });  
     this.authService.isLoggedInObservable$.subscribe((isLoggedInSubject: any) => {
       this.isLoggedIn = isLoggedInSubject;
       setTimeout(() => {
@@ -39,7 +53,7 @@ export class NavBarComponent implements OnInit{
 
   getUserDetails(){
     this.userService.getUser(this.userId).subscribe((res: any)=>{
-      this.userDetails = res[0];
+      this.userDetails = res;
     })
   }
 
