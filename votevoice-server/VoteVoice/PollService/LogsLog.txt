@@ -1,0 +1,1644 @@
+2024-08-03 22:06:56.450 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-03 22:10:12.106 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-03 22:14:43.676 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-03 22:15:05.233 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-03 22:15:05.246 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-03 22:15:06.640 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-03 22:15:06.661 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-03 22:15:07.054 +05:30 [INF] Received HTTP response headers after 363.265ms - 200
+2024-08-03 22:15:07.068 +05:30 [INF] End processing HTTP request after 463.2652ms - 200
+2024-08-03 22:15:07.849 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-03 22:15:07.851 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-03 22:15:07.894 +05:30 [INF] Received HTTP response headers after 38.3815ms - 200
+2024-08-03 22:15:07.897 +05:30 [INF] End processing HTTP request after 51.351ms - 200
+2024-08-03 22:15:07.900 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:15:07.903 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:15:08.019 +05:30 [INF] Received HTTP response headers after 111.6787ms - 200
+2024-08-03 22:15:08.025 +05:30 [INF] End processing HTTP request after 121.5009ms - 200
+2024-08-03 22:16:32.060 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-03 22:16:32.064 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-03 22:16:32.126 +05:30 [INF] Received HTTP response headers after 57.304ms - 200
+2024-08-03 22:16:32.128 +05:30 [INF] End processing HTTP request after 70.7119ms - 200
+2024-08-03 22:16:32.131 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-03 22:16:32.135 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-03 22:16:32.162 +05:30 [INF] Received HTTP response headers after 25.3283ms - 200
+2024-08-03 22:16:32.164 +05:30 [INF] End processing HTTP request after 33.8545ms - 200
+2024-08-03 22:16:32.166 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:16:32.167 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:16:32.267 +05:30 [INF] Received HTTP response headers after 97.3097ms - 200
+2024-08-03 22:16:32.270 +05:30 [INF] End processing HTTP request after 103.2437ms - 200
+2024-08-03 22:16:35.529 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:16:35.534 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:16:35.696 +05:30 [INF] Received HTTP response headers after 156.6099ms - 200
+2024-08-03 22:16:35.702 +05:30 [INF] End processing HTTP request after 170.6298ms - 200
+2024-08-03 22:17:09.361 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:17:09.367 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:17:09.478 +05:30 [INF] Received HTTP response headers after 106.2596ms - 200
+2024-08-03 22:17:09.485 +05:30 [INF] End processing HTTP request after 124.3157ms - 200
+2024-08-03 22:17:32.431 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:17:32.437 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:17:32.536 +05:30 [INF] Received HTTP response headers after 95.5829ms - 200
+2024-08-03 22:17:32.539 +05:30 [INF] End processing HTTP request after 108.4796ms - 200
+2024-08-03 22:18:00.254 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-03 22:18:00.261 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-03 22:18:00.316 +05:30 [INF] Received HTTP response headers after 50.4102ms - 200
+2024-08-03 22:18:00.330 +05:30 [INF] End processing HTTP request after 66.0458ms - 200
+2024-08-03 22:18:00.337 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-03 22:18:00.341 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-03 22:18:00.472 +05:30 [INF] Received HTTP response headers after 127.3112ms - 200
+2024-08-03 22:18:00.476 +05:30 [INF] End processing HTTP request after 141.6915ms - 200
+2024-08-03 22:18:00.479 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:18:00.482 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:18:00.555 +05:30 [INF] Received HTTP response headers after 70.3711ms - 200
+2024-08-03 22:18:00.559 +05:30 [INF] End processing HTTP request after 78.9803ms - 200
+2024-08-03 22:30:13.126 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-03 22:30:37.635 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-03 22:30:37.645 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-03 22:30:38.547 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-03 22:30:38.564 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-03 22:30:38.944 +05:30 [INF] Received HTTP response headers after 262.1651ms - 200
+2024-08-03 22:30:38.970 +05:30 [INF] End processing HTTP request after 450.6744ms - 200
+2024-08-03 22:30:39.652 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-03 22:30:39.659 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-03 22:30:39.745 +05:30 [INF] Received HTTP response headers after 75.662ms - 200
+2024-08-03 22:30:39.753 +05:30 [INF] End processing HTTP request after 96.9579ms - 200
+2024-08-03 22:30:39.765 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:30:39.770 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-03 22:30:39.943 +05:30 [INF] Received HTTP response headers after 166.3132ms - 200
+2024-08-03 22:30:39.949 +05:30 [INF] End processing HTTP request after 189.9471ms - 200
+2024-08-03 22:46:16.672 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-03 22:47:50.117 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-03 23:08:21.520 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 01:25:16.918 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 01:27:35.446 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 01:28:04.854 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 01:28:04.870 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 01:28:06.602 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:28:06.625 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:28:07.100 +05:30 [INF] Received HTTP response headers after 438.7103ms - 200
+2024-08-04 01:28:07.116 +05:30 [INF] End processing HTTP request after 554.9179ms - 200
+2024-08-04 01:28:07.736 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:28:07.744 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:28:07.798 +05:30 [INF] Received HTTP response headers after 47.4701ms - 200
+2024-08-04 01:28:07.803 +05:30 [INF] End processing HTTP request after 66.3748ms - 200
+2024-08-04 01:28:07.813 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:28:07.818 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:28:07.977 +05:30 [INF] Received HTTP response headers after 150.8222ms - 200
+2024-08-04 01:28:07.982 +05:30 [INF] End processing HTTP request after 173.4014ms - 200
+2024-08-04 01:36:40.759 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 01:45:22.333 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 01:45:57.720 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 01:45:57.737 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 01:45:59.565 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:45:59.583 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:46:00.151 +05:30 [INF] Received HTTP response headers after 513.5755ms - 200
+2024-08-04 01:46:00.168 +05:30 [INF] End processing HTTP request after 642.9669ms - 200
+2024-08-04 01:46:01.004 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:46:01.016 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:46:01.090 +05:30 [INF] Received HTTP response headers after 67.6452ms - 200
+2024-08-04 01:46:01.099 +05:30 [INF] End processing HTTP request after 90.8323ms - 200
+2024-08-04 01:46:01.108 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:46:01.115 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:46:01.347 +05:30 [INF] Received HTTP response headers after 226.5086ms - 200
+2024-08-04 01:46:01.353 +05:30 [INF] End processing HTTP request after 244.2306ms - 200
+2024-08-04 01:46:33.088 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:46:33.092 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:46:33.160 +05:30 [INF] Received HTTP response headers after 63.0418ms - 200
+2024-08-04 01:46:33.168 +05:30 [INF] End processing HTTP request after 81.3891ms - 200
+2024-08-04 01:46:33.174 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:46:33.178 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:46:33.237 +05:30 [INF] Received HTTP response headers after 51.2642ms - 200
+2024-08-04 01:46:33.243 +05:30 [INF] End processing HTTP request after 68.39ms - 200
+2024-08-04 01:46:33.251 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:46:33.256 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:46:33.459 +05:30 [INF] Received HTTP response headers after 197.3277ms - 200
+2024-08-04 01:46:33.466 +05:30 [INF] End processing HTTP request after 215.8273ms - 200
+2024-08-04 01:46:43.684 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:46:43.689 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:46:43.769 +05:30 [INF] Received HTTP response headers after 72.0961ms - 200
+2024-08-04 01:46:43.773 +05:30 [INF] End processing HTTP request after 92.0021ms - 200
+2024-08-04 01:46:43.778 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:46:43.786 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:46:43.850 +05:30 [INF] Received HTTP response headers after 57.1039ms - 200
+2024-08-04 01:46:43.858 +05:30 [INF] End processing HTTP request after 76.5984ms - 200
+2024-08-04 01:46:43.865 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:46:43.874 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:46:44.063 +05:30 [INF] Received HTTP response headers after 184.9502ms - 200
+2024-08-04 01:46:44.071 +05:30 [INF] End processing HTTP request after 205.2037ms - 200
+2024-08-04 01:46:48.188 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:46:48.192 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:46:48.383 +05:30 [INF] Received HTTP response headers after 185.0145ms - 200
+2024-08-04 01:46:48.389 +05:30 [INF] End processing HTTP request after 201.0195ms - 200
+2024-08-04 01:47:30.688 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:47:30.693 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:47:30.885 +05:30 [INF] Received HTTP response headers after 184.4817ms - 200
+2024-08-04 01:47:30.890 +05:30 [INF] End processing HTTP request after 206.0554ms - 200
+2024-08-04 01:47:41.211 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:47:41.217 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:47:41.376 +05:30 [INF] Received HTTP response headers after 155.4763ms - 200
+2024-08-04 01:47:41.380 +05:30 [INF] End processing HTTP request after 172.1413ms - 200
+2024-08-04 01:48:13.630 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:48:13.638 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:48:13.725 +05:30 [INF] Received HTTP response headers after 81.4906ms - 200
+2024-08-04 01:48:13.731 +05:30 [INF] End processing HTTP request after 101.9619ms - 200
+2024-08-04 01:48:13.739 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:48:13.744 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:48:13.798 +05:30 [INF] Received HTTP response headers after 47.1447ms - 200
+2024-08-04 01:48:13.802 +05:30 [INF] End processing HTTP request after 66.3892ms - 200
+2024-08-04 01:48:13.807 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:48:13.815 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:48:14.030 +05:30 [INF] Received HTTP response headers after 208.5469ms - 200
+2024-08-04 01:48:14.034 +05:30 [INF] End processing HTTP request after 227.7227ms - 200
+2024-08-04 01:49:32.524 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:49:32.582 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:49:32.924 +05:30 [INF] Received HTTP response headers after 333.0082ms - 200
+2024-08-04 01:49:32.930 +05:30 [INF] End processing HTTP request after 569.1453ms - 200
+2024-08-04 01:49:32.947 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:49:32.966 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:49:33.180 +05:30 [INF] Received HTTP response headers after 194.9264ms - 200
+2024-08-04 01:49:33.195 +05:30 [INF] End processing HTTP request after 248.6461ms - 200
+2024-08-04 01:49:33.201 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:49:33.212 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:49:33.480 +05:30 [INF] Received HTTP response headers after 263.1881ms - 200
+2024-08-04 01:49:33.484 +05:30 [INF] End processing HTTP request after 284.1695ms - 200
+2024-08-04 01:53:16.032 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 01:54:25.845 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 01:54:25.871 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 01:54:27.345 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:54:27.367 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:54:27.712 +05:30 [INF] Received HTTP response headers after 318.413ms - 200
+2024-08-04 01:54:27.722 +05:30 [INF] End processing HTTP request after 424.8927ms - 200
+2024-08-04 01:54:29.279 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:54:29.287 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:54:29.355 +05:30 [INF] Received HTTP response headers after 62.1735ms - 200
+2024-08-04 01:54:29.361 +05:30 [INF] End processing HTTP request after 83.6375ms - 200
+2024-08-04 01:54:29.367 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:54:29.372 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:54:29.520 +05:30 [INF] Received HTTP response headers after 143.7161ms - 200
+2024-08-04 01:54:29.524 +05:30 [INF] End processing HTTP request after 157.7842ms - 200
+2024-08-04 01:56:33.669 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 01:57:05.025 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 01:57:05.036 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 01:57:06.483 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:57:06.501 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:57:06.893 +05:30 [INF] Received HTTP response headers after 360.0222ms - 200
+2024-08-04 01:57:06.907 +05:30 [INF] End processing HTTP request after 458.0726ms - 200
+2024-08-04 01:57:07.445 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:57:07.450 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 01:57:07.509 +05:30 [INF] Received HTTP response headers after 53.6579ms - 200
+2024-08-04 01:57:07.514 +05:30 [INF] End processing HTTP request after 70.9023ms - 200
+2024-08-04 01:57:07.519 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:57:07.524 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 01:57:07.693 +05:30 [INF] Received HTTP response headers after 164.8465ms - 200
+2024-08-04 01:57:07.698 +05:30 [INF] End processing HTTP request after 178.8059ms - 200
+2024-08-04 02:10:22.076 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 02:12:33.106 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 02:12:33.110 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 02:12:33.976 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:12:33.990 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:12:34.292 +05:30 [INF] Received HTTP response headers after 289.7795ms - 200
+2024-08-04 02:12:34.298 +05:30 [INF] End processing HTTP request after 355.4497ms - 200
+2024-08-04 02:12:34.731 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:12:34.737 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:12:34.774 +05:30 [INF] Received HTTP response headers after 34.3556ms - 200
+2024-08-04 02:12:34.776 +05:30 [INF] End processing HTTP request after 47.6752ms - 200
+2024-08-04 02:12:34.778 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:12:34.779 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:12:34.878 +05:30 [INF] Received HTTP response headers after 96.4398ms - 200
+2024-08-04 02:12:34.881 +05:30 [INF] End processing HTTP request after 102.575ms - 200
+2024-08-04 02:12:45.437 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:12:45.450 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:12:45.502 +05:30 [INF] Received HTTP response headers after 46.5483ms - 200
+2024-08-04 02:12:45.505 +05:30 [INF] End processing HTTP request after 73.6824ms - 200
+2024-08-04 02:12:45.509 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:12:45.511 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:12:45.689 +05:30 [INF] Received HTTP response headers after 173.6759ms - 200
+2024-08-04 02:12:45.692 +05:30 [INF] End processing HTTP request after 183.2285ms - 200
+2024-08-04 02:12:45.696 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:12:45.698 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:12:45.778 +05:30 [INF] Received HTTP response headers after 77.4814ms - 200
+2024-08-04 02:12:45.781 +05:30 [INF] End processing HTTP request after 85.57ms - 200
+2024-08-04 02:13:53.848 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 02:14:11.518 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 02:14:11.528 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 02:14:12.570 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:14:12.582 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:14:12.883 +05:30 [INF] Received HTTP response headers after 287.3979ms - 200
+2024-08-04 02:14:12.888 +05:30 [INF] End processing HTTP request after 344.1082ms - 200
+2024-08-04 02:14:13.257 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:14:13.260 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:14:13.304 +05:30 [INF] Received HTTP response headers after 39.8692ms - 200
+2024-08-04 02:14:13.308 +05:30 [INF] End processing HTTP request after 52.7693ms - 200
+2024-08-04 02:14:13.313 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:14:13.318 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:14:13.390 +05:30 [INF] Received HTTP response headers after 68.6077ms - 200
+2024-08-04 02:14:13.392 +05:30 [INF] End processing HTTP request after 80.8903ms - 200
+2024-08-04 02:17:21.429 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 02:17:53.698 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 02:17:53.706 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 02:17:54.246 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:17:54.255 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:17:54.413 +05:30 [INF] Received HTTP response headers after 148.8272ms - 200
+2024-08-04 02:17:54.418 +05:30 [INF] End processing HTTP request after 188.6918ms - 200
+2024-08-04 02:17:54.630 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:17:54.635 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:17:54.666 +05:30 [INF] Received HTTP response headers after 28.5097ms - 200
+2024-08-04 02:17:54.668 +05:30 [INF] End processing HTTP request after 40.8306ms - 200
+2024-08-04 02:17:54.672 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:17:54.674 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:17:54.765 +05:30 [INF] Received HTTP response headers after 88.8899ms - 200
+2024-08-04 02:17:54.767 +05:30 [INF] End processing HTTP request after 96.6329ms - 200
+2024-08-04 02:18:33.586 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:18:33.592 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:18:33.642 +05:30 [INF] Received HTTP response headers after 47.7366ms - 200
+2024-08-04 02:18:33.646 +05:30 [INF] End processing HTTP request after 70.2647ms - 200
+2024-08-04 02:18:33.649 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:18:33.651 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:18:33.675 +05:30 [INF] Received HTTP response headers after 22.6273ms - 200
+2024-08-04 02:18:33.677 +05:30 [INF] End processing HTTP request after 29.4882ms - 200
+2024-08-04 02:18:33.679 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:18:33.681 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:18:33.765 +05:30 [INF] Received HTTP response headers after 81.6686ms - 200
+2024-08-04 02:18:33.767 +05:30 [INF] End processing HTTP request after 87.594ms - 200
+2024-08-04 02:19:08.323 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:19:08.325 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:19:08.347 +05:30 [INF] Received HTTP response headers after 20.5035ms - 200
+2024-08-04 02:19:08.349 +05:30 [INF] End processing HTTP request after 26.8589ms - 200
+2024-08-04 02:19:08.352 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:19:08.353 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:19:08.371 +05:30 [INF] Received HTTP response headers after 15.8243ms - 200
+2024-08-04 02:19:08.373 +05:30 [INF] End processing HTTP request after 21.509ms - 200
+2024-08-04 02:19:08.375 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:19:08.376 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:19:08.434 +05:30 [INF] Received HTTP response headers after 55.8901ms - 200
+2024-08-04 02:19:08.436 +05:30 [INF] End processing HTTP request after 61.2642ms - 200
+2024-08-04 02:19:22.178 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:19:22.180 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:19:22.208 +05:30 [INF] Received HTTP response headers after 25.5846ms - 200
+2024-08-04 02:19:22.210 +05:30 [INF] End processing HTTP request after 32.214ms - 200
+2024-08-04 02:19:22.212 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:19:22.213 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:19:22.235 +05:30 [INF] Received HTTP response headers after 18.0315ms - 200
+2024-08-04 02:19:22.238 +05:30 [INF] End processing HTTP request after 25.2619ms - 200
+2024-08-04 02:19:22.241 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:19:22.243 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:19:22.326 +05:30 [INF] Received HTTP response headers after 81.0199ms - 200
+2024-08-04 02:19:22.328 +05:30 [INF] End processing HTTP request after 87.3025ms - 200
+2024-08-04 02:19:30.138 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:19:30.140 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:19:30.169 +05:30 [INF] Received HTTP response headers after 24.6444ms - 200
+2024-08-04 02:19:30.171 +05:30 [INF] End processing HTTP request after 32.9404ms - 200
+2024-08-04 02:19:30.173 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:19:30.175 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:19:30.194 +05:30 [INF] Received HTTP response headers after 17.6948ms - 200
+2024-08-04 02:19:30.196 +05:30 [INF] End processing HTTP request after 22.9955ms - 200
+2024-08-04 02:19:30.198 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:19:30.202 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:19:30.281 +05:30 [INF] Received HTTP response headers after 77.5848ms - 200
+2024-08-04 02:19:30.283 +05:30 [INF] End processing HTTP request after 84.2557ms - 200
+2024-08-04 02:19:33.763 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:19:33.765 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:19:33.797 +05:30 [INF] Received HTTP response headers after 29.1487ms - 200
+2024-08-04 02:19:33.800 +05:30 [INF] End processing HTTP request after 39.7015ms - 200
+2024-08-04 02:20:13.205 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:20:13.210 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:20:13.269 +05:30 [INF] Received HTTP response headers after 57.1489ms - 200
+2024-08-04 02:20:13.271 +05:30 [INF] End processing HTTP request after 74.2245ms - 200
+2024-08-04 02:24:37.373 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:24:37.375 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:24:37.411 +05:30 [INF] Received HTTP response headers after 33.629ms - 200
+2024-08-04 02:24:37.412 +05:30 [INF] End processing HTTP request after 39.7446ms - 200
+2024-08-04 02:24:37.414 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:24:37.416 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:24:37.435 +05:30 [INF] Received HTTP response headers after 16.721ms - 200
+2024-08-04 02:24:37.437 +05:30 [INF] End processing HTTP request after 22.5317ms - 200
+2024-08-04 02:24:37.440 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:24:37.443 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:24:37.545 +05:30 [INF] Received HTTP response headers after 98.9967ms - 200
+2024-08-04 02:24:37.547 +05:30 [INF] End processing HTTP request after 107.4669ms - 200
+2024-08-04 02:25:01.463 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:25:01.465 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:25:01.494 +05:30 [INF] Received HTTP response headers after 26.5433ms - 200
+2024-08-04 02:25:01.497 +05:30 [INF] End processing HTTP request after 33.5016ms - 200
+2024-08-04 02:25:01.500 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:25:01.502 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:25:01.523 +05:30 [INF] Received HTTP response headers after 18.3218ms - 200
+2024-08-04 02:25:01.524 +05:30 [INF] End processing HTTP request after 25.6019ms - 200
+2024-08-04 02:25:01.527 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:25:01.528 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:25:01.598 +05:30 [INF] Received HTTP response headers after 67.9849ms - 200
+2024-08-04 02:25:01.600 +05:30 [INF] End processing HTTP request after 73.8036ms - 200
+2024-08-04 02:26:17.529 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:26:17.531 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:26:17.559 +05:30 [INF] Received HTTP response headers after 27.0891ms - 200
+2024-08-04 02:26:17.561 +05:30 [INF] End processing HTTP request after 32.7145ms - 200
+2024-08-04 02:26:17.563 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:26:17.565 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:26:17.582 +05:30 [INF] Received HTTP response headers after 14.9052ms - 200
+2024-08-04 02:26:17.584 +05:30 [INF] End processing HTTP request after 20.4482ms - 200
+2024-08-04 02:26:17.586 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:26:17.587 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:26:17.652 +05:30 [INF] Received HTTP response headers after 62.8553ms - 200
+2024-08-04 02:26:17.655 +05:30 [INF] End processing HTTP request after 68.2406ms - 200
+2024-08-04 02:29:48.431 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 02:30:12.462 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 02:30:12.469 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 02:30:13.436 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:30:13.448 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:30:13.647 +05:30 [INF] Received HTTP response headers after 187.4157ms - 200
+2024-08-04 02:30:13.652 +05:30 [INF] End processing HTTP request after 241.2221ms - 200
+2024-08-04 02:30:13.917 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:30:13.920 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:30:13.955 +05:30 [INF] Received HTTP response headers after 32.0036ms - 200
+2024-08-04 02:30:13.957 +05:30 [INF] End processing HTTP request after 40.587ms - 200
+2024-08-04 02:30:13.960 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:30:13.963 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:30:14.078 +05:30 [INF] Received HTTP response headers after 112.8956ms - 200
+2024-08-04 02:30:14.080 +05:30 [INF] End processing HTTP request after 119.9078ms - 200
+2024-08-04 02:30:39.442 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 02:30:57.067 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 02:30:57.074 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 02:30:58.171 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:30:58.180 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:30:58.369 +05:30 [INF] Received HTTP response headers after 174.0186ms - 200
+2024-08-04 02:30:58.374 +05:30 [INF] End processing HTTP request after 223.5252ms - 200
+2024-08-04 02:30:58.577 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:30:58.581 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:30:58.625 +05:30 [INF] Received HTTP response headers after 41.4552ms - 200
+2024-08-04 02:30:58.629 +05:30 [INF] End processing HTTP request after 51.533ms - 200
+2024-08-04 02:30:58.632 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:30:58.634 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:30:58.720 +05:30 [INF] Received HTTP response headers after 83.1115ms - 200
+2024-08-04 02:30:58.722 +05:30 [INF] End processing HTTP request after 90.3548ms - 200
+2024-08-04 02:31:16.820 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:31:16.823 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:31:16.877 +05:30 [INF] Received HTTP response headers after 52.3281ms - 200
+2024-08-04 02:31:16.879 +05:30 [INF] End processing HTTP request after 59.6072ms - 200
+2024-08-04 02:31:16.883 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:31:16.885 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:31:16.910 +05:30 [INF] Received HTTP response headers after 22.6758ms - 200
+2024-08-04 02:31:16.912 +05:30 [INF] End processing HTTP request after 30.3991ms - 200
+2024-08-04 02:31:16.916 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:31:16.918 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:31:16.992 +05:30 [INF] Received HTTP response headers after 72.4815ms - 200
+2024-08-04 02:31:16.995 +05:30 [INF] End processing HTTP request after 79.3226ms - 200
+2024-08-04 02:33:31.569 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:33:31.571 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:33:31.605 +05:30 [INF] Received HTTP response headers after 31.1829ms - 200
+2024-08-04 02:33:31.606 +05:30 [INF] End processing HTTP request after 37.1951ms - 200
+2024-08-04 02:33:31.608 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:33:31.610 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:33:31.629 +05:30 [INF] Received HTTP response headers after 17.0157ms - 200
+2024-08-04 02:33:31.631 +05:30 [INF] End processing HTTP request after 22.5693ms - 200
+2024-08-04 02:33:31.633 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:33:31.635 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:33:31.703 +05:30 [INF] Received HTTP response headers after 63.6298ms - 200
+2024-08-04 02:33:31.706 +05:30 [INF] End processing HTTP request after 71.774ms - 200
+2024-08-04 02:33:35.206 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:33:35.208 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:33:35.244 +05:30 [INF] Received HTTP response headers after 33.3909ms - 200
+2024-08-04 02:33:35.246 +05:30 [INF] End processing HTTP request after 41.0101ms - 200
+2024-08-04 02:33:35.252 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:33:35.254 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:33:35.346 +05:30 [INF] Received HTTP response headers after 88.0792ms - 200
+2024-08-04 02:33:35.353 +05:30 [INF] End processing HTTP request after 99.9523ms - 200
+2024-08-04 02:33:35.357 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:33:35.359 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:33:35.468 +05:30 [INF] Received HTTP response headers after 103.7452ms - 200
+2024-08-04 02:33:35.471 +05:30 [INF] End processing HTTP request after 114.4795ms - 200
+2024-08-04 02:33:46.603 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:33:46.606 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:33:46.648 +05:30 [INF] Received HTTP response headers after 39.4114ms - 200
+2024-08-04 02:33:46.650 +05:30 [INF] End processing HTTP request after 47.8892ms - 200
+2024-08-04 02:33:46.653 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:33:46.655 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:33:46.692 +05:30 [INF] Received HTTP response headers after 34.6088ms - 200
+2024-08-04 02:33:46.694 +05:30 [INF] End processing HTTP request after 41.677ms - 200
+2024-08-04 02:33:46.697 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:33:46.699 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:33:46.794 +05:30 [INF] Received HTTP response headers after 91.9367ms - 200
+2024-08-04 02:33:46.796 +05:30 [INF] End processing HTTP request after 99.3459ms - 200
+2024-08-04 02:33:58.357 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:33:58.360 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:33:58.416 +05:30 [INF] Received HTTP response headers after 54.0907ms - 200
+2024-08-04 02:33:58.419 +05:30 [INF] End processing HTTP request after 61.3642ms - 200
+2024-08-04 02:33:58.430 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:33:58.441 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:33:58.473 +05:30 [INF] Received HTTP response headers after 27.9743ms - 200
+2024-08-04 02:33:58.475 +05:30 [INF] End processing HTTP request after 53.3968ms - 200
+2024-08-04 02:33:58.478 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:33:58.480 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:33:58.556 +05:30 [INF] Received HTTP response headers after 72.1959ms - 200
+2024-08-04 02:33:58.558 +05:30 [INF] End processing HTTP request after 80.6531ms - 200
+2024-08-04 02:35:14.662 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 02:35:38.663 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 02:35:38.672 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 02:35:40.299 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:35:40.324 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:35:40.666 +05:30 [INF] Received HTTP response headers after 312.8939ms - 200
+2024-08-04 02:35:40.677 +05:30 [INF] End processing HTTP request after 442.9517ms - 200
+2024-08-04 02:35:41.222 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:35:41.228 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:35:41.293 +05:30 [INF] Received HTTP response headers after 57.5127ms - 200
+2024-08-04 02:35:41.299 +05:30 [INF] End processing HTTP request after 77.5526ms - 200
+2024-08-04 02:35:41.307 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:35:41.314 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:35:41.512 +05:30 [INF] Received HTTP response headers after 192.7427ms - 200
+2024-08-04 02:35:41.517 +05:30 [INF] End processing HTTP request after 212.3435ms - 200
+2024-08-04 02:36:04.264 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:36:04.268 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:36:04.322 +05:30 [INF] Received HTTP response headers after 50.7349ms - 200
+2024-08-04 02:36:04.327 +05:30 [INF] End processing HTTP request after 62.8121ms - 200
+2024-08-04 02:36:04.334 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:36:04.340 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:36:04.624 +05:30 [INF] Received HTTP response headers after 280.4279ms - 200
+2024-08-04 02:36:04.626 +05:30 [INF] End processing HTTP request after 296.6086ms - 200
+2024-08-04 02:36:04.653 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:36:04.660 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:36:04.941 +05:30 [INF] Received HTTP response headers after 267.3248ms - 200
+2024-08-04 02:36:04.944 +05:30 [INF] End processing HTTP request after 313.8125ms - 200
+2024-08-04 02:36:31.639 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:36:31.641 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:36:31.669 +05:30 [INF] Received HTTP response headers after 26.2351ms - 200
+2024-08-04 02:36:31.670 +05:30 [INF] End processing HTTP request after 35.1509ms - 200
+2024-08-04 02:36:31.672 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:36:31.674 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:36:31.694 +05:30 [INF] Received HTTP response headers after 17.3179ms - 200
+2024-08-04 02:36:31.697 +05:30 [INF] End processing HTTP request after 24.7568ms - 200
+2024-08-04 02:36:31.699 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:36:31.701 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:36:31.767 +05:30 [INF] Received HTTP response headers after 63.7934ms - 200
+2024-08-04 02:36:31.769 +05:30 [INF] End processing HTTP request after 70.0323ms - 200
+2024-08-04 02:36:40.787 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:36:40.791 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:36:40.820 +05:30 [INF] Received HTTP response headers after 27.2536ms - 200
+2024-08-04 02:36:40.822 +05:30 [INF] End processing HTTP request after 35.7577ms - 200
+2024-08-04 02:36:40.824 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:36:40.826 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:36:40.846 +05:30 [INF] Received HTTP response headers after 16.3694ms - 200
+2024-08-04 02:36:40.849 +05:30 [INF] End processing HTTP request after 23.7084ms - 200
+2024-08-04 02:36:40.851 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:36:40.853 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:36:40.938 +05:30 [INF] Received HTTP response headers after 82.6198ms - 200
+2024-08-04 02:36:40.941 +05:30 [INF] End processing HTTP request after 89.2078ms - 200
+2024-08-04 02:36:43.504 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:36:43.506 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:36:43.621 +05:30 [INF] Received HTTP response headers after 110.4713ms - 200
+2024-08-04 02:36:43.625 +05:30 [INF] End processing HTTP request after 119.0889ms - 200
+2024-08-04 02:36:47.165 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:36:47.167 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:36:47.250 +05:30 [INF] Received HTTP response headers after 78.1255ms - 200
+2024-08-04 02:36:47.256 +05:30 [INF] End processing HTTP request after 88.2325ms - 200
+2024-08-04 02:36:55.518 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:36:55.524 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:36:55.670 +05:30 [INF] Received HTTP response headers after 140.4409ms - 200
+2024-08-04 02:36:55.678 +05:30 [INF] End processing HTTP request after 160.177ms - 200
+2024-08-04 02:37:38.832 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:37:38.834 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:37:38.868 +05:30 [INF] Received HTTP response headers after 31.4761ms - 200
+2024-08-04 02:37:38.870 +05:30 [INF] End processing HTTP request after 38.6769ms - 200
+2024-08-04 02:37:38.873 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:37:38.877 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:37:38.901 +05:30 [INF] Received HTTP response headers after 22.3262ms - 200
+2024-08-04 02:37:38.904 +05:30 [INF] End processing HTTP request after 31.004ms - 200
+2024-08-04 02:37:38.908 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:37:38.910 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:37:38.973 +05:30 [INF] Received HTTP response headers after 59.716ms - 200
+2024-08-04 02:37:38.976 +05:30 [INF] End processing HTTP request after 70.007ms - 200
+2024-08-04 02:37:46.482 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:37:46.485 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:37:46.622 +05:30 [INF] Received HTTP response headers after 134.231ms - 200
+2024-08-04 02:37:46.626 +05:30 [INF] End processing HTTP request after 144.0604ms - 200
+2024-08-04 02:37:53.191 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:37:53.197 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:37:53.312 +05:30 [INF] Received HTTP response headers after 113.6006ms - 200
+2024-08-04 02:37:53.314 +05:30 [INF] End processing HTTP request after 128.0553ms - 200
+2024-08-04 02:38:32.500 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:38:32.503 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:38:32.535 +05:30 [INF] Received HTTP response headers after 29.8662ms - 200
+2024-08-04 02:38:32.537 +05:30 [INF] End processing HTTP request after 38.0792ms - 200
+2024-08-04 02:38:32.540 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:38:32.542 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:38:32.576 +05:30 [INF] Received HTTP response headers after 30.9836ms - 200
+2024-08-04 02:38:32.578 +05:30 [INF] End processing HTTP request after 38.5503ms - 200
+2024-08-04 02:38:32.580 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:38:32.582 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:38:32.655 +05:30 [INF] Received HTTP response headers after 69.991ms - 200
+2024-08-04 02:38:32.658 +05:30 [INF] End processing HTTP request after 76.6079ms - 200
+2024-08-04 02:39:11.882 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:39:11.887 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:39:11.953 +05:30 [INF] Received HTTP response headers after 62.1671ms - 200
+2024-08-04 02:39:11.957 +05:30 [INF] End processing HTTP request after 77.0944ms - 200
+2024-08-04 02:39:11.961 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:39:11.965 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:39:11.994 +05:30 [INF] Received HTTP response headers after 24.3609ms - 200
+2024-08-04 02:39:11.997 +05:30 [INF] End processing HTTP request after 36.0639ms - 200
+2024-08-04 02:39:12.001 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:39:12.004 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 02:39:12.135 +05:30 [INF] Received HTTP response headers after 126.9984ms - 200
+2024-08-04 02:39:12.138 +05:30 [INF] End processing HTTP request after 137.2298ms - 200
+2024-08-04 02:40:05.858 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:40:05.866 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:40:05.939 +05:30 [INF] Received HTTP response headers after 70.3627ms - 200
+2024-08-04 02:40:05.943 +05:30 [INF] End processing HTTP request after 87.3895ms - 200
+2024-08-04 02:40:08.570 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:40:08.574 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:40:08.611 +05:30 [INF] Received HTTP response headers after 33.031ms - 200
+2024-08-04 02:40:08.615 +05:30 [INF] End processing HTTP request after 46.2876ms - 200
+2024-08-04 02:40:15.776 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:40:15.785 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 02:40:15.855 +05:30 [INF] Received HTTP response headers after 65.4765ms - 200
+2024-08-04 02:40:15.861 +05:30 [INF] End processing HTTP request after 87.0243ms - 200
+2024-08-04 18:12:11.609 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 18:12:53.656 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 18:12:53.666 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 18:12:56.262 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:12:56.275 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:12:56.597 +05:30 [INF] Received HTTP response headers after 302.6013ms - 200
+2024-08-04 18:12:56.604 +05:30 [INF] End processing HTTP request after 371.2208ms - 200
+2024-08-04 18:12:56.966 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:12:56.969 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:12:57.013 +05:30 [INF] Received HTTP response headers after 39.3985ms - 200
+2024-08-04 18:12:57.015 +05:30 [INF] End processing HTTP request after 49.3592ms - 200
+2024-08-04 18:12:57.019 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 18:12:57.022 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 18:12:57.102 +05:30 [INF] Received HTTP response headers after 77.2378ms - 200
+2024-08-04 18:12:57.105 +05:30 [INF] End processing HTTP request after 86.2244ms - 200
+2024-08-04 18:13:04.123 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:13:04.126 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:13:04.161 +05:30 [INF] Received HTTP response headers after 32.536ms - 200
+2024-08-04 18:13:04.164 +05:30 [INF] End processing HTTP request after 43.5049ms - 200
+2024-08-04 18:13:04.166 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:13:04.168 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:13:04.197 +05:30 [INF] Received HTTP response headers after 25.6894ms - 200
+2024-08-04 18:13:04.199 +05:30 [INF] End processing HTTP request after 32.7198ms - 200
+2024-08-04 18:13:04.202 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 18:13:04.206 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 18:13:04.318 +05:30 [INF] Received HTTP response headers after 108.1289ms - 200
+2024-08-04 18:13:04.323 +05:30 [INF] End processing HTTP request after 118.442ms - 200
+2024-08-04 18:13:14.541 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:13:14.545 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:13:14.588 +05:30 [INF] Received HTTP response headers after 38.9824ms - 200
+2024-08-04 18:13:14.591 +05:30 [INF] End processing HTTP request after 55.3867ms - 200
+2024-08-04 18:13:14.593 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:13:14.596 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:13:14.629 +05:30 [INF] Received HTTP response headers after 31.0801ms - 200
+2024-08-04 18:13:14.632 +05:30 [INF] End processing HTTP request after 38.6737ms - 200
+2024-08-04 18:13:14.634 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 18:13:14.637 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 18:13:14.727 +05:30 [INF] Received HTTP response headers after 87.0819ms - 200
+2024-08-04 18:13:14.730 +05:30 [INF] End processing HTTP request after 95.1901ms - 200
+2024-08-04 18:13:22.843 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:13:22.846 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:13:22.873 +05:30 [INF] Received HTTP response headers after 24.6942ms - 200
+2024-08-04 18:13:22.875 +05:30 [INF] End processing HTTP request after 32.8472ms - 200
+2024-08-04 18:13:26.775 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:13:26.777 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:13:26.802 +05:30 [INF] Received HTTP response headers after 23.4713ms - 200
+2024-08-04 18:13:26.805 +05:30 [INF] End processing HTTP request after 29.4453ms - 200
+2024-08-04 18:13:32.477 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:13:32.481 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 18:13:32.515 +05:30 [INF] Received HTTP response headers after 30.986ms - 200
+2024-08-04 18:13:32.517 +05:30 [INF] End processing HTTP request after 43.0288ms - 200
+2024-08-04 19:06:10.628 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 19:08:27.851 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 19:09:11.662 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 19:09:11.667 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 19:09:15.112 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:09:15.122 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:09:15.503 +05:30 [INF] Received HTTP response headers after 232.654ms - 200
+2024-08-04 19:09:15.796 +05:30 [INF] End processing HTTP request after 417.6384ms - 200
+2024-08-04 19:09:16.723 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:09:16.801 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:09:19.265 +05:30 [INF] Received HTTP response headers after 2460.585ms - 200
+2024-08-04 19:09:19.268 +05:30 [INF] End processing HTTP request after 2596.7305ms - 200
+2024-08-04 19:09:19.271 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:09:19.274 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:09:19.406 +05:30 [INF] Received HTTP response headers after 127.5058ms - 200
+2024-08-04 19:09:19.411 +05:30 [INF] End processing HTTP request after 138.2254ms - 200
+2024-08-04 19:09:23.048 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:09:23.052 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:09:23.105 +05:30 [INF] Received HTTP response headers after 48.4078ms - 200
+2024-08-04 19:09:23.111 +05:30 [INF] End processing HTTP request after 63.1635ms - 200
+2024-08-04 19:09:23.115 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:09:23.119 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:09:23.153 +05:30 [INF] Received HTTP response headers after 30.9236ms - 200
+2024-08-04 19:09:23.156 +05:30 [INF] End processing HTTP request after 41.8884ms - 200
+2024-08-04 19:09:23.160 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:09:23.165 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:09:23.305 +05:30 [INF] Received HTTP response headers after 135.43ms - 200
+2024-08-04 19:09:23.310 +05:30 [INF] End processing HTTP request after 148.9249ms - 200
+2024-08-04 19:09:27.343 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:09:27.345 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:09:27.379 +05:30 [INF] Received HTTP response headers after 31.5785ms - 200
+2024-08-04 19:09:27.382 +05:30 [INF] End processing HTTP request after 40.504ms - 200
+2024-08-04 19:17:55.781 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 19:18:59.182 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 19:20:52.243 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 19:20:52.253 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 19:20:53.683 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:20:53.694 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:20:54.148 +05:30 [INF] Received HTTP response headers after 440.5389ms - 200
+2024-08-04 19:20:54.156 +05:30 [INF] End processing HTTP request after 492.0276ms - 200
+2024-08-04 19:20:54.431 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:20:54.434 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:20:54.494 +05:30 [INF] Received HTTP response headers after 54.063ms - 200
+2024-08-04 19:20:54.497 +05:30 [INF] End processing HTTP request after 66.6262ms - 200
+2024-08-04 19:20:54.500 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:20:54.504 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:20:54.583 +05:30 [INF] Received HTTP response headers after 75.6086ms - 200
+2024-08-04 19:20:54.585 +05:30 [INF] End processing HTTP request after 85.4093ms - 200
+2024-08-04 19:21:00.928 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:21:00.930 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:21:00.984 +05:30 [INF] Received HTTP response headers after 51.0605ms - 200
+2024-08-04 19:21:00.986 +05:30 [INF] End processing HTTP request after 57.9705ms - 200
+2024-08-04 19:21:00.991 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:21:00.994 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:21:01.020 +05:30 [INF] Received HTTP response headers after 23.1967ms - 200
+2024-08-04 19:21:01.024 +05:30 [INF] End processing HTTP request after 33.1867ms - 200
+2024-08-04 19:21:01.027 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:21:01.030 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:21:01.113 +05:30 [INF] Received HTTP response headers after 81.0306ms - 200
+2024-08-04 19:21:01.116 +05:30 [INF] End processing HTTP request after 88.8705ms - 200
+2024-08-04 19:21:09.044 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:21:09.046 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:21:09.074 +05:30 [INF] Received HTTP response headers after 26.6648ms - 200
+2024-08-04 19:21:09.076 +05:30 [INF] End processing HTTP request after 32.733ms - 200
+2024-08-04 19:21:09.078 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:21:09.080 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:21:09.109 +05:30 [INF] Received HTTP response headers after 25.6877ms - 200
+2024-08-04 19:21:09.111 +05:30 [INF] End processing HTTP request after 32.2439ms - 200
+2024-08-04 19:21:09.113 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:21:09.115 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:21:09.229 +05:30 [INF] Received HTTP response headers after 110.8794ms - 200
+2024-08-04 19:21:09.231 +05:30 [INF] End processing HTTP request after 117.5498ms - 200
+2024-08-04 19:21:12.081 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:21:12.084 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:21:12.118 +05:30 [INF] Received HTTP response headers after 32.2171ms - 200
+2024-08-04 19:21:12.121 +05:30 [INF] End processing HTTP request after 39.9906ms - 200
+2024-08-04 19:21:14.488 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:21:14.494 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:21:14.552 +05:30 [INF] Received HTTP response headers after 52.4153ms - 200
+2024-08-04 19:21:14.555 +05:30 [INF] End processing HTTP request after 70.4847ms - 200
+2024-08-04 19:21:19.011 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:21:19.016 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:24:17.724 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 19:24:32.063 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 19:24:32.210 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 19:24:36.527 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:24:36.545 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:24:39.160 +05:30 [INF] Received HTTP response headers after 2586.9787ms - 200
+2024-08-04 19:24:39.173 +05:30 [INF] End processing HTTP request after 2687.3657ms - 200
+2024-08-04 19:24:39.542 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:24:39.544 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:24:39.609 +05:30 [INF] Received HTTP response headers after 62.165ms - 200
+2024-08-04 19:24:39.612 +05:30 [INF] End processing HTTP request after 70.9497ms - 200
+2024-08-04 19:24:39.618 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:24:39.621 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:24:39.816 +05:30 [INF] Received HTTP response headers after 189.9457ms - 200
+2024-08-04 19:24:39.823 +05:30 [INF] End processing HTTP request after 202.9852ms - 200
+2024-08-04 19:24:44.507 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:24:44.509 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:24:44.552 +05:30 [INF] Received HTTP response headers after 39.8974ms - 200
+2024-08-04 19:24:44.554 +05:30 [INF] End processing HTTP request after 46.9692ms - 200
+2024-08-04 19:24:47.737 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:24:47.739 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:24:47.764 +05:30 [INF] Received HTTP response headers after 22.6531ms - 200
+2024-08-04 19:24:47.766 +05:30 [INF] End processing HTTP request after 29.1024ms - 200
+2024-08-04 19:24:55.964 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:24:55.972 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:26:11.609 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 19:26:30.070 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 19:26:30.090 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 19:26:31.738 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:26:31.752 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:26:32.113 +05:30 [INF] Received HTTP response headers after 333.5992ms - 200
+2024-08-04 19:26:32.129 +05:30 [INF] End processing HTTP request after 423.3649ms - 200
+2024-08-04 19:26:32.745 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:26:32.777 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:26:32.847 +05:30 [INF] Received HTTP response headers after 65.2397ms - 200
+2024-08-04 19:26:32.851 +05:30 [INF] End processing HTTP request after 148.1896ms - 200
+2024-08-04 19:26:32.855 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:26:32.858 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:26:33.067 +05:30 [INF] Received HTTP response headers after 199.9573ms - 200
+2024-08-04 19:26:33.070 +05:30 [INF] End processing HTTP request after 215.3118ms - 200
+2024-08-04 19:26:37.040 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:26:37.045 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:26:37.137 +05:30 [INF] Received HTTP response headers after 89.5498ms - 200
+2024-08-04 19:26:37.140 +05:30 [INF] End processing HTTP request after 99.5355ms - 200
+2024-08-04 19:26:40.064 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:26:40.071 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:26:40.197 +05:30 [INF] Received HTTP response headers after 122.46ms - 200
+2024-08-04 19:26:40.201 +05:30 [INF] End processing HTTP request after 139.8613ms - 200
+2024-08-04 19:26:48.430 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:26:48.434 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:28:47.070 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 19:29:06.802 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 19:29:06.811 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 19:29:08.056 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:29:08.067 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:29:08.322 +05:30 [INF] Received HTTP response headers after 238.9666ms - 200
+2024-08-04 19:29:08.350 +05:30 [INF] End processing HTTP request after 290.9569ms - 200
+2024-08-04 19:29:08.625 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:29:08.630 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:29:08.681 +05:30 [INF] Received HTTP response headers after 46.6034ms - 200
+2024-08-04 19:29:08.684 +05:30 [INF] End processing HTTP request after 59.5523ms - 200
+2024-08-04 19:29:08.687 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:29:08.690 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:29:08.797 +05:30 [INF] Received HTTP response headers after 101.5848ms - 200
+2024-08-04 19:29:08.800 +05:30 [INF] End processing HTTP request after 112.9374ms - 200
+2024-08-04 19:29:13.121 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:29:13.123 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:29:13.156 +05:30 [INF] Received HTTP response headers after 30.0536ms - 200
+2024-08-04 19:29:13.158 +05:30 [INF] End processing HTTP request after 37.1157ms - 200
+2024-08-04 19:29:16.073 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:29:16.075 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:29:16.098 +05:30 [INF] Received HTTP response headers after 20.6724ms - 200
+2024-08-04 19:29:16.100 +05:30 [INF] End processing HTTP request after 27.1797ms - 200
+2024-08-04 19:32:37.051 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 19:32:58.835 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 19:32:58.894 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 19:33:00.417 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:00.430 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:00.744 +05:30 [INF] Received HTTP response headers after 287.2689ms - 200
+2024-08-04 19:33:00.753 +05:30 [INF] End processing HTTP request after 373.8298ms - 200
+2024-08-04 19:33:01.247 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:01.253 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:01.294 +05:30 [INF] Received HTTP response headers after 38.2157ms - 200
+2024-08-04 19:33:01.297 +05:30 [INF] End processing HTTP request after 62.5171ms - 200
+2024-08-04 19:33:01.302 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:33:01.305 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:33:01.424 +05:30 [INF] Received HTTP response headers after 114.2022ms - 200
+2024-08-04 19:33:01.429 +05:30 [INF] End processing HTTP request after 127.1031ms - 200
+2024-08-04 19:33:05.059 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:05.062 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:05.131 +05:30 [INF] Received HTTP response headers after 63.4612ms - 200
+2024-08-04 19:33:05.137 +05:30 [INF] End processing HTTP request after 76.249ms - 200
+2024-08-04 19:33:05.140 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:05.144 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:05.199 +05:30 [INF] Received HTTP response headers after 50.8991ms - 200
+2024-08-04 19:33:05.203 +05:30 [INF] End processing HTTP request after 62.5197ms - 200
+2024-08-04 19:33:05.207 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:33:05.210 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:33:05.395 +05:30 [INF] Received HTTP response headers after 179.8909ms - 200
+2024-08-04 19:33:05.399 +05:30 [INF] End processing HTTP request after 191.1001ms - 200
+2024-08-04 19:33:12.929 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:12.933 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:12.976 +05:30 [INF] Received HTTP response headers after 39.4462ms - 200
+2024-08-04 19:33:12.980 +05:30 [INF] End processing HTTP request after 51.383ms - 200
+2024-08-04 19:33:12.985 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:12.988 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:13.029 +05:30 [INF] Received HTTP response headers after 38.2965ms - 200
+2024-08-04 19:33:13.033 +05:30 [INF] End processing HTTP request after 47.2576ms - 200
+2024-08-04 19:33:13.036 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:33:13.039 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:33:13.186 +05:30 [INF] Received HTTP response headers after 143.8726ms - 200
+2024-08-04 19:33:13.191 +05:30 [INF] End processing HTTP request after 152.5988ms - 200
+2024-08-04 19:33:16.673 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:16.677 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:16.727 +05:30 [INF] Received HTTP response headers after 46.0403ms - 200
+2024-08-04 19:33:16.731 +05:30 [INF] End processing HTTP request after 57.0132ms - 200
+2024-08-04 19:33:20.120 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:20.123 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:20.154 +05:30 [INF] Received HTTP response headers after 29.7561ms - 200
+2024-08-04 19:33:20.157 +05:30 [INF] End processing HTTP request after 36.6362ms - 200
+2024-08-04 19:33:42.112 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:42.117 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:33:42.156 +05:30 [INF] Received HTTP response headers after 36.5238ms - 200
+2024-08-04 19:33:42.158 +05:30 [INF] End processing HTTP request after 57.5613ms - 200
+2024-08-04 19:34:40.531 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:34:40.535 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:34:40.596 +05:30 [INF] Received HTTP response headers after 56.4452ms - 200
+2024-08-04 19:34:40.598 +05:30 [INF] End processing HTTP request after 68.4339ms - 200
+2024-08-04 19:34:40.601 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:34:40.602 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 19:34:40.638 +05:30 [INF] Received HTTP response headers after 33.5806ms - 200
+2024-08-04 19:34:40.643 +05:30 [INF] End processing HTTP request after 39.8356ms - 200
+2024-08-04 19:34:40.645 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:34:40.648 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:34:40.763 +05:30 [INF] Received HTTP response headers after 113.8668ms - 200
+2024-08-04 19:34:40.765 +05:30 [INF] End processing HTTP request after 120.4426ms - 200
+2024-08-04 19:34:52.142 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:34:52.149 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:34:52.319 +05:30 [INF] Received HTTP response headers after 166.3642ms - 200
+2024-08-04 19:34:52.323 +05:30 [INF] End processing HTTP request after 183.9519ms - 200
+2024-08-04 19:34:56.172 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:34:56.174 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:34:56.304 +05:30 [INF] Received HTTP response headers after 126.6132ms - 200
+2024-08-04 19:34:56.308 +05:30 [INF] End processing HTTP request after 134.1854ms - 200
+2024-08-04 19:35:00.526 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:35:00.528 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 19:35:00.657 +05:30 [INF] Received HTTP response headers after 124.3235ms - 200
+2024-08-04 19:35:00.661 +05:30 [INF] End processing HTTP request after 135.0161ms - 200
+2024-08-04 21:46:23.173 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 21:46:58.043 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 21:46:58.053 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 21:46:59.738 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:46:59.802 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:47:00.280 +05:30 [INF] Received HTTP response headers after 443.3426ms - 200
+2024-08-04 21:47:00.815 +05:30 [INF] End processing HTTP request after 601.2867ms - 200
+2024-08-04 21:47:01.607 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:47:01.615 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:47:01.765 +05:30 [INF] Received HTTP response headers after 134.9917ms - 200
+2024-08-04 21:47:01.770 +05:30 [INF] End processing HTTP request after 165.6232ms - 200
+2024-08-04 21:47:01.780 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:47:01.790 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:47:02.016 +05:30 [INF] Received HTTP response headers after 215.9769ms - 200
+2024-08-04 21:47:02.027 +05:30 [INF] End processing HTTP request after 245.6765ms - 200
+2024-08-04 21:47:09.255 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:47:09.263 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:47:09.316 +05:30 [INF] Received HTTP response headers after 50.351ms - 200
+2024-08-04 21:47:09.320 +05:30 [INF] End processing HTTP request after 65.9416ms - 200
+2024-08-04 21:47:09.323 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:47:09.329 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:47:09.898 +05:30 [INF] Received HTTP response headers after 556.9571ms - 200
+2024-08-04 21:47:09.904 +05:30 [INF] End processing HTTP request after 577.6462ms - 200
+2024-08-04 21:47:09.925 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:47:09.933 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:47:10.203 +05:30 [INF] Received HTTP response headers after 254.977ms - 200
+2024-08-04 21:47:10.213 +05:30 [INF] End processing HTTP request after 298.9712ms - 200
+2024-08-04 21:47:17.237 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:47:17.241 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:47:17.306 +05:30 [INF] Received HTTP response headers after 59.4258ms - 200
+2024-08-04 21:47:17.312 +05:30 [INF] End processing HTTP request after 74.0482ms - 200
+2024-08-04 21:47:17.317 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:47:17.319 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:47:17.382 +05:30 [INF] Received HTTP response headers after 57.7844ms - 200
+2024-08-04 21:47:17.387 +05:30 [INF] End processing HTTP request after 70.1583ms - 200
+2024-08-04 21:47:17.393 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:47:17.396 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:47:17.936 +05:30 [INF] Received HTTP response headers after 532.7863ms - 200
+2024-08-04 21:47:17.940 +05:30 [INF] End processing HTTP request after 548.3181ms - 200
+2024-08-04 21:47:22.318 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:47:22.321 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:47:22.358 +05:30 [INF] Received HTTP response headers after 32.801ms - 200
+2024-08-04 21:47:22.362 +05:30 [INF] End processing HTTP request after 42.2157ms - 200
+2024-08-04 21:47:25.185 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:47:25.188 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:47:25.230 +05:30 [INF] Received HTTP response headers after 37.8474ms - 200
+2024-08-04 21:47:25.233 +05:30 [INF] End processing HTTP request after 47.2539ms - 200
+2024-08-04 21:48:46.052 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:48:46.054 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:48:46.111 +05:30 [INF] Received HTTP response headers after 54.5161ms - 200
+2024-08-04 21:48:46.113 +05:30 [INF] End processing HTTP request after 60.6684ms - 200
+2024-08-04 21:57:01.803 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 21:58:33.352 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 21:58:33.357 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 21:58:33.957 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:33.971 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:34.232 +05:30 [INF] Received HTTP response headers after 247.3404ms - 200
+2024-08-04 21:58:34.238 +05:30 [INF] End processing HTTP request after 299.9735ms - 200
+2024-08-04 21:58:34.437 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:34.441 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:34.465 +05:30 [INF] Received HTTP response headers after 22.5737ms - 200
+2024-08-04 21:58:34.467 +05:30 [INF] End processing HTTP request after 32.0954ms - 200
+2024-08-04 21:58:34.468 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:58:34.471 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:58:34.554 +05:30 [INF] Received HTTP response headers after 78.9178ms - 200
+2024-08-04 21:58:34.556 +05:30 [INF] End processing HTTP request after 87.133ms - 200
+2024-08-04 21:58:37.033 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:37.035 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:37.063 +05:30 [INF] Received HTTP response headers after 26.013ms - 200
+2024-08-04 21:58:37.065 +05:30 [INF] End processing HTTP request after 32.2623ms - 200
+2024-08-04 21:58:37.067 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:37.069 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:37.101 +05:30 [INF] Received HTTP response headers after 28.7964ms - 200
+2024-08-04 21:58:37.103 +05:30 [INF] End processing HTTP request after 35.5176ms - 200
+2024-08-04 21:58:37.108 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:58:37.111 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:58:37.192 +05:30 [INF] Received HTTP response headers after 78.6028ms - 200
+2024-08-04 21:58:37.193 +05:30 [INF] End processing HTTP request after 86.4192ms - 200
+2024-08-04 21:58:46.210 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:46.212 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:46.241 +05:30 [INF] Received HTTP response headers after 27.901ms - 200
+2024-08-04 21:58:46.243 +05:30 [INF] End processing HTTP request after 33.3628ms - 200
+2024-08-04 21:58:46.245 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:46.246 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:46.265 +05:30 [INF] Received HTTP response headers after 17.4934ms - 200
+2024-08-04 21:58:46.267 +05:30 [INF] End processing HTTP request after 22.0572ms - 200
+2024-08-04 21:58:46.269 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:58:46.272 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:58:46.390 +05:30 [INF] Received HTTP response headers after 115.3586ms - 200
+2024-08-04 21:58:46.392 +05:30 [INF] End processing HTTP request after 122.8724ms - 200
+2024-08-04 21:58:50.015 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:50.017 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:50.043 +05:30 [INF] Received HTTP response headers after 24.1566ms - 200
+2024-08-04 21:58:50.046 +05:30 [INF] End processing HTTP request after 30.1728ms - 200
+2024-08-04 21:58:52.919 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:52.923 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:52.955 +05:30 [INF] Received HTTP response headers after 28.4088ms - 200
+2024-08-04 21:58:52.958 +05:30 [INF] End processing HTTP request after 38.6715ms - 200
+2024-08-04 21:58:53.796 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:53.798 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:58:53.825 +05:30 [INF] Received HTTP response headers after 24.7987ms - 200
+2024-08-04 21:58:53.826 +05:30 [INF] End processing HTTP request after 32.7434ms - 200
+2024-08-04 21:59:26.774 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:59:26.777 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:59:26.806 +05:30 [INF] Received HTTP response headers after 27.2279ms - 200
+2024-08-04 21:59:26.811 +05:30 [INF] End processing HTTP request after 35.0252ms - 200
+2024-08-04 21:59:26.814 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:59:26.816 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:59:26.855 +05:30 [INF] Received HTTP response headers after 36.3778ms - 200
+2024-08-04 21:59:26.857 +05:30 [INF] End processing HTTP request after 43.3847ms - 200
+2024-08-04 21:59:26.861 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:59:26.863 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 21:59:26.959 +05:30 [INF] Received HTTP response headers after 93.4307ms - 200
+2024-08-04 21:59:26.961 +05:30 [INF] End processing HTTP request after 101.6351ms - 200
+2024-08-04 21:59:31.989 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:59:31.991 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:59:32.016 +05:30 [INF] Received HTTP response headers after 22.2873ms - 200
+2024-08-04 21:59:32.018 +05:30 [INF] End processing HTTP request after 28.722ms - 200
+2024-08-04 21:59:34.632 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:59:34.633 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:59:34.656 +05:30 [INF] Received HTTP response headers after 21.0725ms - 200
+2024-08-04 21:59:34.658 +05:30 [INF] End processing HTTP request after 26.6922ms - 200
+2024-08-04 21:59:34.929 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:59:34.931 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 21:59:34.953 +05:30 [INF] Received HTTP response headers after 20.7529ms - 200
+2024-08-04 21:59:34.955 +05:30 [INF] End processing HTTP request after 26.5365ms - 200
+2024-08-04 22:00:30.370 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:00:30.373 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:00:30.401 +05:30 [INF] Received HTTP response headers after 26.0026ms - 200
+2024-08-04 22:00:30.404 +05:30 [INF] End processing HTTP request after 33.7497ms - 200
+2024-08-04 22:00:30.408 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:00:30.411 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:00:30.437 +05:30 [INF] Received HTTP response headers after 24.4646ms - 200
+2024-08-04 22:00:30.440 +05:30 [INF] End processing HTTP request after 33.2245ms - 200
+2024-08-04 22:00:30.445 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:00:30.446 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:00:30.520 +05:30 [INF] Received HTTP response headers after 70.9261ms - 200
+2024-08-04 22:00:30.522 +05:30 [INF] End processing HTTP request after 78.6243ms - 200
+2024-08-04 22:00:34.872 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:00:34.881 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:00:34.970 +05:30 [INF] Received HTTP response headers after 79.172ms - 200
+2024-08-04 22:00:34.975 +05:30 [INF] End processing HTTP request after 104.6503ms - 200
+2024-08-04 22:00:36.420 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:00:36.424 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:00:36.449 +05:30 [INF] Received HTTP response headers after 21.8083ms - 200
+2024-08-04 22:00:36.450 +05:30 [INF] End processing HTTP request after 34.3075ms - 200
+2024-08-04 22:00:36.808 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:00:36.813 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:00:36.834 +05:30 [INF] Received HTTP response headers after 19.154ms - 200
+2024-08-04 22:00:36.836 +05:30 [INF] End processing HTTP request after 32.4604ms - 200
+2024-08-04 22:01:35.678 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:01:35.685 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:01:35.864 +05:30 [INF] Received HTTP response headers after 169.0013ms - 200
+2024-08-04 22:01:35.870 +05:30 [INF] End processing HTTP request after 194.4463ms - 200
+2024-08-04 22:01:36.200 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:01:36.205 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:01:36.304 +05:30 [INF] Received HTTP response headers after 93.8481ms - 200
+2024-08-04 22:01:36.309 +05:30 [INF] End processing HTTP request after 108.571ms - 200
+2024-08-04 22:04:37.639 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 22:05:02.660 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 22:05:02.666 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 22:05:03.407 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:05:03.424 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:05:03.815 +05:30 [INF] Received HTTP response headers after 361.1426ms - 500
+2024-08-04 22:05:03.828 +05:30 [INF] End processing HTTP request after 442.723ms - 500
+2024-08-04 22:05:04.066 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at PollService.Controllers.PollController.GetAllPolls(Int32 skip, Int32 take) in D:\VoteVoice\votevoice-server\VoteVoice\PollService\Controllers\PollController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-08-04 22:05:28.291 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 22:05:28.297 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 22:05:28.442 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:05:28.445 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:05:28.594 +05:30 [INF] Received HTTP response headers after 145.9966ms - 500
+2024-08-04 22:05:28.596 +05:30 [INF] End processing HTTP request after 157.7728ms - 500
+2024-08-04 22:05:28.727 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at PollService.Controllers.PollController.GetAllPollsByUser(Int32 skip, Int32 take, Int64 userId) in D:\VoteVoice\votevoice-server\VoteVoice\PollService\Controllers\PollController.cs:line 56
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-08-04 22:05:54.024 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:05:54.027 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:05:54.182 +05:30 [INF] Received HTTP response headers after 149.1237ms - 500
+2024-08-04 22:05:54.185 +05:30 [INF] End processing HTTP request after 160.3009ms - 500
+2024-08-04 22:05:54.352 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at PollService.Controllers.PollController.GetAllPolls(Int32 skip, Int32 take) in D:\VoteVoice\votevoice-server\VoteVoice\PollService\Controllers\PollController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-08-04 22:06:25.335 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:06:25.337 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:09:32.360 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 22:09:51.167 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 22:09:52.481 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 22:09:58.318 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:09:58.325 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:12:09.339 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 22:12:30.934 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 22:12:30.940 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 22:12:41.727 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:12:41.744 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:12:45.319 +05:30 [INF] Received HTTP response headers after 3562.5109ms - 200
+2024-08-04 22:12:45.324 +05:30 [INF] End processing HTTP request after 3628.9487ms - 200
+2024-08-04 22:12:45.669 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[PollService.Business.Services.Dto.UserDetailDto]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'userId', line 1, position 10.
+   at PollService.Controllers.PollController.GetAllPolls(Int32 skip, Int32 take) in D:\VoteVoice\votevoice-server\VoteVoice\PollService\Controllers\PollController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-08-04 22:13:30.073 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:13:30.079 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:13:33.310 +05:30 [INF] Received HTTP response headers after 3228.1398ms - 200
+2024-08-04 22:13:33.313 +05:30 [INF] End processing HTTP request after 3242.8528ms - 200
+2024-08-04 22:13:33.423 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[PollService.Business.Services.Dto.UserDetailDto]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'userId', line 1, position 10.
+   at PollService.Controllers.PollController.GetAllPolls(Int32 skip, Int32 take) in D:\VoteVoice\votevoice-server\VoteVoice\PollService\Controllers\PollController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-08-04 22:14:32.671 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:14:32.677 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:14:35.575 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:14:35.579 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:14:41.927 +05:30 [INF] Received HTTP response headers after 9245.0212ms - 200
+2024-08-04 22:14:41.931 +05:30 [INF] End processing HTTP request after 9260.7856ms - 200
+2024-08-04 22:14:43.589 +05:30 [INF] Received HTTP response headers after 8006.2864ms - 200
+2024-08-04 22:14:43.593 +05:30 [INF] End processing HTTP request after 8019.0556ms - 200
+2024-08-04 22:14:43.748 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[PollService.Business.Services.Dto.UserDetailDto]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'userId', line 1, position 10.
+   at PollService.Controllers.PollController.GetAllPolls(Int32 skip, Int32 take) in D:\VoteVoice\votevoice-server\VoteVoice\PollService\Controllers\PollController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-08-04 22:14:43.749 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[PollService.Business.Services.Dto.UserDetailDto]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'userId', line 1, position 10.
+   at PollService.Controllers.PollController.GetAllPolls(Int32 skip, Int32 take) in D:\VoteVoice\votevoice-server\VoteVoice\PollService\Controllers\PollController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-08-04 22:19:04.239 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-04 22:19:38.154 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 22:19:38.161 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 22:19:40.494 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:19:40.513 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:19:43.442 +05:30 [INF] Received HTTP response headers after 2899.9835ms - 200
+2024-08-04 22:19:43.454 +05:30 [INF] End processing HTTP request after 3006.6034ms - 200
+2024-08-04 22:19:43.578 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:19:43.580 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:19:47.143 +05:30 [INF] Received HTTP response headers after 3558.2336ms - 200
+2024-08-04 22:19:47.145 +05:30 [INF] End processing HTTP request after 3567.8231ms - 200
+2024-08-04 22:19:47.148 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:19:47.152 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:19:48.930 +05:30 [INF] Received HTTP response headers after 1775.5963ms - 200
+2024-08-04 22:19:48.934 +05:30 [INF] End processing HTTP request after 1784.3822ms - 200
+2024-08-04 22:20:00.658 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 22:20:00.662 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-04 22:20:00.852 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:20:00.855 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:20:00.958 +05:30 [INF] Received HTTP response headers after 98.8093ms - 200
+2024-08-04 22:20:00.962 +05:30 [INF] End processing HTTP request after 110.5558ms - 200
+2024-08-04 22:20:18.500 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:20:18.503 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:20:18.583 +05:30 [INF] Received HTTP response headers after 77.8578ms - 200
+2024-08-04 22:20:18.585 +05:30 [INF] End processing HTTP request after 85.0326ms - 200
+2024-08-04 22:20:20.978 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:20:20.983 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:20:21.078 +05:30 [INF] Received HTTP response headers after 91.6876ms - 200
+2024-08-04 22:20:21.085 +05:30 [INF] End processing HTTP request after 107.206ms - 200
+2024-08-04 22:20:21.909 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:20:21.911 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:20:21.977 +05:30 [INF] Received HTTP response headers after 63.786ms - 200
+2024-08-04 22:20:21.980 +05:30 [INF] End processing HTTP request after 70.6508ms - 200
+2024-08-04 22:21:05.337 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:21:05.342 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:21:05.458 +05:30 [INF] Received HTTP response headers after 112.4894ms - 200
+2024-08-04 22:21:05.463 +05:30 [INF] End processing HTTP request after 126.2733ms - 200
+2024-08-04 22:21:24.138 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:21:24.142 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:21:24.602 +05:30 [INF] Received HTTP response headers after 457.3031ms - 200
+2024-08-04 22:21:24.604 +05:30 [INF] End processing HTTP request after 487.6246ms - 200
+2024-08-04 22:21:30.346 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:21:30.348 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:21:30.434 +05:30 [INF] Received HTTP response headers after 79.9698ms - 200
+2024-08-04 22:21:30.440 +05:30 [INF] End processing HTTP request after 92.0949ms - 200
+2024-08-04 22:21:30.750 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:21:30.753 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:21:30.845 +05:30 [INF] Received HTTP response headers after 89.8299ms - 200
+2024-08-04 22:21:30.848 +05:30 [INF] End processing HTTP request after 98.2773ms - 200
+2024-08-04 22:21:33.880 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:21:33.885 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:21:34.063 +05:30 [INF] Received HTTP response headers after 171.7535ms - 200
+2024-08-04 22:21:34.073 +05:30 [INF] End processing HTTP request after 189.3407ms - 200
+2024-08-04 22:22:10.116 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:22:10.118 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:22:10.173 +05:30 [INF] Received HTTP response headers after 49.6921ms - 200
+2024-08-04 22:22:10.175 +05:30 [INF] End processing HTTP request after 59.3622ms - 200
+2024-08-04 22:22:10.177 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:22:10.180 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:22:10.209 +05:30 [INF] Received HTTP response headers after 27.4184ms - 200
+2024-08-04 22:22:10.210 +05:30 [INF] End processing HTTP request after 33.4026ms - 200
+2024-08-04 22:22:10.212 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:22:10.214 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:22:10.286 +05:30 [INF] Received HTTP response headers after 69.3354ms - 200
+2024-08-04 22:22:10.289 +05:30 [INF] End processing HTTP request after 75.623ms - 200
+2024-08-04 22:22:13.325 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:22:13.332 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:22:13.368 +05:30 [INF] Received HTTP response headers after 33.3735ms - 200
+2024-08-04 22:22:13.370 +05:30 [INF] End processing HTTP request after 51.0183ms - 200
+2024-08-04 22:22:15.362 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:22:15.364 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:22:15.401 +05:30 [INF] Received HTTP response headers after 34.9787ms - 200
+2024-08-04 22:22:15.404 +05:30 [INF] End processing HTTP request after 41.5371ms - 200
+2024-08-04 22:22:15.924 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:22:15.927 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:22:15.953 +05:30 [INF] Received HTTP response headers after 24.434ms - 200
+2024-08-04 22:22:15.957 +05:30 [INF] End processing HTTP request after 33.3934ms - 200
+2024-08-04 22:22:21.177 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:22:21.181 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:22:21.224 +05:30 [INF] Received HTTP response headers after 41.1587ms - 200
+2024-08-04 22:22:21.226 +05:30 [INF] End processing HTTP request after 50.9695ms - 200
+2024-08-04 22:28:08.281 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:28:08.284 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:28:08.392 +05:30 [INF] Received HTTP response headers after 105.3852ms - 200
+2024-08-04 22:28:08.397 +05:30 [INF] End processing HTTP request after 115.3319ms - 200
+2024-08-04 22:28:10.515 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:28:10.520 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:28:10.557 +05:30 [INF] Received HTTP response headers after 34.8422ms - 200
+2024-08-04 22:28:10.559 +05:30 [INF] End processing HTTP request after 52.1099ms - 200
+2024-08-04 22:28:10.561 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:28:10.564 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:28:10.591 +05:30 [INF] Received HTTP response headers after 24.2903ms - 200
+2024-08-04 22:28:10.593 +05:30 [INF] End processing HTTP request after 32.2309ms - 200
+2024-08-04 22:28:10.596 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:28:10.598 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:28:10.676 +05:30 [INF] Received HTTP response headers after 75.7653ms - 200
+2024-08-04 22:28:10.680 +05:30 [INF] End processing HTTP request after 82.7443ms - 200
+2024-08-04 22:30:13.300 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:30:13.302 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:30:13.406 +05:30 [INF] Received HTTP response headers after 98.9803ms - 200
+2024-08-04 22:30:13.412 +05:30 [INF] End processing HTTP request after 108.7766ms - 200
+2024-08-04 22:30:24.267 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:30:24.274 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:30:24.311 +05:30 [INF] Received HTTP response headers after 35.5088ms - 200
+2024-08-04 22:30:24.313 +05:30 [INF] End processing HTTP request after 51.9217ms - 200
+2024-08-04 22:30:27.999 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:30:28.005 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:30:28.045 +05:30 [INF] Received HTTP response headers after 37.2708ms - 200
+2024-08-04 22:30:28.046 +05:30 [INF] End processing HTTP request after 51.8733ms - 200
+2024-08-04 22:30:34.604 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:30:34.609 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:30:34.628 +05:30 [INF] Received HTTP response headers after 17.4617ms - 200
+2024-08-04 22:30:34.630 +05:30 [INF] End processing HTTP request after 29.9836ms - 200
+2024-08-04 22:30:34.632 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:30:34.634 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:30:34.653 +05:30 [INF] Received HTTP response headers after 16.0034ms - 200
+2024-08-04 22:30:34.655 +05:30 [INF] End processing HTTP request after 22.2105ms - 200
+2024-08-04 22:30:55.522 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:30:55.527 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:30:55.549 +05:30 [INF] Received HTTP response headers after 19.9621ms - 200
+2024-08-04 22:30:55.552 +05:30 [INF] End processing HTTP request after 30.3764ms - 200
+2024-08-04 22:30:55.554 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:30:55.556 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:30:55.576 +05:30 [INF] Received HTTP response headers after 17.4355ms - 200
+2024-08-04 22:30:55.578 +05:30 [INF] End processing HTTP request after 23.225ms - 200
+2024-08-04 22:30:55.580 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:30:55.582 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:30:55.648 +05:30 [INF] Received HTTP response headers after 64.2368ms - 200
+2024-08-04 22:30:55.652 +05:30 [INF] End processing HTTP request after 70.2048ms - 200
+2024-08-04 22:33:18.635 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:33:18.637 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:33:18.671 +05:30 [INF] Received HTTP response headers after 32.2031ms - 200
+2024-08-04 22:33:18.673 +05:30 [INF] End processing HTTP request after 39.9495ms - 200
+2024-08-04 22:33:18.675 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:33:18.678 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:33:18.699 +05:30 [INF] Received HTTP response headers after 17.9547ms - 200
+2024-08-04 22:33:18.701 +05:30 [INF] End processing HTTP request after 25.1154ms - 200
+2024-08-04 22:33:18.703 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:18.704 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:18.763 +05:30 [INF] Received HTTP response headers after 54.5742ms - 200
+2024-08-04 22:33:18.765 +05:30 [INF] End processing HTTP request after 62.3175ms - 200
+2024-08-04 22:33:35.658 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:33:35.661 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:33:35.729 +05:30 [INF] Received HTTP response headers after 64.0784ms - 200
+2024-08-04 22:33:35.734 +05:30 [INF] End processing HTTP request after 73.7282ms - 200
+2024-08-04 22:33:35.737 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:33:35.741 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:33:35.784 +05:30 [INF] Received HTTP response headers after 38.8346ms - 200
+2024-08-04 22:33:35.786 +05:30 [INF] End processing HTTP request after 49.6412ms - 200
+2024-08-04 22:33:35.788 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:35.791 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:35.872 +05:30 [INF] Received HTTP response headers after 77.3347ms - 200
+2024-08-04 22:33:35.875 +05:30 [INF] End processing HTTP request after 85.2809ms - 200
+2024-08-04 22:33:57.537 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:57.539 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:57.541 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:57.548 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:57.581 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:57.588 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:57.599 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:57.603 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:57.605 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:57.631 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:57.648 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:57.652 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:57.673 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:57.677 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:57.680 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:57.683 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:33:57.834 +05:30 [INF] Received HTTP response headers after 287.8787ms - 200
+2024-08-04 22:33:57.839 +05:30 [INF] End processing HTTP request after 300.3898ms - 200
+2024-08-04 22:33:57.849 +05:30 [INF] Received HTTP response headers after 288.3426ms - 200
+2024-08-04 22:33:57.864 +05:30 [INF] End processing HTTP request after 314.8602ms - 200
+2024-08-04 22:33:57.908 +05:30 [INF] Received HTTP response headers after 312.378ms - 200
+2024-08-04 22:33:57.915 +05:30 [INF] End processing HTTP request after 334.3731ms - 200
+2024-08-04 22:33:57.919 +05:30 [INF] Received HTTP response headers after 309.4822ms - 200
+2024-08-04 22:33:57.922 +05:30 [INF] End processing HTTP request after 323.0767ms - 200
+2024-08-04 22:33:57.924 +05:30 [INF] Received HTTP response headers after 289.9793ms - 200
+2024-08-04 22:33:57.932 +05:30 [INF] End processing HTTP request after 324.9215ms - 200
+2024-08-04 22:33:57.951 +05:30 [INF] Received HTTP response headers after 269.4129ms - 200
+2024-08-04 22:33:57.955 +05:30 [INF] End processing HTTP request after 281.9406ms - 200
+2024-08-04 22:33:57.976 +05:30 [INF] Received HTTP response headers after 320.6058ms - 200
+2024-08-04 22:33:57.981 +05:30 [INF] End processing HTTP request after 335.812ms - 200
+2024-08-04 22:33:57.984 +05:30 [INF] Received HTTP response headers after 295.8523ms - 200
+2024-08-04 22:33:57.988 +05:30 [INF] End processing HTTP request after 310.7119ms - 200
+2024-08-04 22:34:17.710 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:34:17.712 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:34:17.796 +05:30 [INF] Received HTTP response headers after 81.6746ms - 200
+2024-08-04 22:34:17.801 +05:30 [INF] End processing HTTP request after 90.2107ms - 200
+2024-08-04 22:51:03.646 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:51:03.653 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:51:03.718 +05:30 [INF] Received HTTP response headers after 59.6957ms - 200
+2024-08-04 22:51:03.720 +05:30 [INF] End processing HTTP request after 75.7685ms - 200
+2024-08-04 22:51:03.723 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:51:03.725 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:51:03.780 +05:30 [INF] Received HTTP response headers after 41.7284ms - 200
+2024-08-04 22:51:03.787 +05:30 [INF] End processing HTTP request after 59.926ms - 200
+2024-08-04 22:51:03.791 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:51:03.794 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:51:03.917 +05:30 [INF] Received HTTP response headers after 118.4162ms - 200
+2024-08-04 22:51:03.919 +05:30 [INF] End processing HTTP request after 129.5404ms - 200
+2024-08-04 22:51:56.604 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:51:56.606 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:51:56.643 +05:30 [INF] Received HTTP response headers after 35.0399ms - 200
+2024-08-04 22:51:56.646 +05:30 [INF] End processing HTTP request after 41.5808ms - 200
+2024-08-04 22:51:56.649 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:51:56.651 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:51:56.674 +05:30 [INF] Received HTTP response headers after 20.6371ms - 200
+2024-08-04 22:51:56.677 +05:30 [INF] End processing HTTP request after 28.0089ms - 200
+2024-08-04 22:51:56.680 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:51:56.682 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:51:56.775 +05:30 [INF] Received HTTP response headers after 90.0243ms - 200
+2024-08-04 22:51:56.777 +05:30 [INF] End processing HTTP request after 98.4675ms - 200
+2024-08-04 22:59:26.847 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:59:26.849 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:59:26.883 +05:30 [INF] Received HTTP response headers after 31.1234ms - 200
+2024-08-04 22:59:26.885 +05:30 [INF] End processing HTTP request after 37.5946ms - 200
+2024-08-04 22:59:26.887 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:59:26.889 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 22:59:26.914 +05:30 [INF] Received HTTP response headers after 23.1691ms - 200
+2024-08-04 22:59:26.916 +05:30 [INF] End processing HTTP request after 29.0877ms - 200
+2024-08-04 22:59:26.918 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:59:26.920 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 22:59:26.992 +05:30 [INF] Received HTTP response headers after 69.8728ms - 200
+2024-08-04 22:59:26.995 +05:30 [INF] End processing HTTP request after 75.2547ms - 200
+2024-08-04 23:02:01.141 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:02:01.144 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:02:01.193 +05:30 [INF] Received HTTP response headers after 46.785ms - 200
+2024-08-04 23:02:01.196 +05:30 [INF] End processing HTTP request after 54.9199ms - 200
+2024-08-04 23:02:01.199 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:02:01.202 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:02:01.246 +05:30 [INF] Received HTTP response headers after 41.6001ms - 200
+2024-08-04 23:02:01.248 +05:30 [INF] End processing HTTP request after 49.4615ms - 200
+2024-08-04 23:02:01.251 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:02:01.252 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:02:01.348 +05:30 [INF] Received HTTP response headers after 93.3094ms - 200
+2024-08-04 23:02:01.350 +05:30 [INF] End processing HTTP request after 99.8797ms - 200
+2024-08-04 23:02:26.445 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:02:26.449 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:02:26.473 +05:30 [INF] Received HTTP response headers after 21.401ms - 200
+2024-08-04 23:02:26.475 +05:30 [INF] End processing HTTP request after 31.0882ms - 200
+2024-08-04 23:02:26.477 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:02:26.479 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:02:26.503 +05:30 [INF] Received HTTP response headers after 21.8511ms - 200
+2024-08-04 23:02:26.505 +05:30 [INF] End processing HTTP request after 28.0696ms - 200
+2024-08-04 23:02:26.507 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:02:26.510 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:02:26.642 +05:30 [INF] Received HTTP response headers after 130.3339ms - 200
+2024-08-04 23:02:26.644 +05:30 [INF] End processing HTTP request after 136.5198ms - 200
+2024-08-04 23:02:39.947 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:02:39.950 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:02:39.980 +05:30 [INF] Received HTTP response headers after 26.2571ms - 200
+2024-08-04 23:02:39.983 +05:30 [INF] End processing HTTP request after 37.6818ms - 200
+2024-08-04 23:02:39.984 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:02:39.986 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:02:40.011 +05:30 [INF] Received HTTP response headers after 22.8232ms - 200
+2024-08-04 23:02:40.014 +05:30 [INF] End processing HTTP request after 27.9003ms - 200
+2024-08-04 23:02:40.016 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:02:40.018 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:02:40.082 +05:30 [INF] Received HTTP response headers after 62.6341ms - 200
+2024-08-04 23:02:40.085 +05:30 [INF] End processing HTTP request after 68.6033ms - 200
+2024-08-04 23:04:17.119 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:04:17.123 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:04:17.181 +05:30 [INF] Received HTTP response headers after 54.196ms - 200
+2024-08-04 23:04:17.184 +05:30 [INF] End processing HTTP request after 65.5185ms - 200
+2024-08-04 23:04:17.188 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:04:17.193 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:04:17.245 +05:30 [INF] Received HTTP response headers after 45.45ms - 200
+2024-08-04 23:04:17.249 +05:30 [INF] End processing HTTP request after 60.5633ms - 200
+2024-08-04 23:04:17.253 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:04:17.257 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:04:17.382 +05:30 [INF] Received HTTP response headers after 120.6478ms - 200
+2024-08-04 23:04:17.386 +05:30 [INF] End processing HTTP request after 133.045ms - 200
+2024-08-04 23:04:34.557 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:04:34.561 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:04:34.640 +05:30 [INF] Received HTTP response headers after 75.2818ms - 200
+2024-08-04 23:04:34.644 +05:30 [INF] End processing HTTP request after 86.1684ms - 200
+2024-08-04 23:04:34.650 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:04:34.654 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:04:34.715 +05:30 [INF] Received HTTP response headers after 58.0163ms - 200
+2024-08-04 23:04:34.721 +05:30 [INF] End processing HTTP request after 71.4445ms - 200
+2024-08-04 23:04:34.726 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:04:34.729 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:04:34.890 +05:30 [INF] Received HTTP response headers after 156.726ms - 200
+2024-08-04 23:04:34.895 +05:30 [INF] End processing HTTP request after 168.3615ms - 200
+2024-08-04 23:04:58.770 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:04:58.772 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:04:58.799 +05:30 [INF] Received HTTP response headers after 23.936ms - 200
+2024-08-04 23:04:58.803 +05:30 [INF] End processing HTTP request after 32.7806ms - 200
+2024-08-04 23:04:58.805 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:04:58.807 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:04:58.832 +05:30 [INF] Received HTTP response headers after 21.4091ms - 200
+2024-08-04 23:04:58.836 +05:30 [INF] End processing HTTP request after 28.5437ms - 200
+2024-08-04 23:04:58.840 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:04:58.843 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:04:58.952 +05:30 [INF] Received HTTP response headers after 104.4111ms - 200
+2024-08-04 23:04:58.955 +05:30 [INF] End processing HTTP request after 116.2589ms - 200
+2024-08-04 23:05:44.959 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:05:44.963 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:05:45.020 +05:30 [INF] Received HTTP response headers after 53.0541ms - 200
+2024-08-04 23:05:45.023 +05:30 [INF] End processing HTTP request after 66.2637ms - 200
+2024-08-04 23:05:45.029 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:05:45.032 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:05:45.083 +05:30 [INF] Received HTTP response headers after 47.7149ms - 200
+2024-08-04 23:05:45.087 +05:30 [INF] End processing HTTP request after 59.2896ms - 200
+2024-08-04 23:05:45.093 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:05:45.097 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:05:45.261 +05:30 [INF] Received HTTP response headers after 158.9509ms - 200
+2024-08-04 23:05:45.264 +05:30 [INF] End processing HTTP request after 174.2473ms - 200
+2024-08-04 23:06:01.956 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:06:01.965 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:06:02.031 +05:30 [INF] Received HTTP response headers after 62.5281ms - 200
+2024-08-04 23:06:02.048 +05:30 [INF] End processing HTTP request after 81.2207ms - 200
+2024-08-04 23:06:02.054 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:06:02.061 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:06:02.114 +05:30 [INF] Received HTTP response headers after 50.0154ms - 200
+2024-08-04 23:06:02.119 +05:30 [INF] End processing HTTP request after 65.5528ms - 200
+2024-08-04 23:06:02.124 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:06:02.128 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:06:02.286 +05:30 [INF] Received HTTP response headers after 150.3979ms - 200
+2024-08-04 23:06:02.293 +05:30 [INF] End processing HTTP request after 167.2066ms - 200
+2024-08-04 23:06:13.388 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:06:13.392 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:06:13.454 +05:30 [INF] Received HTTP response headers after 57.8105ms - 200
+2024-08-04 23:06:13.459 +05:30 [INF] End processing HTTP request after 70.4932ms - 200
+2024-08-04 23:06:13.462 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:06:13.467 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:06:13.516 +05:30 [INF] Received HTTP response headers after 43.4321ms - 200
+2024-08-04 23:06:13.519 +05:30 [INF] End processing HTTP request after 56.8203ms - 200
+2024-08-04 23:06:13.522 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:06:13.525 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:06:13.649 +05:30 [INF] Received HTTP response headers after 118.8906ms - 200
+2024-08-04 23:06:13.655 +05:30 [INF] End processing HTTP request after 130.4816ms - 200
+2024-08-04 23:07:03.191 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:07:03.199 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:07:03.385 +05:30 [INF] Received HTTP response headers after 182.0566ms - 200
+2024-08-04 23:07:03.390 +05:30 [INF] End processing HTTP request after 206.321ms - 200
+2024-08-04 23:07:03.397 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:07:03.416 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:07:03.511 +05:30 [INF] Received HTTP response headers after 88.8087ms - 200
+2024-08-04 23:07:03.519 +05:30 [INF] End processing HTTP request after 120.1623ms - 200
+2024-08-04 23:07:03.523 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:07:03.527 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:07:03.675 +05:30 [INF] Received HTTP response headers after 143.4591ms - 200
+2024-08-04 23:07:03.682 +05:30 [INF] End processing HTTP request after 156.5876ms - 200
+2024-08-04 23:07:15.919 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:07:15.924 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:07:15.969 +05:30 [INF] Received HTTP response headers after 42.4976ms - 200
+2024-08-04 23:07:15.973 +05:30 [INF] End processing HTTP request after 56.202ms - 200
+2024-08-04 23:07:15.976 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:07:15.980 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:07:16.047 +05:30 [INF] Received HTTP response headers after 61.4363ms - 200
+2024-08-04 23:07:16.060 +05:30 [INF] End processing HTTP request after 74.8482ms - 200
+2024-08-04 23:07:16.065 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:07:16.072 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:07:16.224 +05:30 [INF] Received HTTP response headers after 147.3963ms - 200
+2024-08-04 23:07:16.228 +05:30 [INF] End processing HTTP request after 163.3522ms - 200
+2024-08-04 23:07:53.973 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:07:53.975 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:07:54.029 +05:30 [INF] Received HTTP response headers after 50.7838ms - 200
+2024-08-04 23:07:54.031 +05:30 [INF] End processing HTTP request after 58.571ms - 200
+2024-08-04 23:07:54.037 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:07:54.041 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:07:54.174 +05:30 [INF] Received HTTP response headers after 101.2079ms - 200
+2024-08-04 23:07:54.217 +05:30 [INF] End processing HTTP request after 143.5139ms - 200
+2024-08-04 23:07:54.236 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:07:54.247 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:07:54.425 +05:30 [INF] Received HTTP response headers after 173.8829ms - 200
+2024-08-04 23:07:54.427 +05:30 [INF] End processing HTTP request after 206.957ms - 200
+2024-08-04 23:12:13.485 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:12:13.493 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:12:13.596 +05:30 [INF] Received HTTP response headers after 99.8979ms - 200
+2024-08-04 23:12:13.600 +05:30 [INF] End processing HTTP request after 119.5065ms - 200
+2024-08-04 23:12:13.604 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:12:13.608 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:12:13.644 +05:30 [INF] Received HTTP response headers after 30.8005ms - 200
+2024-08-04 23:12:13.648 +05:30 [INF] End processing HTTP request after 44.2807ms - 200
+2024-08-04 23:12:13.652 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:12:13.655 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:12:13.778 +05:30 [INF] Received HTTP response headers after 115.4654ms - 200
+2024-08-04 23:12:13.781 +05:30 [INF] End processing HTTP request after 129.4541ms - 200
+2024-08-04 23:12:38.443 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:12:38.447 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:12:38.514 +05:30 [INF] Received HTTP response headers after 63.4513ms - 200
+2024-08-04 23:12:38.518 +05:30 [INF] End processing HTTP request after 75.6295ms - 200
+2024-08-04 23:12:38.524 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:12:38.527 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:12:38.576 +05:30 [INF] Received HTTP response headers after 45.6182ms - 200
+2024-08-04 23:12:38.579 +05:30 [INF] End processing HTTP request after 57.7954ms - 200
+2024-08-04 23:12:38.583 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:12:38.589 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:12:38.735 +05:30 [INF] Received HTTP response headers after 140.3707ms - 200
+2024-08-04 23:12:38.739 +05:30 [INF] End processing HTTP request after 155.6402ms - 200
+2024-08-04 23:14:42.283 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:14:42.288 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:14:42.379 +05:30 [INF] Received HTTP response headers after 86.0024ms - 200
+2024-08-04 23:14:42.383 +05:30 [INF] End processing HTTP request after 99.6234ms - 200
+2024-08-04 23:14:42.389 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:14:42.394 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:14:42.461 +05:30 [INF] Received HTTP response headers after 38.3026ms - 200
+2024-08-04 23:14:42.472 +05:30 [INF] End processing HTTP request after 77.0687ms - 200
+2024-08-04 23:14:42.477 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:14:42.481 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:14:42.944 +05:30 [INF] Received HTTP response headers after 451.1382ms - 200
+2024-08-04 23:14:42.948 +05:30 [INF] End processing HTTP request after 471.4108ms - 200
+2024-08-04 23:15:51.923 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:15:51.929 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:15:51.974 +05:30 [INF] Received HTTP response headers after 40.5182ms - 200
+2024-08-04 23:15:51.979 +05:30 [INF] End processing HTTP request after 57.2494ms - 200
+2024-08-04 23:15:51.986 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:15:51.993 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:15:52.037 +05:30 [INF] Received HTTP response headers after 40.188ms - 200
+2024-08-04 23:15:52.046 +05:30 [INF] End processing HTTP request after 57.7561ms - 200
+2024-08-04 23:15:52.052 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:15:52.055 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:15:52.170 +05:30 [INF] Received HTTP response headers after 110.9477ms - 200
+2024-08-04 23:15:52.175 +05:30 [INF] End processing HTTP request after 122.4186ms - 200
+2024-08-04 23:16:49.165 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:16:49.170 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:16:49.239 +05:30 [INF] Received HTTP response headers after 62.7461ms - 200
+2024-08-04 23:16:49.243 +05:30 [INF] End processing HTTP request after 77.9111ms - 200
+2024-08-04 23:16:49.249 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:16:49.256 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:16:49.334 +05:30 [INF] Received HTTP response headers after 71.9816ms - 200
+2024-08-04 23:16:49.339 +05:30 [INF] End processing HTTP request after 92.022ms - 200
+2024-08-04 23:16:49.344 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:16:49.350 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:16:49.465 +05:30 [INF] Received HTTP response headers after 108.1712ms - 200
+2024-08-04 23:16:49.470 +05:30 [INF] End processing HTTP request after 125.6557ms - 200
+2024-08-04 23:18:05.321 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:18:05.326 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:18:05.379 +05:30 [INF] Received HTTP response headers after 47.6501ms - 200
+2024-08-04 23:18:05.384 +05:30 [INF] End processing HTTP request after 62.4181ms - 200
+2024-08-04 23:18:05.388 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:18:05.394 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:18:05.448 +05:30 [INF] Received HTTP response headers after 48.9293ms - 200
+2024-08-04 23:18:05.454 +05:30 [INF] End processing HTTP request after 63.611ms - 200
+2024-08-04 23:18:05.459 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:18:05.464 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:18:05.643 +05:30 [INF] Received HTTP response headers after 170.7877ms - 200
+2024-08-04 23:18:05.698 +05:30 [INF] End processing HTTP request after 188.9211ms - 200
+2024-08-04 23:18:39.144 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:18:39.146 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:18:39.177 +05:30 [INF] Received HTTP response headers after 27.9835ms - 200
+2024-08-04 23:18:39.179 +05:30 [INF] End processing HTTP request after 35.5992ms - 200
+2024-08-04 23:18:39.181 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:18:39.183 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:18:39.212 +05:30 [INF] Received HTTP response headers after 26.5695ms - 200
+2024-08-04 23:18:39.214 +05:30 [INF] End processing HTTP request after 32.6278ms - 200
+2024-08-04 23:18:39.216 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:18:39.217 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:18:39.293 +05:30 [INF] Received HTTP response headers after 70.5846ms - 200
+2024-08-04 23:18:39.296 +05:30 [INF] End processing HTTP request after 79.4274ms - 200
+2024-08-04 23:20:57.271 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:20:57.276 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:20:57.828 +05:30 [INF] Received HTTP response headers after 541.1817ms - 200
+2024-08-04 23:20:57.836 +05:30 [INF] End processing HTTP request after 561.5954ms - 200
+2024-08-04 23:20:57.842 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:20:57.854 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:20:57.952 +05:30 [INF] Received HTTP response headers after 91.7495ms - 200
+2024-08-04 23:20:57.960 +05:30 [INF] End processing HTTP request after 116.2132ms - 200
+2024-08-04 23:20:57.964 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:20:57.969 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:20:58.164 +05:30 [INF] Received HTTP response headers after 191.2055ms - 200
+2024-08-04 23:20:58.168 +05:30 [INF] End processing HTTP request after 203.8841ms - 200
+2024-08-04 23:21:31.448 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:21:31.454 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:21:31.511 +05:30 [INF] Received HTTP response headers after 51.5018ms - 200
+2024-08-04 23:21:31.514 +05:30 [INF] End processing HTTP request after 68.6991ms - 200
+2024-08-04 23:21:31.518 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:21:31.522 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-04 23:21:31.576 +05:30 [INF] Received HTTP response headers after 49.6846ms - 200
+2024-08-04 23:21:31.581 +05:30 [INF] End processing HTTP request after 62.5001ms - 200
+2024-08-04 23:21:31.587 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:21:31.592 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-04 23:21:31.746 +05:30 [INF] Received HTTP response headers after 150.6488ms - 200
+2024-08-04 23:21:31.751 +05:30 [INF] End processing HTTP request after 163.819ms - 200
