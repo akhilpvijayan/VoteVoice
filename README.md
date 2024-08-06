@@ -20,6 +20,7 @@ VoteVoice is an innovative application designed to allow users to create, manage
 - **Authentication**: JWT Authentication
 - **Caching**: In-Memory Caching
 - **Logging**: Serilog
+- **API Testing**: Postman
 
 ## 🚀 Getting Started
 
