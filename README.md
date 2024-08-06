@@ -26,8 +26,9 @@ VoteVoice is an innovative application designed to allow users to create, manage
 
 - Node.js and npm
 - .NET Core SDK
-- SQL Server
 - RabbitMQ
+- SQL Server 2019 or above
+- Visual Studio 2022 or above
 
 ### Steps
 
@@ -81,7 +82,7 @@ We welcome contributions to VoteVoice. To contribute, please follow these steps:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the APACHE 2.0 License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
