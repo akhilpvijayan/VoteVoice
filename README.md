@@ -12,8 +12,8 @@ VoteVoice is an innovative application designed to allow users to create, manage
 
 ## Tech Stack
 
-- **Frontend**: Angular
-- **Backend**: .NET Core Web API
+- **Frontend**: Angular (Typescript, HTML5, CSS3, SCSS)
+- **Backend**: .NET Core Web API ( C# )
 - **Database**: SQL Server
 - **Real-time Communication**: SignalR
 - **Message Queue**: RabbitMQ
