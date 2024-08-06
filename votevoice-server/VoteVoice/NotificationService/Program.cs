@@ -5,6 +5,7 @@ using NotificationService.Business.Services;
 using NotificationService.Data;
 using NotificationService.Helper;
 using NotificationService.RabbitMQ;
+using NotificationService.XObjects.SeedScripts;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -67,10 +68,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseRouting();
+
 app.UseAuthentication();
 app.UseAuthorization();
-
-app.UseRouting();
 
 app.UseCors("CorsPolicy");
 
@@ -89,6 +90,7 @@ using (var scope = app.Services.CreateScope())
     {
         var dbContext = services.GetRequiredService<DataContext>();
         dbContext.Database.Migrate();
+        SeedDataExtension.SeedAsync(app.Services);
     }
     catch (Exception ex)
     {

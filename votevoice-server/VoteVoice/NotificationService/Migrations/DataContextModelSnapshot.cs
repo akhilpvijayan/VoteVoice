@@ -40,12 +40,64 @@ namespace NotificationService.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<long>("NotificationTypeId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long?>("PollId")
+                        .HasColumnType("bigint");
+
                     b.Property<long>("TargetUserId")
                         .HasColumnType("bigint");
 
+                    b.Property<long?>("UserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("firstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("lastName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("profileImage")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("NotificationId");
 
+                    b.HasIndex("NotificationTypeId");
+
                     b.ToTable("Notifications");
+                });
+
+            modelBuilder.Entity("NotificationService.Models.NotificationType", b =>
+                {
+                    b.Property<long>("NotificationTypeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("NotificationTypeId"), 1L, 1);
+
+                    b.Property<string>("NotificationMessage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NotificationTypeName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("NotificationTypeId");
+
+                    b.ToTable("NotificationTypes");
+                });
+
+            modelBuilder.Entity("NotificationService.Models.Notification", b =>
+                {
+                    b.HasOne("NotificationService.Models.NotificationType", "NotificationType")
+                        .WithMany()
+                        .HasForeignKey("NotificationTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("NotificationType");
                 });
 #pragma warning restore 612, 618
         }

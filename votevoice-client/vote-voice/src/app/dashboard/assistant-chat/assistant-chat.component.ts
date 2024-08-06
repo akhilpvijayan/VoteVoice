@@ -33,12 +33,4 @@ export class AssistantChatComponent {
   get chatState() {
     return this.isAssistantOpen ? 'open' : 'closed';
   }
-
-  openChat() {
-    this.isAssistantOpen = true;
-  }
-
-  closeChat() {
-    this.isAssistantOpen = false;
-  }
 }

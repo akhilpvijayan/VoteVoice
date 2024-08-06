@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Connections;
 using Microsoft.AspNetCore.SignalR;
 using NotificationService.Business.Services;
+using NotificationService.Business.Services.Dto;
 using NotificationService.Helper;
+using NotificationService.Models;
 using NotificationService.RabbitMQ.ProducerModel;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
@@ -56,24 +58,24 @@ namespace NotificationService.RabbitMQ
 
                 try
                 {
-                    var result = await notificationService.AddNotification(notificationEvent.TargetUser, notificationEvent.Message);
-                    if (result)
+                    //Saving notification details
+                    var result = await notificationService.AddNotification(notificationEvent.Notification);
+                    if (result != null)
                     {
-                        await SendNotification(notificationEvent.TargetUser, notificationEvent.Message);
+                        await SendNotification(result);
                     }
                 }
                 catch (Exception ex)
                 {
-                    // Log or handle the exception as necessary
                     throw;
                 }
             }
         }
 
 
-        private async Task SendNotification(long targetUser, string message)
+        private async Task SendNotification(Notification result)
         {
-            await _hubContext.Clients.All.SendAsync("ReceiveNotification", targetUser, message);
+            await _hubContext.Clients.All.SendAsync("ReceiveNotification", result);
         }
 
         public override void Dispose()

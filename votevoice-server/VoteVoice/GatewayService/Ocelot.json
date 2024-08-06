@@ -142,7 +142,7 @@
         }
       ],
       "UpstreamPathTemplate": "/notificationHub",
-      "UpstreamHttpMethod": [ "GET", "POST"]
+      "UpstreamHttpMethod": [ "GET", "POST" ]
     },
     {
       "DownstreamPathTemplate": "/notificationHub/negotiate",
@@ -155,6 +155,38 @@
       ],
       "UpstreamPathTemplate": "/notificationHub/negotiate",
       "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/notification/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7036"
+        }
+      ],
+      "UpstreamPathTemplate": "/notification/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/notification/preview/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7036"
+        }
+      ],
+      "UpstreamPathTemplate": "/notification/preview/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
     }
   ]
 }

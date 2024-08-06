@@ -3925,3 +3925,11 @@ System.InvalidOperationException: There is already an open DataReader associated
 2024-08-04 22:22:15.968 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
 2024-08-04 22:22:16.056 +05:30 [INF] Received HTTP response headers after 84.518ms - 200
 2024-08-04 22:22:16.061 +05:30 [INF] End processing HTTP request after 92.6086ms - 200
+2024-08-05 19:56:58.588 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-05 23:38:48.458 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-05 23:45:08.687 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-05 23:46:50.451 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-05 23:51:26.877 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-06 01:02:10.345 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-06 01:17:56.469 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-06 01:25:00.331 +05:30 [INF] Bus started: "rabbitmq://localhost/"

@@ -21,24 +21,16 @@
       <i class="fa fa-search"></i>
     </button>
   </div>
-  <div>
-    <button mat-button class="icon-button icon-button-content web-icon" matTooltip="Notifications" [matMenuTriggerFor]="menu">
-      <mat-icon matBadge="3" matBadgePosition="before" matBadgeColor="warn">notifications</mat-icon>
+  <div *ngIf="isLoggedIn">
+    <button mat-button class="icon-button icon-button-content web-icon" matTooltip="Notifications" (click)="showNotificationBar()">
+      <mat-icon *ngIf="unReadCount > 0" matBadge="unReadCount > 0 ? {{unReadCount}} : " matBadgePosition="before" matBadgeColor="warn" [ngStyle]="{'color': showNotification ? '#FF7C03' : ''}">notifications</mat-icon>
+      <mat-icon *ngIf="unReadCount === 0" matBadge="" matBadgePosition="before" matBadgeColor="warn" [ngStyle]="{'color': showNotification ? '#FF7C03' : ''}">notifications</mat-icon>
     </button>
   </div>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item class="nav-button" *ngFor="let notification of notifications">
-      <mat-icon>info</mat-icon>
-      <div class="notification-content">
-        <div class="notification-message">{{ notification.message }}</div>
-        <div class="notification-timestamp">{{ notification.timestamp | date:'short' }}</div>
-      </div>
-    </button>
-    <button mat-menu-item class="nav-button">
-      <mat-icon></mat-icon>See All
-    </button>
-  </mat-menu>
-  
+  <div class="notifications-menu" *ngIf="showNotification">
+    <app-notification [showNotification]="showNotification" [notifications]="notifications"></app-notification>
+  </div>  
+
   <button class="button-88" role="button" *ngIf="!isLoggedIn" (click)="login()">
     <span><i class="fa-solid fa-user"></i></span>&nbsp;Login
   </button>
@@ -95,3 +87,8 @@
     </button>
   </div>
 </mat-toolbar>
+<button class="floating-button" (click)="openChat()" [class.rotating]="!isAssistantOpen">
+  <i *ngIf="!isAssistantOpen" class="fa-brands fa-rocketchat" style="color: #ffffff;"></i>
+  <i *ngIf="isAssistantOpen" class="fa-solid fa-xmark" style="color: #fafafa;"></i>
+</button>
+<app-assistant-chat class="chat" [isAssistantOpen]="isAssistantOpen"></app-assistant-chat>

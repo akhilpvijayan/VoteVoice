@@ -1,5 +1,6 @@
 ﻿using NotificationService.Business.Entities;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NotificationService.Models
 {
@@ -19,5 +20,21 @@ namespace NotificationService.Models
 
         [Required]
         public long TargetUserId { get; set; }
+
+        public long? UserId { get; set; }
+
+        public long? PollId { get; set; }
+
+        public string? firstName { get; set; }
+
+        public string? lastName { get; set; }
+
+        public string? profileImage { get; set; }
+
+        [Required]
+        [ForeignKey("NotificationType")]
+        public long NotificationTypeId { get; set; }
+
+        public NotificationType NotificationType { get; set; }
     }
 }

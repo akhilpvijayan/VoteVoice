@@ -1,0 +1,31 @@
+
+<div [@openClose]="notificationState" class="notification-container">
+        <div class="notification-header">
+            <span class="head">Notifications</span>
+            <a href="#" class="mark-all-read" *ngIf="notifications.length > 0">Mark all as read</a>
+        </div>
+        <div class="notification-list notification-empty" *ngIf="notifications.length === 0">
+            <img src="assets/notifications-not-found.svg">
+            <span class="empty-notification">No notifications to show</span>
+        </div>
+        <div class="notification-list">
+            <div class="notification-item" *ngFor="let notification of notifications" [ngStyle]="{'background-color': notification.isRead ? 'rgb(232, 232, 232)' : ''}">
+                <i class="fa-solid fa-circle-exclamation avatar" style="color: #afafaf;" *ngIf="notification?.profileImage === null"></i>
+                <img *ngIf="notification?.profileImage !== null" src="{{notification?.profileImage}}" alt="Stephan Parker" class="avatar">
+                <div class="notification-content">
+                    <div class="name" (click)="showProfile(notification?.userId)">
+                        <strong><u>{{notification?.firstName}} {{notification?.lastName}}</u></strong>
+                    </div>
+                    <div class="message">
+                        {{notification?.message}}
+                    </div>
+                    <div class="notification-time">
+                        {{notification?.createdAt | date:'short' }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="notification-footer" *ngIf="notifications.length > 0">
+            <a href="#" class="view-all">View All</a>
+        </div>
+</div>

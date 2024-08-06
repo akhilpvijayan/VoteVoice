@@ -9,7 +9,7 @@
             <img src="{{poll.profileImage}}">
         </div>
         <div (click)="showProfile(poll.userId)">
-            <div matTooltip="{{poll.firstName}} {{poll.lastName}}"><strong>{{poll.firstName}} {{poll.lastName}}</strong></div>
+            <div matTooltip="{{poll.firstName}} {{poll.lastName}}" class="username"><strong>{{poll.firstName}} {{poll.lastName}}</strong></div>
             <div class="post-details" matTooltip="1 hour ago">1 hour ago <i class="fa fa-clock"></i></div>
         </div>
         <div class="more" *ngIf="isLoggedInUser(poll.userId)">

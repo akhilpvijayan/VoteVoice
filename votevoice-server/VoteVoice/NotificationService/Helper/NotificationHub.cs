@@ -4,6 +4,7 @@ using System;
 using NotificationService.Data;
 using NotificationService.Models;
 using NotificationService.Business.Services;
+using NotificationService.Business.Services.Dto;
 
 namespace NotificationService.Helper
 {
@@ -23,11 +24,12 @@ namespace NotificationService.Helper
         #endregion
 
         #region public functions
-        public async Task SendNotification(long targetUser, string message)
+        public async Task SendNotification(NotificationDto notification)
         {
-            if(_notificationService.AddNotification(targetUser, message).Result)
+            var result = _notificationService.AddNotification(notification);
+            if (result != null)
             {
-                await Clients.All.SendAsync("ReceiveNotification", targetUser, message);
+                await Clients.All.SendAsync("ReceiveNotification", result);
             }
         }
         #endregion

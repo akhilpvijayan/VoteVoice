@@ -7,6 +7,7 @@ using VoteService.Models;
 using VoteService.RabbitMQ.ProducerModel;
 using VoteService.RabbitMQ;
 using VoteService.Business.Services.Dto;
+using VoteService.Enums;
 
 namespace VoteService.Business.Services.Services
 {
@@ -100,9 +101,21 @@ namespace VoteService.Business.Services.Services
                         if (pollDetails?.UserId != null)
                         {
                             var userDetails = await GetUserDetailsAsync(client, voteDetails.UserId);
-                            var message = $"<b>{userDetails.FirstName} {userDetails.LastName}</b> added a new vote";
-                            var notificationEvent = new NotificationEvent { TargetUser = pollDetails.UserId, Message = message };
-                            _rabbitMQPublisher.Publish(notificationEvent);
+                            if (userDetails != null)
+                            {
+                                NotificationDto notification = new NotificationDto
+                                {
+                                    TargetUserId = pollDetails.UserId,
+                                    UserId = userDetails.UserId,
+                                    PollId = pollDetails.PollId,
+                                    FirstName = userDetails.FirstName,
+                                    LastName = userDetails.LastName,
+                                    profileImage = userDetails.ProfileImage,
+                                    NotificationTypeId = (long)NotificationTypeEnum.AddVote
+                                };
+                                var notificationEvent = new NotificationEvent { Notification = notification };
+                                _rabbitMQPublisher.Publish(notificationEvent);
+                            }
                         }
 
                         return vote.VoteId;

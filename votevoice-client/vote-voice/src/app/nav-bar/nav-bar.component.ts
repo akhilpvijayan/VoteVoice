@@ -1,3 +1,4 @@
+import { NotificationService } from './../services/notification.service';
 import { SignalrService } from './../services/signalr.service';
 import { UserService } from './../services/user.service';
 import { LoginComponent } from './../login/login.component';
@@ -8,6 +9,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ConfirmationPopupModalComponent } from '../shared/confirmation-popup-modal/confirmation-popup-modal.component';
 import { AddPollModalComponent } from '../dashboard/poll-list/add-poll/add-poll-modal/add-poll-modal.component';
 import { Router } from '@angular/router';
+import { Notifications } from '../interfaces/notifications';
 
 @Component({
   selector: 'app-nav-bar',
@@ -15,10 +17,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit{
-  isOpen = false;
   isLoggedIn = false;
   userDetails: any;
-  notifications: { message: string, timestamp: Date }[] = [];
+  showNotification = false;
+  isAssistantOpen = false;
+  unReadCount = 0;
+  notifications: Notifications[] = [];
   userId =parseInt(this.userService.getUserId() ?? '0', 10)
 
   constructor(public darkModeService: DarkModeService,
@@ -26,29 +30,43 @@ export class NavBarComponent implements OnInit{
     private dialog: MatDialog,
     private router: Router,
     private userService: UserService,
-    private signalRService: SignalrService) {}
+    private signalRService: SignalrService,
+    private notificationService: NotificationService) {}
 
   ngOnInit(): void {
-    this.notifications = [
-      { message: 'New comment on your post', timestamp: new Date() },
-      { message: 'You have a new follower', timestamp: new Date() },
-      { message: 'Server maintenance scheduled for tonight', timestamp: new Date() }
-    ];
+    this.subscribeSignalR();  
+    this.subscribeAuth()
+    this.isLoggedIn = this.authService.isLoggedIn();
+    this.getUserDetails();
+    if(this.isLoggedIn){
+      this.getNotifications();
+    }
+  }
+
+  subscribeSignalR(){
     this.signalRService.startConnection();
-    this.signalRService.addReceiveNotificationListener((targetUser: number, message: string) => {
-      if(this.userId == targetUser){
-        console.log(message);
+    this.signalRService.addReceiveNotificationListener((notification: Notifications) => {
+      if(this.userId == notification.targetUserId){
+        if(this.notifications?.length === 3){
+          this.notifications.splice(2, 1); // Remove the third notification
+          this.notifications.unshift(notification); // Add the new notification as the first element
+        } else {
+          this.notifications.unshift(notification);
+        }
       }
-    });  
+    });
+  }
+
+  //subscribe for logged in or logged out changes
+  subscribeAuth(){
     this.authService.isLoggedInObservable$.subscribe((isLoggedInSubject: any) => {
       this.isLoggedIn = isLoggedInSubject;
       setTimeout(() => {
         this.userId = parseInt(this.userService.getUserId() ?? '0', 10)
         this.getUserDetails();
+        this.getNotifications();
       }, 100);
     });
-    this.isLoggedIn = this.authService.isLoggedIn();
-    this.getUserDetails();
   }
 
   getUserDetails(){
@@ -57,14 +75,16 @@ export class NavBarComponent implements OnInit{
     })
   }
 
-  toggleDarkMode() {
-    this.darkModeService.updateDarkMode();
+  //get notifications for preview
+  getNotifications(){
+    this.notificationService.getNotificationsForPreview(this.userId).subscribe((res: any)=>{
+      if(res[0]){
+        this.notifications.push(res);
+        this.unReadCount = this.notifications?.filter(x => x.isRead).length;
+      }
+    })
   }
-
-  toggleDropdown() {
-    this.isOpen = !this.isOpen;
-  }
-
+  
   search(){
     console.log('Search works');
   }
@@ -128,5 +148,15 @@ export class NavBarComponent implements OnInit{
 
   goToDashboard(){
     this.router.navigateByUrl('');
+  }
+
+  openChat() {
+    this.isAssistantOpen = !this.isAssistantOpen;
+    this.showNotification = false;
+  }
+
+  showNotificationBar(){
+    this.showNotification = !this.showNotification;
+    this.isAssistantOpen = false;
   }
 }

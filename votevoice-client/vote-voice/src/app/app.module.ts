@@ -33,6 +33,7 @@ import { SignupComponent } from './signup/signup.component';
 import { MiscSideBarComponent } from './dashboard/misc-side-bar/misc-side-bar.component';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { NotificationComponent } from './nav-bar/notification/notification.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +49,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     AssistantChatComponent,
     ProfileComponent,
     SignupComponent,
-    MiscSideBarComponent
+    MiscSideBarComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,

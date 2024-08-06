@@ -1,8 +1,9 @@
-﻿namespace VoteService.RabbitMQ.ProducerModel
+﻿using VoteService.Business.Services.Dto;
+
+namespace VoteService.RabbitMQ.ProducerModel
 {
     public class NotificationEvent
     {
-        public long TargetUser { get; set; }
-        public string Message { get; set; }
+        public NotificationDto Notification { get; set; }
     }
 }

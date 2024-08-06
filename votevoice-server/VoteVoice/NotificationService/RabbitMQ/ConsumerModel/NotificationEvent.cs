@@ -1,8 +1,9 @@
-﻿namespace NotificationService.RabbitMQ.ProducerModel
+﻿using NotificationService.Business.Services.Dto;
+
+namespace NotificationService.RabbitMQ.ProducerModel
 {
     public class NotificationEvent
     {
-        public long TargetUser { get; set; }
-        public string Message { get; set; }
+        public NotificationDto Notification { get; set; }
     }
 }

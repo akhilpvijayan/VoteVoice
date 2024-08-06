@@ -1,3 +1,4 @@
+import { Notifications } from './../interfaces/notifications';
 import { Injectable } from '@angular/core';
 import * as signalR from '@microsoft/signalr';
 import { environment } from 'src/environments/environment';
@@ -21,7 +22,7 @@ export class SignalrService {
       .catch(err => console.log('Error while starting connection: ' + err));
   }
 
-  public addReceiveNotificationListener = (callback: (user: number, message: string, targetUser: number) => void) => {
+  public addReceiveNotificationListener = (callback: (notification: Notifications) => void) => {
     this.hubConnection.on('ReceiveNotification', callback);
   }
 
