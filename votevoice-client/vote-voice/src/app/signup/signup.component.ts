@@ -1,3 +1,4 @@
+import { environment } from 'src/environments/environment';
 import { AuthService } from './../Auth/auth.service';
 import { UserService } from './../services/user.service';
 import {
@@ -27,8 +28,8 @@ export class SignupComponent implements OnInit {
   countries: any;
   states: any;
   isPasswordConfirmed = false;
-  tokenVisible = false;
-  reCAPTCHAToken: string = "";
+  siteKey = environment.recaptcha.siteKey;
+  theme = 'Dark';
 
   constructor(
     private dialog: MatDialog,
@@ -37,8 +38,7 @@ export class SignupComponent implements OnInit {
     private userService: UserService,
     private toastr: ToastrService,
     private authService: AuthService,
-    @Inject(MAT_DIALOG_DATA) public data: any,
-    private recaptchaV3Service: ReCaptchaV3Service
+    @Inject(MAT_DIALOG_DATA) public data: any
   ) { }
 
   ngOnInit(): void {
@@ -64,6 +64,8 @@ export class SignupComponent implements OnInit {
       userBio: ['', [Validators.required, Validators.maxLength(100)]],
       gender: ['Male', Validators.required],
       roleId: [2],
+      terms: [false, Validators.requiredTrue],
+      recaptcha: []
     });
   }
 
@@ -168,38 +170,29 @@ export class SignupComponent implements OnInit {
   onSubmit() {
     if (this.signUpForm.valid) {
       console.log(this.signUpForm.value);
-      this.recaptchaV3Service
-        .execute('importantAction')
-        .subscribe((token: string) => {
-          if(token){
-            this.tokenVisible = true;
-            this.reCAPTCHAToken = `Token [${token}] generated`
-            console.debug(`Token [${token}] generated`);
-            if (this.data?.pollDetails?.pollId != null) {
-              this.userService
-                .updateUser(this.saveFileInfo(), this.data?.userDetails?.userId)
-                .subscribe((res: any) => {
-                  if (res) {
-                    this.toastr.warning(res.message);
-                    this.closeDialog();
-                    //this.triggerUpdateReload(this.data?.pollDetails?.pollId);
-                  }
-                });
-            } else {
-              this.userService.addUser(this.saveFileInfo()).subscribe((res: any) => {
-                if (res) {
-                  this.toastr.success(res.message);
-                  this.authService.setToken(res.token);
-                  this.authService.setUser(res.userId);
-                  this.authService.setRefreshToken(res.refreshToken);
-                  this.signUpForm.reset();
-                  this.closeDialog();
-                }
-              });
+      if (this.data?.pollDetails?.pollId != null) {
+        this.userService
+          .updateUser(this.saveFileInfo(), this.data?.userDetails?.userId)
+          .subscribe((res: any) => {
+            if (res) {
+              this.toastr.warning(res.message);
+              this.closeDialog();
+              //this.triggerUpdateReload(this.data?.pollDetails?.pollId);
             }
+          });
+      } else {
+        this.userService.addUser(this.saveFileInfo()).subscribe((res: any) => {
+          if (res) {
+            this.toastr.success(res.message);
+            this.authService.setToken(res.token);
+            this.authService.setUser(res.userId);
+            this.authService.setRefreshToken(res.refreshToken);
+            this.signUpForm.reset();
+            this.closeDialog();
           }
         });
-      
+      }
+
     } else {
       this.signUpForm.markAllAsTouched();
     }

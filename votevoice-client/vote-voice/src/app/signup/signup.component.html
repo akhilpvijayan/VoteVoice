@@ -20,6 +20,9 @@
           <input type="email" formControlName="email" placeholder="Enter your email" required>
           <small *ngIf="signUpForm.controls['email'].dirty && signUpForm.hasError('required','email')"
             class="error">*Email is required</small>
+          <small *ngIf="signUpForm.controls['email'].errors?.['emailExists']" class="error">
+            Email already exists. Please try another one.
+          </small>
         </div>
         <div class="input-box">
           <span class="details">Username <span class="error">*</span></span>
@@ -99,15 +102,18 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="input-box">
-      </div>
-      <div class="input-box">
-        <div *ngIf="tokenVisible"> reCAPTCHA Token <br />
-          <p style="color: red">{{reCAPTCHAToken}}</p>
+        <div class="input-box">
+          <ngx-recaptcha2 #captchaElem
+          [siteKey]="siteKey"
+          formControlName="recaptcha">
+        </ngx-recaptcha2>
         </div>
-      </div>
-      <div class="input-box">
+        <div class="input-box check">
+          <input type="checkbox" id="terms" class="text-blue-600" formControlName="terms">
+          <label for="rememberMe" class="text-gray-700">Agree to <a href="">Terms & Conditions</a></label><br>
+          <small *ngIf="signUpForm.controls['terms'].dirty && signUpForm.hasError('required','terms')"
+          class="error">*Accept Terms & Conditions</small>
+        </div>
       </div>
       <div class="button">
         <input type="submit" value="Register" [ngClass]="{'disabled-button': signUpForm.invalid}">
