@@ -7145,3 +7145,90 @@ System.InvalidOperationException: This SqlTransaction has completed; it is no lo
 2024-08-07 02:22:31.234 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
 2024-08-07 02:22:31.322 +05:30 [INF] Received HTTP response headers after 80.0535ms - 200
 2024-08-07 02:22:31.327 +05:30 [INF] End processing HTTP request after 99.741ms - 200
+2024-08-08 12:11:49.997 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-08 12:12:25.956 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-08 12:12:25.966 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-08 12:12:34.249 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-08 12:12:34.263 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-08 12:12:34.583 +05:30 [INF] Received HTTP response headers after 299.9144ms - 200
+2024-08-08 12:12:34.594 +05:30 [INF] End processing HTTP request after 371.5099ms - 200
+2024-08-08 12:12:34.753 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-08 12:12:34.757 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-08 12:12:34.815 +05:30 [INF] Received HTTP response headers after 48.7766ms - 200
+2024-08-08 12:12:34.820 +05:30 [INF] End processing HTTP request after 65.993ms - 200
+2024-08-08 12:12:34.826 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-08 12:12:34.831 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-08 12:12:35.064 +05:30 [INF] Received HTTP response headers after 229.6962ms - 200
+2024-08-08 12:12:35.068 +05:30 [INF] End processing HTTP request after 243.8327ms - 200
+2024-08-08 12:12:35.087 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-08 12:12:35.092 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-08 12:12:35.194 +05:30 [INF] Received HTTP response headers after 96.6906ms - 200
+2024-08-08 12:12:35.197 +05:30 [INF] End processing HTTP request after 110.6301ms - 200
+2024-08-08 13:40:07.409 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-08 13:40:07.419 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-08 13:40:07.521 +05:30 [INF] Received HTTP response headers after 98.9098ms - 200
+2024-08-08 13:40:07.524 +05:30 [INF] End processing HTTP request after 119.4089ms - 200
+2024-08-08 13:40:07.530 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-08 13:40:07.532 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-08 13:40:07.549 +05:30 [INF] Received HTTP response headers after 15.3011ms - 200
+2024-08-08 13:40:07.551 +05:30 [INF] End processing HTTP request after 20.8574ms - 200
+2024-08-08 13:40:07.553 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-08 13:40:07.555 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-08 13:40:07.636 +05:30 [INF] Received HTTP response headers after 76.7712ms - 200
+2024-08-08 13:40:07.641 +05:30 [INF] End processing HTTP request after 84.9145ms - 200
+2024-08-08 13:40:07.648 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-08 13:40:07.653 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-08 13:40:07.740 +05:30 [INF] Received HTTP response headers after 84.4475ms - 200
+2024-08-08 13:40:07.742 +05:30 [INF] End processing HTTP request after 97.599ms - 200
+2024-08-08 13:40:18.117 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-08 13:40:18.120 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-08 13:40:32.805 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-08 13:40:32.810 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-08 13:40:32.835 +05:30 [INF] Received HTTP response headers after 23.4631ms - 200
+2024-08-08 13:40:32.838 +05:30 [INF] End processing HTTP request after 34.4644ms - 200
+2024-08-08 13:40:32.840 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/3"
+2024-08-08 13:40:32.842 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/3"
+2024-08-08 13:40:32.861 +05:30 [INF] Received HTTP response headers after 17.2724ms - 200
+2024-08-08 13:40:32.863 +05:30 [INF] End processing HTTP request after 23.1036ms - 200
+2024-08-08 13:40:32.865 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-08 13:40:32.867 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-08 13:40:33.090 +05:30 [INF] Received HTTP response headers after 219.6227ms - 200
+2024-08-08 13:40:33.094 +05:30 [INF] End processing HTTP request after 226.9463ms - 200
+2024-08-08 13:40:33.100 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/7"
+2024-08-08 13:40:33.104 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/7"
+2024-08-08 13:40:33.195 +05:30 [INF] Received HTTP response headers after 88.8077ms - 200
+2024-08-08 13:40:33.198 +05:30 [INF] End processing HTTP request after 99.4935ms - 200
+2024-08-08 17:17:21.440 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-08 17:26:19.290 +05:30 [ERR] Failed executing DbCommand (20,322ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [PollOperational];
+2024-08-08 17:31:33.304 +05:30 [ERR] Failed executing DbCommand (20,264ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [PollOperational];
+2024-08-08 17:35:06.492 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-08 17:40:12.824 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-08 17:40:12.833 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-08 17:47:06.228 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-08 17:51:48.525 +05:30 [INF] ClearExpiredPollsService is starting.
+2024-08-08 17:53:07.718 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-08 17:53:07.725 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-08 17:57:21.297 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-08 17:57:21.301 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-08 18:02:11.156 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/1"
+2024-08-08 18:02:11.156 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/1"
+2024-08-08 18:02:11.156 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/1"
+2024-08-08 18:02:11.156 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/1"
+2024-08-08 18:02:11.156 +05:30 [INF] Start processing HTTP request GET "https://localhost:7253/user/1"
+2024-08-08 18:02:11.165 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/1"
+2024-08-08 18:02:11.166 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/1"
+2024-08-08 18:02:11.167 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/1"
+2024-08-08 18:02:11.169 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/1"
+2024-08-08 18:02:11.170 +05:30 [INF] Sending HTTP request GET "https://localhost:7253/user/1"
+2024-08-08 18:02:11.577 +05:30 [INF] Received HTTP response headers after 385.9633ms - 200
+2024-08-08 18:02:11.577 +05:30 [INF] Received HTTP response headers after 395.0552ms - 200
+2024-08-08 18:02:11.577 +05:30 [INF] Received HTTP response headers after 410.2043ms - 200
+2024-08-08 18:02:11.577 +05:30 [INF] Received HTTP response headers after 387.4275ms - 200
+2024-08-08 18:02:11.577 +05:30 [INF] Received HTTP response headers after 397.0567ms - 200
+2024-08-08 18:02:11.582 +05:30 [INF] End processing HTTP request after 446.4418ms - 200
+2024-08-08 18:02:11.583 +05:30 [INF] End processing HTTP request after 445.2658ms - 200
+2024-08-08 18:02:11.585 +05:30 [INF] End processing HTTP request after 445.2826ms - 200
+2024-08-08 18:02:11.586 +05:30 [INF] End processing HTTP request after 446.4395ms - 200
+2024-08-08 18:02:11.588 +05:30 [INF] End processing HTTP request after 445.2721ms - 200

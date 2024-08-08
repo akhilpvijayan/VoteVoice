@@ -82,3 +82,13 @@ D:\VoteVoice\votevoice-server\VoteVoice\PollService\obj\Debug\net6.0\refint\Poll
 D:\VoteVoice\votevoice-server\VoteVoice\PollService\obj\Debug\net6.0\PollService.pdb
 D:\VoteVoice\votevoice-server\VoteVoice\PollService\obj\Debug\net6.0\PollService.genruntimeconfig.cache
 D:\VoteVoice\votevoice-server\VoteVoice\PollService\obj\Debug\net6.0\ref\PollService.dll
+D:\VoteVoice\votevoice-server\VoteVoice\PollService\bin\Debug\net6.0\MassTransit.dll
+D:\VoteVoice\votevoice-server\VoteVoice\PollService\bin\Debug\net6.0\MassTransit.Abstractions.dll
+D:\VoteVoice\votevoice-server\VoteVoice\PollService\bin\Debug\net6.0\MassTransit.AspNetCoreIntegration.dll
+D:\VoteVoice\votevoice-server\VoteVoice\PollService\bin\Debug\net6.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+D:\VoteVoice\votevoice-server\VoteVoice\PollService\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+D:\VoteVoice\votevoice-server\VoteVoice\PollService\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+D:\VoteVoice\votevoice-server\VoteVoice\PollService\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+D:\VoteVoice\votevoice-server\VoteVoice\PollService\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\VoteVoice\votevoice-server\VoteVoice\PollService\bin\Debug\net6.0\RabbitMQ.Client.dll
+D:\VoteVoice\votevoice-server\VoteVoice\PollService\bin\Debug\net6.0\System.Threading.Channels.dll

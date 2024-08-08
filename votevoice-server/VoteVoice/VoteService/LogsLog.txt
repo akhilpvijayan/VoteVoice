@@ -4747,3 +4747,9 @@ System.InvalidOperationException: There is already an open DataReader associated
 2024-08-07 01:52:09.456 +05:30 [INF] Received HTTP response headers after 21.9671ms - 200
 2024-08-07 01:52:09.458 +05:30 [INF] End processing HTTP request after 30.3414ms - 200
 2024-08-07 02:09:28.685 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-08 12:12:02.220 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-08 17:17:23.741 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-08 17:26:31.409 +05:30 [ERR] Failed executing DbCommand (20,354ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [VoteOperational];
+2024-08-08 17:35:07.614 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2024-08-08 17:51:52.167 +05:30 [INF] Bus started: "rabbitmq://localhost/"

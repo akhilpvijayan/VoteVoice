@@ -34,6 +34,8 @@ import { MiscSideBarComponent } from './dashboard/misc-side-bar/misc-side-bar.co
 import { NgxSpinnerModule } from "ngx-spinner";
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { NotificationComponent } from './nav-bar/notification/notification.component';
+import { RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module } from 'ng-recaptcha'
+import { environment } from 'src/environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
@@ -75,13 +77,18 @@ import { NotificationComponent } from './nav-bar/notification/notification.compo
     MatTabsModule,
     FormsModule,
     NgxSpinnerModule,
-    MatTooltipModule
+    MatTooltipModule,
+    RecaptchaV3Module
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
     useClass: TokenInterceptor,
-    multi: true
-  }],
+    multi: true,
+  },
+  {
+    provide: RECAPTCHA_V3_SITE_KEY,
+    useValue: environment.recaptcha.siteKey,
+  },],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
