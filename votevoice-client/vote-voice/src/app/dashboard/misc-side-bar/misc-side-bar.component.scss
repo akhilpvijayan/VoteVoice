@@ -6,6 +6,7 @@
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: rgba(0.15, 0.15, 0.15, 0.15) 1.95px 1.95px 2.6px;
 
     .content{
@@ -14,5 +15,10 @@
         .advice-text{
             color: #FF7C03;
         }
+    }
+
+    &.dark-mode{
+        background-color: #3D3D3D;
+        color: white;
     }
 }

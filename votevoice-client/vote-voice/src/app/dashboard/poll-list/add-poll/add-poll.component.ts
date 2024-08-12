@@ -1,3 +1,4 @@
+import { DarkModeService } from './../../../services/dark-mode.service';
 import { UserService } from './../../../services/user.service';
 import { AuthService } from './../../../Auth/auth.service';
 import { AddPollModalComponent } from './add-poll-modal/add-poll-modal.component';
@@ -15,11 +16,13 @@ export class AddPollComponent implements OnInit{
   @Input() isFromProfile: boolean = false;
   isLoggedIn = false;
   isLoggedInUser = false;
+  isDarkMode = this.darkModeService.isDarkModeEnabled();
 
 constructor(private dialog: MatDialog,
   private authService: AuthService,
   private userservice: UserService,
-  private route: ActivatedRoute){}
+  private route: ActivatedRoute,
+  private darkModeService: DarkModeService){}
 
   ngOnInit(): void {
     this.route?.queryParams?.subscribe(params => {
@@ -29,6 +32,7 @@ constructor(private dialog: MatDialog,
       this.isLoggedIn = isLoggedIn;
     });
     this.isLoggedIn = this.authService.isLoggedIn();
+    this.subscribeDarkMode();
   }
 
 addPoll(){
@@ -52,5 +56,11 @@ addPoll(){
       exitAnimationDuration: '300ms',
     });
   }
+}
+
+subscribeDarkMode(){
+  this.darkModeService.darkMode$.subscribe((isDarkMode) => {
+    this.isDarkMode = isDarkMode;
+  });
 }
 }

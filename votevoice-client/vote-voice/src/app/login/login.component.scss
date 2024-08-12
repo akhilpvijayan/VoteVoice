@@ -1,3 +1,10 @@
+.container{
+    &.dark-mode{
+        background-color: #3D3D3D;
+        color: #fcfcfc;
+    }
+}
+
 .image {
         background-size: cover;
         background-position: center;
@@ -8,6 +15,10 @@
 #close{
     float: right;
 }
+
+.dark-mode-box {
+    background-color: #181818;
+  }
 
 .details{
     display: block;

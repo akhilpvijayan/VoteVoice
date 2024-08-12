@@ -1,4 +1,4 @@
-<div class="flex flex-wrap">
+<div class="flex flex-wrap container" [class.dark-mode]="isDarkMode">
     <div class="w-full md:w-1/2 bg-cover md:block image"
         style="background-image: url('assets/forgot-password-animate.svg')">
         <!-- <div class="p-8">
@@ -7,15 +7,15 @@
                 </div> -->
     </div>
 
-    <div class="w-full md:w-1/2 p-8">
+    <div class="w-full md:w-1/2 p-8 form">
         <button id='close' type="button" (click)="closeDialog()">close</button>
-        <h2 class="text-2xl font-semibold text-gray-700">Login to VoteVoice</h2>
-        <p class="mt-4 text-gray-600">Where Every Vote Matter</p>
+        <h2 class="text-2xl font-semibold" [ngClass]="{ 'text-gray-600': !isDarkMode, 'text-white': isDarkMode }">Login to VoteVoice</h2>
+        <p class="mt-4" [ngClass]="{ 'text-gray-600': !isDarkMode, 'text-white': isDarkMode }">Where Every Vote Matter</p>
         <form class="mt-6" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <div class="input-area">
                 <label class="details">Username</label>
                 <input type="text" formControlName="username"
-                    placeholder="Eg: John">
+                    placeholder="Eg: John" [ngClass]="{ 'dark-mode-box': isDarkMode }">
             </div>
             <small *ngIf="loginForm.controls['username'].dirty && loginForm.hasError('required','username')"
                 class="text-red-600">*Username is required</small>
@@ -23,7 +23,7 @@
             <div class="input-area">
                 <label class="details">Password</label>
                 <input type="password" formControlName="password"
-                    placeholder="Enter your password">
+                    placeholder="Enter your password" [ngClass]="{ 'dark-mode-box': isDarkMode }">
             </div>
             <small *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')"
                 class="text-red-600">*Password is required</small>
@@ -31,7 +31,7 @@
             <div class="flex items-center justify-between mt-4">
                 <div>
                     <input type="checkbox" id="rememberMe" class="text-blue-600">
-                    <label for="rememberMe" class="text-gray-700 ml-2">Remember me</label>
+                    <label for="rememberMe" [ngClass]="{ 'text-gray-600': !isDarkMode, 'text-white': isDarkMode }" class="ml-2">Remember me</label>
                 </div>
                 <a href="#" class="text-sm text-blue-600 hover:underline">Forgot password?</a>
             </div>
@@ -39,6 +39,6 @@
                 <button class="w-full px-4 py-2 button-88" id="submit" [disabled]="loginForm.invalid">Start Voting</button>
             </div>
         </form>
-        <p class="mt-4 text-center text-gray-600">New to VoteVoice? <u (click)="signUp()">Sign Up Here</u></p>
+        <p class="mt-4 text-center" [ngClass]="{ 'text-gray-600': !isDarkMode, 'text-white': isDarkMode }">New to VoteVoice? <u (click)="signUp()">Sign Up Here</u></p>
     </div>
 </div>

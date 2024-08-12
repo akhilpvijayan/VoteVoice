@@ -1,3 +1,4 @@
+import { DarkModeService } from './../../../../services/dark-mode.service';
 import { PollService } from './../../../../services/poll.service';
 import { PollOption } from './../../../../interfaces/poll-option';
 import { UserService } from './../../../../services/user.service';
@@ -16,6 +17,7 @@ export class AddPollModalComponent {
   addPollForm!: FormGroup;
   defaultHeight: number = 300;
   selectedFile: any;
+  isDarkMode = this.darkModeService.isDarkModeEnabled();
   imageUrl: string | ArrayBuffer | null = null;
   formData = new FormData();
   hideNewPollOptionButton = false;
@@ -29,13 +31,15 @@ export class AddPollModalComponent {
     private userService: UserService,
     private pollService: PollService,
     private reloadService: ReloadService,
+    private darkModeService: DarkModeService,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit(): void {
     this.initializeForm();
     if (this.data?.pollDetails?.pollOptions) {
       this.patchPollOptions(this.data.pollDetails.pollOptions);
-    }
+    };
+    this.subscribeDarkMode();
   }
 
   initializeForm() {
@@ -46,6 +50,12 @@ export class AddPollModalComponent {
       isActive: true,
       expiryDate: [this.data?.pollDetails?.expiryDate ?? '', Validators.required],
       pollOptions: this.formBuilder.array([])
+    });
+  }
+
+  subscribeDarkMode(){
+    this.darkModeService.darkMode$.subscribe((isDarkMode) => {
+      this.isDarkMode = isDarkMode;
     });
   }
 

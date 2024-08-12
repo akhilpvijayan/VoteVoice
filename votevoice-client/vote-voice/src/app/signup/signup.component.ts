@@ -1,3 +1,4 @@
+import { DarkModeService } from './../services/dark-mode.service';
 import { environment } from 'src/environments/environment';
 import { AuthService } from './../Auth/auth.service';
 import { UserService } from './../services/user.service';
@@ -26,10 +27,10 @@ import { ReCaptchaV3Service } from 'ng-recaptcha';
 export class SignupComponent implements OnInit {
   signUpForm!: FormGroup;
   countries: any;
+  isDarkMode = this.darkModeService.isDarkModeEnabled();
   states: any;
   isPasswordConfirmed = false;
   siteKey = environment.recaptcha.siteKey;
-  theme = 'Dark';
 
   constructor(
     private dialog: MatDialog,
@@ -38,6 +39,7 @@ export class SignupComponent implements OnInit {
     private userService: UserService,
     private toastr: ToastrService,
     private authService: AuthService,
+    private darkModeService: DarkModeService,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) { }
 
@@ -47,6 +49,7 @@ export class SignupComponent implements OnInit {
       this.countries = res;
     });
     this.subscribeToFormChanges();
+    this.subscribeDarkMode();
   }
 
   initializeForm() {
@@ -121,6 +124,12 @@ export class SignupComponent implements OnInit {
         }
       });
     }
+  }
+
+  subscribeDarkMode(){
+    this.darkModeService.darkMode$.subscribe((isDarkMode) => {
+      this.isDarkMode = isDarkMode;
+    });
   }
 
   onPollOptionImageFileSelected(event: any) {

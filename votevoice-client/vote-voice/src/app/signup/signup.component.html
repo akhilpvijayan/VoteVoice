@@ -1,23 +1,23 @@
-<div class="container">
+<div class="container" [class.dark-mode]="isDarkMode">
   <div class="title">Registration</div>
   <div class="content">
     <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
       <div class="user-details">
         <div class="input-box">
           <span class="details">First Name <span class="error">*</span></span>
-          <input type="text" formControlName="firstName" placeholder="Enter first name" required>
+          <input type="text" formControlName="firstName" placeholder="Enter first name" required [ngClass]="{ 'dark-mode-box': isDarkMode }">
           <small *ngIf="signUpForm.controls['firstName'].dirty && signUpForm.hasError('required','firstName')"
             class="error">*First Name is required</small>
         </div>
         <div class="input-box">
           <span class="details">Last Name <span class="error">*</span></span>
-          <input type="text" formControlName="lastName" placeholder="Enter last name" required>
+          <input type="text" formControlName="lastName" placeholder="Enter last name" required [ngClass]="{ 'dark-mode-box': isDarkMode }">
           <small *ngIf="signUpForm.controls['lastName'].dirty && signUpForm.hasError('required','lastName')"
             class="error">*Last Name is required</small>
         </div>
         <div class="input-box">
           <span class="details">Email <span class="error">*</span></span>
-          <input type="email" formControlName="email" placeholder="Enter your email" required>
+          <input type="email" formControlName="email" placeholder="Enter your email" required [ngClass]="{ 'dark-mode-box': isDarkMode }">
           <small *ngIf="signUpForm.controls['email'].dirty && signUpForm.hasError('required','email')"
             class="error">*Email is required</small>
           <small *ngIf="signUpForm.controls['email'].errors?.['emailExists']" class="error">
@@ -26,7 +26,7 @@
         </div>
         <div class="input-box">
           <span class="details">Username <span class="error">*</span></span>
-          <input type="text" formControlName="username" placeholder="Enter your username" required>
+          <input type="text" formControlName="username" placeholder="Enter your username" required [ngClass]="{ 'dark-mode-box': isDarkMode }">
           <small *ngIf="signUpForm.controls['username'].dirty && signUpForm.hasError('required','username')"
             class="error">*Username is required.</small>
           <small *ngIf="signUpForm.controls['username'].errors?.['userNameExists']" class="error">
@@ -35,13 +35,13 @@
         </div>
         <div class="input-box">
           <span class="details">Password <span class="error">*</span></span>
-          <input type="password" formControlName="password" placeholder="Enter your password" required>
+          <input type="password" formControlName="password" placeholder="Enter your password" required [ngClass]="{ 'dark-mode-box': isDarkMode }">
           <small *ngIf="signUpForm.controls['password'].dirty && signUpForm.hasError('required','password')"
             class="error">*Password is required.</small>
         </div>
         <div class="input-box" [ngClass]="{'disabled-button': !signUpForm.controls['password'].value}">
           <span class="details">Confirm Password <span class="error">*</span></span>
-          <input type="password" formControlName="confirmPassword" placeholder="Confirm your password" required>
+          <input type="password" formControlName="confirmPassword" placeholder="Confirm your password" required [ngClass]="{ 'dark-mode-box': isDarkMode }">
           <small
             *ngIf="signUpForm.controls['password'].dirty && signUpForm.controls['password'].value && !isPasswordConfirmed"
             class="error">*Passwords not match.</small>
@@ -55,7 +55,7 @@
         </div>
         <div class="input-box">
           <span class="details">Country <span class="error">*</span></span>
-          <select class="form-control" name="country" id="country" formControlName="countryId" required>
+          <select class="form-control" name="country" id="country" formControlName="countryId" required [ngClass]="{ 'dark-mode-box': isDarkMode }">
             <option value='' disabled selected>Select Country</option>
             <option *ngFor="let country of countries" [value]="country.countryId">{{country.countryName}}</option>
           </select>
@@ -64,7 +64,7 @@
         </div>
         <div class="input-box" [ngClass]="{'disabled-button': !signUpForm.controls['countryId'].value}">
           <span class="details">State <span class="error">*</span></span>
-          <select class="form-control" name="country" id="country" formControlName="stateId" required>
+          <select class="form-control" name="country" id="country" formControlName="stateId" required [ngClass]="{ 'dark-mode-box': isDarkMode }">
             <option value="" disabled selected>Select State</option>
             <option *ngFor="let state of states" [value]="state.stateId">{{state.stateName}}</option>
           </select>
@@ -73,13 +73,13 @@
         </div>
         <div class="input-box">
           <span class="details">Region <span class="error">*</span></span>
-          <input type="text" formControlName="region" placeholder="Enter your region" required>
+          <input type="text" formControlName="region" placeholder="Enter your region" required [ngClass]="{ 'dark-mode-box': isDarkMode }">
           <small *ngIf="signUpForm.controls['region'].dirty && signUpForm.hasError('required','region')"
             class="error">*Region is required</small>
         </div>
         <div class="input-box">
           <span class="details">User Bio <span class="error">*</span></span>
-          <textarea type="textarea" formControlName="userBio" placeholder="Enter user bio" required></textarea>
+          <textarea type="textarea" formControlName="userBio" placeholder="Enter user bio" required [ngClass]="{ 'dark-mode-box': isDarkMode }"></textarea>
           <small *ngIf="signUpForm.controls['userBio'].dirty && signUpForm.hasError('required','userBio')"
             class="error">*UserBio is required</small>
         </div>
@@ -110,7 +110,7 @@
         </div>
         <div class="input-box check">
           <input type="checkbox" id="terms" class="text-blue-600" formControlName="terms">
-          <label for="rememberMe" class="text-gray-700">Agree to <a href="">Terms & Conditions</a></label><br>
+          <label for="rememberMe" [ngClass]="{ 'text-gray-700': !isDarkMode, 'text-white': isDarkMode }">Agree to <a href="">Terms & Conditions</a></label><br>
           <small *ngIf="signUpForm.controls['terms'].dirty && signUpForm.hasError('required','terms')"
           class="error">*Accept Terms & Conditions</small>
         </div>
@@ -119,5 +119,5 @@
         <input type="submit" value="Register" [ngClass]="{'disabled-button': signUpForm.invalid}">
       </div>
     </form>
-    <p class="mt-4 text-center text-gray-600">Already have an account? <u (click)="login()">Login</u></p>
+    <p class="mt-4 text-center" [ngClass]="{ 'text-gray-700': !isDarkMode, 'text-white': isDarkMode }">Already have an account? <u (click)="login()">Login</u></p>
   </div>

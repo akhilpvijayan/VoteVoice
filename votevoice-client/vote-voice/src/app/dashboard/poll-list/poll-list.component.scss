@@ -6,6 +6,11 @@
     border-radius: 10px;
     margin-bottom: 5px;
     background-color: #fff;
+
+    &.dark-mode{
+      background-color: #3D3D3D !important;
+      color: white;
+    }
   }
   
   .votevoice-header,
@@ -13,6 +18,11 @@
     padding: 15px;
     border-radius: 10px;
     display: flex;
+
+    &.dark-mode{
+      background-color: #3D3D3D !important;
+      color: white;
+    }
   }
   
   .votevoice-header {
@@ -35,6 +45,10 @@
     font-size: 0.7em;
     color: #666;
     text-align: left;
+
+    &.dark-mode{
+      color: rgb(192, 192, 192);
+    }
   }
   
   .votevoice-post-content {
@@ -69,12 +83,17 @@
     gap: 5px;
     justify-content: center;
     background-color: #f9fafb;
+
+    &.dark-mode{
+      background-color: #3D3D3D !important;
+      color: white;
+    }
   }
   
   .poll-option {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     cursor: pointer;
     overflow: hidden;
     border-radius: 15px;

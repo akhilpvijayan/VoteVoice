@@ -1,3 +1,4 @@
+import { DarkModeService } from './../../services/dark-mode.service';
 import { MiscService } from './../../services/misc.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,13 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MiscSideBarComponent implements OnInit{
 advice!: string;
+isDarkMode = this.darkModeService.isDarkModeEnabled();
 
-  constructor(private miscService: MiscService){}
+  constructor(private miscService: MiscService,
+    private darkModeService: DarkModeService){}
 
   ngOnInit(): void {
     this.miscService.getAdvice().subscribe((res: any)=>{
       this.advice = res.slip.advice;
-    })
+    });
+    this.darkModeService.darkMode$.subscribe((isDarkMode) => {
+      this.isDarkMode = isDarkMode;
+    });
   }
 
 }

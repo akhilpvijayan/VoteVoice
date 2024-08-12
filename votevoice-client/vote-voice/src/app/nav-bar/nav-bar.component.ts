@@ -19,6 +19,7 @@ import { Notifications } from '../interfaces/notifications';
 export class NavBarComponent implements OnInit{
   isLoggedIn = false;
   userDetails: any;
+  isDarkMode = this.darkModeService.isDarkModeEnabled();
   showNotification = false;
   isAssistantOpen = false;
   unReadCount = 0;
@@ -41,6 +42,9 @@ export class NavBarComponent implements OnInit{
     if(this.isLoggedIn){
       this.getNotifications();
     }
+    this.darkModeService.darkMode$.subscribe((isDarkMode) => {
+      this.isDarkMode = isDarkMode;
+    });
   }
 
   subscribeSignalR(){
@@ -158,5 +162,9 @@ export class NavBarComponent implements OnInit{
   showNotificationBar(){
     this.showNotification = !this.showNotification;
     this.isAssistantOpen = false;
+  }
+
+  toggleDarkMode() {
+    this.darkModeService.toggleDarkMode();
   }
 }

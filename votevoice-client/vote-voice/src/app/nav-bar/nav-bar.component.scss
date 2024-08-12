@@ -5,7 +5,24 @@
     width: 100%;
     padding-top: 10px;
     padding-bottom: 20px;
-    box-shadow: 0 0 0 0px
+    box-shadow: 0 0 0 0px;
+
+    &.dark-mode{
+        background-color: #2d2d2d !important;
+
+        .main-title{
+            color: #ffffff !important;
+        }
+
+        .searchTerm{
+            background-color: #181818 !important;
+
+            &:focus {
+                transform: scale(1.01); 
+                color: #ffffff;
+            }
+        }
+    }
 }
 
 img{
@@ -14,7 +31,7 @@ img{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-a .main-title {
+.main-title {
     font-size: 20px;
     font-weight: bold;
     color: #010101;
@@ -79,7 +96,7 @@ a span .title {
 }
 
 .searchTerm {
-    width: 80%;
+    width: 40%;
     border: 2px solid #FF7C03;
     border-right: none;
     padding: 5px;
@@ -146,11 +163,12 @@ a span .title {
     right: 20px;
     width: 100px;
     height: 200px;
+    z-index: 1001;
 }
 
 .floating-button {
     position: fixed;
-    bottom: 80px;
+    bottom: 20px;
     right: 20px;
     width: 60px;
     height: 60px;
@@ -165,7 +183,7 @@ a span .title {
     font-size: 24px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    z-index: 99;
+    z-index: 99999;
 
     &:hover {
         box-shadow: 0 0.5em 1.5em -0.5em #FF7C03;

@@ -1,74 +1,84 @@
 <div id="boxes">
-    <div id="leftbox">
-      <form [formGroup]="addPollForm" (ngSubmit)="onSubmit()">
-        <div class="input-wrap">
-          <div class="input title">
-            <input formControlName="title" type="text" id="title" placeholder="Enter title *" />
+  <div id="leftbox" [ngClass]="{
+    'text-gray-600 custom-light-bg': !isDarkMode,
+    'text-white custom-dark-bg': isDarkMode}">
+    <form [formGroup]="addPollForm" (ngSubmit)="onSubmit()">
+      <div class="input-wrap">
+        <div class="input title">
+          <input formControlName="title" type="text" id="title" placeholder="Enter title *"
+            [ngClass]="{ 'dark-mode-box': isDarkMode }" />
+        </div>
+        <div class="input">
+          <div class="textarea-container">
+            <textarea formControlName="description" id="description" rows="3" placeholder="Describe your poll.. *"
+              (keyup)="updateWordCount()" [ngClass]="{ 'dark-mode-box': isDarkMode }"></textarea>
+            <div class="word-count">{{ wordCount }}/500</div>
           </div>
-          <div class="input">
-            <div class="textarea-container">
-              <textarea
-                formControlName="description"
-                id="description"
-                rows="3"
-                placeholder="Describe your poll.. *"
-                (keyup)="updateWordCount()"
-              ></textarea>
-              <div class="word-count">{{ wordCount }}/500</div>
+        </div>
+        <div class="input">
+          <input formControlName="expiryDate" type="text" placeholder="Expiry Date *"
+            [ngClass]="{ 'dark-mode-box': isDarkMode }" onfocus="(this.type='date')" onblur="(this.type='text')"
+            required>
+        </div>
+        <div *ngIf="addPollForm.controls['expiryDate'].touched && addPollForm.controls['expiryDate'].invalid"
+          class="error-message">
+          <p>Please fill out this field.</p>
+        </div>
+      </div>
+      <div formArrayName="pollOptions" class="poll-option">
+        <div *ngFor="let pollOption of pollOptionForms.controls; let i=index">
+          <div [formGroupName]="i">
+            <div class="head">
+              <h5>Poll Option {{i+1}}</h5>
+              <button id='close' type="button" (click)="removePollOption(i)"
+                *ngIf="pollOption.value.pollOptionId == null">close</button>
+            </div>
+            <div class="container-small-unit leftbox">
+              <div class="input title">
+                <input formControlName="optionText" type="text" id="optionText" placeholder="Enter Option Text *"
+                  [ngClass]="{ 'dark-mode-box': isDarkMode }" />
+              </div>
+            </div>
+            <div class="leftbox">
+              <input type="file" class="upload-button" accept="image/*"
+                (change)="onPollOptionImageFileSelected($event, i)">
             </div>
           </div>
-          <div class="input">
-            <input formControlName="expiryDate" type="text" placeholder="Expiry Date *" onfocus="(this.type='date')" onblur="(this.type='text')" required>
-          </div>
-          <div *ngIf="addPollForm.controls['expiryDate'].touched && addPollForm.controls['expiryDate'].invalid" class="error-message">
-            <p>Please fill out this field.</p>
-          </div>
         </div>
-        <div formArrayName="pollOptions" class="poll-option">
-          <div *ngFor="let pollOption of pollOptionForms.controls; let i=index">
-            <div [formGroupName]="i">
-              <div class="head">
-                <h5>Poll Option {{i+1}}</h5>
-                <button id='close' type="button" (click)="removePollOption(i)" *ngIf="pollOption.value.pollOptionId == null">close</button>
-              </div>
-              <div class="container-small-unit leftbox">
-                <div class="input title">
-                  <input formControlName="optionText" type="text" id="optionText" placeholder="Enter Option Text *" />
-                </div>
-              </div>
-              <div class="leftbox">
-                <input type="file" class="upload-button" accept="image/*" (change)="onPollOptionImageFileSelected($event, i)">
-              </div>
-            </div>
-          </div>
-        </div>
-        <small class="error" *ngIf="pollOptionForms.length < 2">*Atleast 2 poll options required</small><br>
-        <button type="button" *ngIf="!hideNewPollOptionButton" class="add-experience" (click)="addPollOption()">Add Option</button>
-      </form>
-      <div class="buttons submit-mobile">
-        <button type="submit" (click)="onSubmit()" class="submit-button button-88" [disabled]="addPollForm.invalid || pollOptionForms.invalid || pollOptionForms.length < 2">{{ data?.pollDetails?.pollId ? 'Update' : 'Create' }}</button>
-    </div>
-    </div>
-  
-    <div id="rightbox" #rightbox>
-        <button id='close' type="button" (click)="closeDialog()">close</button>
-        <br>
-        <div class="votevoice-post">
-            <div class="votevoice-post-content">
-                {{ addPollForm.value.description }}
-                <div class="poll-container">
-                  <div class="poll-option-image" *ngFor="let option of addPollForm.value.pollOptions">
-                    <img [src]="option.pollImage" alt="{{ option.optionText }}" class="poll-img">
-                    <div class="poll-content">
-                      <p>{{ option.optionText }}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>
-        <div class="buttons">
-            <button type="submit" (click)="onSubmit()" class="submit-button button-88" [disabled]="addPollForm.invalid || pollOptionForms.invalid || pollOptionForms.length < 2">{{ data?.pollDetails?.pollId ? 'Update' : 'Create' }}</button>
-        </div>
+      </div>
+      <small class="error" *ngIf="pollOptionForms.length < 2">*Atleast 2 poll options required</small><br>
+      <button type="button" *ngIf="!hideNewPollOptionButton" class="add-experience" (click)="addPollOption()">Add
+        Option</button>
+    </form>
+    <div class="buttons submit-mobile">
+      <button type="submit" (click)="onSubmit()" class="submit-button button-88"
+        [disabled]="addPollForm.invalid || pollOptionForms.invalid || pollOptionForms.length < 2">{{
+        data?.pollDetails?.pollId ? 'Update' : 'Create' }}</button>
     </div>
   </div>
-  
+
+  <div id="rightbox" #rightbox [ngClass]="{
+    'text-gray-600 custom-light-bg': !isDarkMode,
+    'text-white custom-dark-bg': isDarkMode}">
+    <button id='close' type="button" (click)="closeDialog()">close</button>
+    <br>
+    <div class="votevoice-post" [class.dark-mode]="isDarkMode">
+      <div class="votevoice-post-content">
+        {{ addPollForm.value.description }}
+        <div class="poll-container" [class.dark-mode]="isDarkMode">
+          <div class="poll-option-image" *ngFor="let option of addPollForm.value.pollOptions" [class.dark-mode]="isDarkMode">
+            <img [src]="option.pollImage" alt="{{ option.optionText }}" class="poll-img">
+            <div class="poll-content">
+              <p>{{ option.optionText }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="buttons" >
+      <button type="submit" (click)="onSubmit()" class="submit-button button-88"
+        [disabled]="addPollForm.invalid || pollOptionForms.invalid || pollOptionForms.length < 2">{{
+        data?.pollDetails?.pollId ? 'Update' : 'Create' }}</button>
+    </div>
+  </div>
+</div>

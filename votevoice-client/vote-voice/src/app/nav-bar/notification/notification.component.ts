@@ -1,3 +1,4 @@
+import { DarkModeService } from './../../services/dark-mode.service';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
@@ -12,10 +13,19 @@ import { Notifications } from 'src/app/interfaces/notifications';
 export class NotificationComponent implements OnInit{
   @Input() showNotification!: boolean;
   @Input() notifications!: Notifications[];
+  isDarkMode = this.darkModeService.isDarkModeEnabled();
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,
+    private darkModeService: DarkModeService) {}
 
   ngOnInit(): void {
+    this.subscribeDarkMode();
+  }
+
+  subscribeDarkMode(){
+    this.darkModeService.darkMode$.subscribe((isDarkMode) => {
+      this.isDarkMode = isDarkMode;
+    });
   }
 
   showProfile(userId: number | undefined) {

@@ -1,3 +1,4 @@
+import { DarkModeService } from './../services/dark-mode.service';
 import { SignupComponent } from './../signup/signup.component';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -15,23 +16,30 @@ import { ReloadService } from '../services/reload.service';
 export class LoginComponent implements OnInit{
   loginForm!: FormGroup;
   isInvalidUser = false;
+  isDarkMode = this.darkModeService.isDarkModeEnabled();
 
   constructor(private formBuilder: FormBuilder,
     private authService: AuthService,
     private toastr: ToastrService,
     private dialogRef: MatDialogRef<LoginComponent>,
-    private router: Router,
-    private reloadService: ReloadService,
+    private darkModeService: DarkModeService,
     private dialog: MatDialog){}
 
   ngOnInit(): void {
     this.initializeForm();
+    this.subscribeDarkMode();
   }
 
   initializeForm() {
     this.loginForm = this.formBuilder.group({
       username: ['', Validators.required],
       password: ['', Validators.required]
+    });
+  }
+
+  subscribeDarkMode(){
+    this.darkModeService.darkMode$.subscribe((isDarkMode) => {
+      this.isDarkMode = isDarkMode;
     });
   }
 

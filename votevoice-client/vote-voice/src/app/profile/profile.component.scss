@@ -25,6 +25,11 @@
     background: #fff;
     border-radius: 2rem;
     box-shadow: 0 15px 35px rgba(50,50,93,0.1), 0 5px 15px rgba(0,0,0,0.07);
+
+    &.dark-mode{
+      background-color: #3D3D3D !important;
+      color: white;
+    }
   }
   @media (max-width: 990px) {
     .profile-page .content {
@@ -335,4 +340,9 @@
     left: 20px;
     width: 60px;
     height: 60px;
+    color: #3D3D3D;
+    
+    &.dark-mode{
+      color: #ffffff !important;
+    }
   }

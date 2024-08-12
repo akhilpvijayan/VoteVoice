@@ -1,3 +1,4 @@
+import { DarkModeService } from './../../services/dark-mode.service';
 import { VoteService } from './../../services/vote.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AuthService } from './../../Auth/auth.service';
@@ -25,6 +26,7 @@ export class PollListComponent implements OnInit {
   showResults = false;
   skip = 0;
   take = 6;
+  isDarkMode = this.darkModeService.isDarkModeEnabled();
   userId = parseInt(this.userService.getUserId() ?? '0', 10);
   polls!: Poll[];
   isLoggedIn = false;
@@ -40,7 +42,8 @@ export class PollListComponent implements OnInit {
     private authService: AuthService,
     private router: Router,
     private route: ActivatedRoute,
-    private voteService: VoteService) { 
+    private voteService: VoteService,
+    private darkModeService: DarkModeService) { 
       this.reloadSubscription = this.reloadService.getReloadObservable()
       .subscribe(reloadData => {
         if (reloadData.componentName === 'app-poll-list-update') {
@@ -63,6 +66,7 @@ export class PollListComponent implements OnInit {
       this.isLoggedIn = isLoggedInSubject;
     });
     this.isLoggedIn = this.authService.isLoggedIn();
+    this.subscribeDarkMode();
   }
 
   loadPolls(){
@@ -78,6 +82,12 @@ export class PollListComponent implements OnInit {
         this.loading = false;
       });
     }
+  }
+
+  subscribeDarkMode(){
+    this.darkModeService.darkMode$.subscribe((isDarkMode) => {
+      this.isDarkMode = isDarkMode;
+    });
   }
 
   onReload(pollId: number){

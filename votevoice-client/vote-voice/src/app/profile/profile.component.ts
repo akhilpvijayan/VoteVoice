@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatTabChangeEvent } from '@angular/material/tabs';
 import { Location } from '@angular/common';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { DarkModeService } from '../services/dark-mode.service';
 
 
 @Component({
@@ -17,13 +18,15 @@ export class ProfileComponent implements OnInit{
   userDetails: any;
   isLoggedIn = false;
   userId: any = null;
+  isDarkMode = this.darkModeService.isDarkModeEnabled();
 
   constructor(private userService: UserService,
     private authService: AuthService,
     private route: ActivatedRoute,
     private location: Location,
     private router: Router,
-    private spinner: NgxSpinnerService){}
+    private spinner: NgxSpinnerService,
+    public darkModeService: DarkModeService){}
   ngOnInit(): void {
     this.spinner.show();
     this.route.queryParams.subscribe(params => {
@@ -36,7 +39,14 @@ export class ProfileComponent implements OnInit{
         this.getUserDetails(this.userId);
       }, 100);
     });
+    this.subscribeDarkMode();
     this.isLoggedIn = this.authService.isLoggedIn();
+  }
+
+  subscribeDarkMode(){
+    this.darkModeService.darkMode$.subscribe((isDarkMode) => {
+      this.isDarkMode = isDarkMode;
+    });
   }
 
   onTabChange(event: MatTabChangeEvent) {

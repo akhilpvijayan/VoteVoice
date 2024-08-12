@@ -1,3 +1,4 @@
+import { DarkModeService } from './../../services/dark-mode.service';
 import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { AuthService } from './../../Auth/auth.service';
@@ -12,6 +13,7 @@ import { LoginComponent } from 'src/app/login/login.component';
 })
 export class ProfileSideBarComponent implements OnInit{
   userDetails: any;
+  isDarkMode = this.darkModeService.isDarkModeEnabled();
   userId = parseInt(this.userService.getUserId() ?? '0', 10);
   isLoggedIn = this.authService.isLoggedIn();
 
@@ -19,7 +21,8 @@ export class ProfileSideBarComponent implements OnInit{
     private userService: UserService,
     private authService: AuthService,
     private dialog: MatDialog,
-    private router: Router
+    private router: Router,
+    private darkModeService: DarkModeService
   ){}
 
   ngOnInit(): void {
@@ -31,6 +34,7 @@ export class ProfileSideBarComponent implements OnInit{
         this.getUserDetails();
       }, 100);
     });
+    this.subscribeDarkMode();
     this.isLoggedIn = this.authService.isLoggedIn();
   }
 
@@ -55,5 +59,11 @@ export class ProfileSideBarComponent implements OnInit{
 
   showProfile() {
     this.router.navigate(['profile'], { queryParams: { userId: this.userService.getUserId() } });
+  }
+
+  subscribeDarkMode(){
+    this.darkModeService.darkMode$.subscribe((isDarkMode) => {
+      this.isDarkMode = isDarkMode;
+    });
   }
 }

@@ -49,7 +49,8 @@ namespace NotificationService.Business.Services.Services
                     UserId = notification.UserId,
                     firstName = notification.FirstName,
                     lastName = notification.LastName,
-                    profileImage = notification.profileImage
+                    profileImage = notification.profileImage,
+                    NotificationTypeId = notification.NotificationTypeId
                 };
                 await _context.Notifications.AddAsync(notifications);
                 await _context.SaveChangesAsync();

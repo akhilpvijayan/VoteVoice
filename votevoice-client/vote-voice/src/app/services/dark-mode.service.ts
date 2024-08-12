@@ -1,38 +1,41 @@
 import { Injectable, signal } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DarkModeService {
-  private isDarkMode = false;
+  private darkModeSubject = new BehaviorSubject<boolean>(false);
+  darkMode$ = this.darkModeSubject.asObservable();
 
-  darkModeSignal = signal<string>('null');
   constructor() {
-    // this.isDarkMode = localStorage.getItem('dark-mode') === 'true';
-    // this.updateBodyClass();
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    if (isDarkMode) {
+      this.enableDarkMode();
+    }
   }
 
-  updateDarkMode(){
-    this.darkModeSignal.update((value)=> (value === 'dark' ? 'null' : 'dark'));
+  enableDarkMode() {
+    this.darkModeSubject.next(true);
+    document.body.classList.add('dark-mode');
+    localStorage.setItem('darkMode', 'true');
+  }
+
+  disableDarkMode() {
+    this.darkModeSubject.next(false);
+    document.body.classList.remove('dark-mode');
+    localStorage.setItem('darkMode', 'false');
   }
 
   toggleDarkMode() {
-    this.isDarkMode = !this.isDarkMode;
-    localStorage.setItem('dark-mode', this.isDarkMode.toString());
-    this.updateBodyClass();
-  }
-
-  private updateBodyClass() {
-    if (this.isDarkMode) {
-      document.body.classList.add('dark');
-      console.log('Dark mode enabled');
+    if (this.darkModeSubject.value) {
+      this.disableDarkMode();
     } else {
-      document.body.classList.remove('dark');
-      console.log('Dark mode disabled');
+      this.enableDarkMode();
     }
   }
 
   isDarkModeEnabled(): boolean {
-    return this.isDarkMode;
+    return this.darkModeSubject.value;
   }
 }

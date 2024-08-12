@@ -1,9 +1,14 @@
 .container{
   width: 100%;
   background-color: #fff;
-  padding: 25px 30px;
+  padding: 20px 30px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+
+  &.dark-mode{
+    background-color: #3D3D3D;
+    color: #fcfcfc;
+}
 }
 .container .title{
   font-size: 15px;
@@ -11,11 +16,14 @@
   position: relative;
 }
 
+.dark-mode-box {
+  background-color: #181818;
+}
 .content form .user-details{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px 0 12px 0;
+  margin: 20px 0 10px 0;
 }
 form .user-details .input-box{
   margin-bottom: 10px;
@@ -24,14 +32,14 @@ form .user-details .input-box{
 form .input-box span.details{
   display: block;
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 .user-details .input-box input,
 .user-details .input-box select{
   height: 35px;
   width: 100%;
   outline: none;
-  font-size: 14px;
+  font-size: 13px;
   border-radius: 5px;
   padding-left: 15px;
   border: 1px solid #ccc;
@@ -60,7 +68,7 @@ form .input-box span.details{
   height: 35px;
   width: 100%;
   outline: none;
-  font-size: 14px;
+  font-size: 13px;
   border-radius: 5px;
   padding-left: 15px;
   border: 1px solid #ccc;
@@ -81,7 +89,7 @@ form .input-box span.details{
 }
 
  form .gender-details .gender-title{
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
  }
  form .category{
@@ -115,7 +123,7 @@ form .input-box span.details{
  }
  form .button{
    height: 45px;
-   margin: 35px 0
+   margin: 15px 0
  }
  form .button input{
    height: 100%;
@@ -138,6 +146,7 @@ form .input-box span.details{
 
 .error{
   color: red;
+  font-size: 12px;
 }
 
 .disabled-button {

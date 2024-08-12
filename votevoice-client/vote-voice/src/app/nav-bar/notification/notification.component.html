@@ -1,5 +1,5 @@
 
-<div [@openClose]="notificationState" class="notification-container">
+<div [@openClose]="notificationState" class="notification-container" [class.dark-mode]="isDarkMode">
         <div class="notification-header">
             <span class="head">Notifications</span>
             <a href="#" class="mark-all-read" *ngIf="notifications.length > 0">Mark all as read</a>
