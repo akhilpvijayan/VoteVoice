@@ -13,9 +13,10 @@
       <i class="fa fa-search"></i>
     </button>
   </div>
-  <button mat-button class="icon-button icon-button-content web-icon" matTooltip="Dark Mode" (click)="toggleDarkMode()"
+  <button mat-button class="icon-button icon-button-content web-icon" matTooltip="{{ isDarkMode ? 'Light Mode' : 'Dark Mode' }}" (click)="toggleDarkMode()"
     [ngStyle]="{ color: isDarkMode ? '#ffffff' : '' }">
-    <mat-icon matBadge="" matBadgePosition="before" matBadgeColor="warn">notifications</mat-icon>
+    <mat-icon *ngIf="!isDarkMode" matBadge="" matBadgePosition="before" matBadgeColor="warn">brightness_2</mat-icon>
+    <mat-icon *ngIf="isDarkMode" matBadge="" matBadgePosition="before" matBadgeColor="warn">wb_sunny</mat-icon>
   </button>
   <div *ngIf="isLoggedIn">
     <button mat-button class="icon-button icon-button-content web-icon" matTooltip="Notifications"
